@@ -4,7 +4,7 @@ Let cats who speak different languages understand each other's everyday jokes.
 
 ## Current production status
 
-The pixel direction continues with further visual refinement needed. The existing full animatics are not approved for production. [DIRECTOR_SCRIPT.md](DIRECTOR_SCRIPT.md) is the current script proposal, built around one door joke and a continuous logo-to-selection action inside the viewing scene. Script review comes before new boards or animation.
+The pixel direction continues with further visual refinement needed. The existing full animatics are not approved for production. [DIRECTOR_SCRIPT.md](DIRECTOR_SCRIPT.md) is the current proposal: familiar translated subtitles stop at a cat drama's climax, the viewer uses Meowcal Sub to read the remaining original text, and the grand declaration turns out to be five more minutes of sleep. Script review comes before new boards or animation.
 
 ## Existing animatic reference
 
