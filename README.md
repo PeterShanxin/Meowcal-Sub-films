@@ -44,3 +44,10 @@ same film; geometry comes from `src/film/layout.ts`.
 - The soundtrack is generated from code; no samples or licensed music.
 - Remotion is free for individuals and small teams; larger companies need a
   company licence (see remotion.dev/license).
+
+## License
+
+The source is licensed under the [GNU Affero General Public License v3.0 only](LICENSE),
+the same licence as [Meowcal Sub](https://github.com/PeterShanxin/Meowcal-Sub).
+The licence does not grant rights to the Meowcal Sub name or logo; see the
+project's [trademark policy](https://github.com/PeterShanxin/Meowcal-Sub/blob/main/TRADEMARKS.md).
