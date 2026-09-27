@@ -9,11 +9,12 @@ languages behind the locked box, the frame breaks into its layers (screen →
 Windows OCR → local AI translation) to show nothing leaves the PC, and the box
 finally folds into the app icon.
 
-## Cat Planet storyboards
+## Cat Planet story
 
-The 60-second story and 30-second portrait edit are available as `CatPlanetStory60`
-and `CatPlanetStory30Vertical`. See [STORYBOARD.md](STORYBOARD.md) for the shot list,
-product claims, asset sources, preview commands, and approval boundary.
+The current 60-second story and 30-second portrait proposal are in
+[DIRECTOR_SCRIPT.md](DIRECTOR_SCRIPT.md), awaiting script review.
+[STORYBOARD.md](STORYBOARD.md) documents the existing pixel animatics and their
+source assets; those exports are visual references, not an approved story.
 
 ## Watch
 

@@ -2,13 +2,17 @@
 
 Let cats who speak different languages understand each other's everyday jokes.
 
-## Review deliverables
+## Current production status
 
-The pixel style and living-room / television direction are approved. `PixelStory60` and `PixelStory30Vertical` extend that direction into silent 60-second and 30-second animatics at 60 fps. The current review is `out/story/review.html`; MP4 downloads and WebM browser previews are available there. Preview resolutions are 960×540 and 540×960.
+The pixel direction continues with further visual refinement needed. The existing full animatics are not approved for production. [DIRECTOR_SCRIPT.md](DIRECTOR_SCRIPT.md) is the current script proposal, built around one door joke and a continuous logo-to-selection action inside the viewing scene. Script review comes before new boards or animation.
+
+## Existing animatic reference
+
+The material below describes the previous `PixelStory60` and `PixelStory30Vertical` exports, retained as visual reference. They are silent 60-second and 30-second animatics at 60 fps. `out/story/review.html` contains MP4 downloads and WebM browser previews at 960×540 and 540×960.
 
 The opening establishes the world and its viewers. Meowcal Sub appears when a cat needs help reading another cat's subtitles. The final selection box becomes the brand mark; the pixel brand progressively resolves into the existing clean logo and wordmark. This resolution change belongs to the brand ending, not a product feature demonstration.
 
-The review includes one frame per shot, a four-frame brand transition strip, and a separate five-second ending. Full-resolution delivery and sound remain pending review of these animatics.
+The page includes one frame per shot, a four-frame brand transition strip, and a separate five-second ending. These exports do not depict the new director script.
 
 ## Picture
 
