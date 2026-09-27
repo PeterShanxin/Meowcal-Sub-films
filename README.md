@@ -9,6 +9,11 @@ languages behind the locked box, the frame breaks into its layers (screen →
 Windows OCR → local AI translation) to show nothing leaves the PC, and the box
 finally folds into the app icon.
 
+## Watch
+
+Landscape, vertical, and under-10 MB web copies are attached to the
+[latest release](https://github.com/PeterShanxin/Meowcal-Sub-launch-film/releases/latest).
+
 ## Render
 
 Remotion ships no Windows ARM64 renderer, so on ARM64 run it under an x64 Node
