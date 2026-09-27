@@ -1,0 +1,43 @@
+{
+  "fps": 60,
+  "duration": 900,
+  "bpm": 120,
+  "hook": {
+    "pullbackStart": 6,
+    "pullbackEnd": 52,
+    "cursorIn": 30,
+    "dimIn": 36,
+    "hintIn": 40,
+    "cursorArrive": 57,
+    "press": 60,
+    "dragEnd": 86,
+    "release": 88
+  },
+  "magic": {
+    "scanStart": 94,
+    "scanEnd": 118,
+    "selectorOut": 116,
+    "drop": 120,
+    "line2": 240,
+    "line2ScanEnd": 252,
+    "line2Drop": 254
+  },
+  "montage": {
+    "cuts": [300, 330, 360, 390, 420, 450, 480, 495, 510, 525],
+    "translateDelay": 5
+  },
+  "payoff": {
+    "start": 540,
+    "labels": [582, 598, 614],
+    "statement": 660,
+    "collapse": 720,
+    "flat": 746
+  },
+  "brand": {
+    "hit": 780,
+    "wordmark": 790,
+    "tagline": 806,
+    "meta": 822,
+    "end": 900
+  }
+}
