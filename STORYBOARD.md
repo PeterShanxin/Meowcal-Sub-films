@@ -4,9 +4,9 @@ Six cats miss each other's everyday jokes across subtitled vlogs; one selection 
 
 ## Review deliverables
 
-`CatPlanetStory60` is 1920×1080 / 3600 frames; `CatPlanetStory30Vertical` is 1080×1920 / 1800 frames. Both run at 60 fps. This stage exports low-resolution animatics at 640×360 and 360×640, with original score and effects. Final production awaits storyboard approval.
+The current review contains two silent 12-second style studies: `TVStylePixel12` and `TVStyleCeramic12`. Both compositions are 1920×1080 at 60 fps; review exports are 960×540. Open `out/story/review.html` for synchronized playback and the six-frame contact sheet. The living-room / television narrative direction is accepted; visual style and full production remain pending.
 
-Open `out/story/review.html` for both videos and contact sheets. Each contact-sheet tile represents one shot. Timing and sound cues live in `src/timeline.json` under `catPlanet`; the existing 15-second compositions retain their timing.
+The earlier `CatPlanetStory60` and `CatPlanetStory30Vertical` animatics are retained for reference at `out/story/review-v1.html`; they are not approved. Their timing and sound cues live in `src/timeline.json` under `catPlanet`. The existing 15-second launch compositions retain their timing.
 
 ## Story
 
@@ -83,3 +83,11 @@ The initial Cat Planet animatic is rejected: the synthetic score, presentation-s
 This study changes the visual direction and camera grammar only. It does not approve or replace the full 60s/30s deliverable. TV scenes in the eventual product demonstration must clearly use the television as a Windows 11 PC's primary display; the app is not a standalone smart-TV app. No soundtrack from the rejected animatic should be reused.
 
 Browser preview uses VP9 WebM. H.264 displayed black in the actual Codex sidebar even when it played in an automation-created tab; validate the user's actual tab. The original MP4 remains available as a file.
+
+## Style comparison
+
+The living-room / television narrative is approved in direction. Visual style is pending selection between `TVStylePixel12` (pixel art) and `TVStyleCeramic12` (cool grey illustration based on the app palette). Both are silent 12-second studies at 60 fps with the same camera and acting cues in `timeline.json` under `styleStudy`.
+
+The characters, sets, and lighting are SVG artwork in `src/story-tv/styles/`. The viewer's body and paws remain planted; eyes lead the neck turn, followed by a held pose and blink. The bobtail's ribcage breathes independently of its paws, rump, and contact shadow. Camera motion ends before the reaction cut. Pixel poses use discrete offsets; the illustration uses eased neck movement.
+
+Render both compositions at scale 0.5 with x64 Node, Edge, `--concurrency=1 --gl=swangle`, then run `python scripts/story_style_review.py` to create the WebM previews, six-frame contact sheet, media checks, and current `out/story/review.html`. Full production and the replacement score remain pending style selection.

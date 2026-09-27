@@ -322,6 +322,16 @@
       }
     }
   },
+  "styleStudy": {
+    "duration": 720,
+    "pushStart": 85,
+    "pushEnd": 420,
+    "reaction": 480,
+    "vlogLook": 220,
+    "vlogBlinks": [155, 366],
+    "viewerLook": 42,
+    "viewerBlinks": [12, 177]
+  },
   "tvStudy": {
     "duration": 720,
     "pushStart": 70,
