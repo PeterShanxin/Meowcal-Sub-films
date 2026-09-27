@@ -73,3 +73,13 @@ After approval: refine character acting and cloud contact, continuous camera mov
 ## Animatic verification
 
 Both H.264 previews decode fully: 3600 and 1800 frames at 60 fps, stereo AAC at a 320 kbps encoder target. Encoded audio measured -14.08 LUFS / -1.46 dBTP (landscape), -13.97 LUFS / -1.48 dBTP (portrait). TypeScript and Python compilation pass. Contact sheets cover all 19 and 9 shots; title collisions and portrait wrapping were corrected. Product screenshot and token snapshot SHA-256 values match their source files. Original launch-film timeline values are unchanged. Detailed local media metadata is in `out/story/verification.json`.
+
+## Review status
+
+The initial Cat Planet animatic is rejected: the synthetic score, presentation-style layout, and shallow staging do not establish the intended story. It must not be treated as an approved direction.
+
+`TVStoryStudy12` is a silent 12-second direction study. A tabby watches a television in its living room; the camera moves past the viewer into the screen, where a Japanese bobtail rests on a keyboard. The Japanese burned-in subtitle means "This is the warmest place." A cut back to the tabby's restrained reaction establishes the viewer/screen relationship without explanatory titles or punctuation graphics.
+
+This study changes the visual direction and camera grammar only. It does not approve or replace the full 60s/30s deliverable. TV scenes in the eventual product demonstration must clearly use the television as a Windows 11 PC's primary display; the app is not a standalone smart-TV app. No soundtrack from the rejected animatic should be reused.
+
+Browser preview uses VP9 WebM. H.264 displayed black in the actual Codex sidebar even when it played in an automation-created tab; validate the user's actual tab. The original MP4 remains available as a file.

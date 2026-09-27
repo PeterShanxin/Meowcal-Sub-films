@@ -321,5 +321,11 @@
         "logo": 1545
       }
     }
+  },
+  "tvStudy": {
+    "duration": 720,
+    "pushStart": 70,
+    "pushEnd": 525,
+    "reaction": 540
   }
 }
