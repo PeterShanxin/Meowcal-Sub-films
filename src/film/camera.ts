@@ -14,7 +14,10 @@ export interface Camera {
 
 const MACRO_SCALE = 4.6;
 const PERSPECTIVE = 2600;
+// A narrow portrait frame cannot take the wide swing: the front layers would
+// fan out past its left edge.
 const EXPLODED = { scale: 0.47, rx: -12, ry: -28 };
+const EXPLODED_PORTRAIT = { scale: 0.6, rx: -12, ry: -16 };
 
 function baseCamera(f: number, L: Layout): Camera {
   const { W, H, box } = L;
@@ -55,13 +58,14 @@ function baseCamera(f: number, L: Layout): Camera {
   const orbit = tween(f, [T.payoff.start + 40, T.payoff.collapse], [0, 1], ease.linear);
   const flatten = sp(f, T.payoff.collapse, { damping: 22, stiffness: 150 });
   const k = explode * (1 - flatten);
-  const target = { x: W / 2 - (L.portrait ? 60 : 260) * L.u, y: H / 2 - 60 * L.u };
+  const view = L.portrait ? EXPLODED_PORTRAIT : EXPLODED;
+  const target = { x: W / 2 - (L.portrait ? 170 : 260) * L.u, y: H / 2 - 60 * L.u };
   cam = {
     cx: mix(mix(cam.cx, target.x, explode), home.x, flatten),
     cy: mix(mix(cam.cy, target.y, explode), home.y, flatten),
-    scale: mix(mix(cam.scale, EXPLODED.scale * (1 + 0.05 * orbit), explode), 1, flatten),
-    rx: EXPLODED.rx * k,
-    ry: (EXPLODED.ry - 6 * orbit) * k,
+    scale: mix(mix(cam.scale, view.scale * (1 + 0.05 * orbit), explode), 1, flatten),
+    rx: view.rx * k,
+    ry: (view.ry - (L.portrait ? 3 : 6) * orbit) * k,
     rz: cam.rz,
   };
   return cam;
