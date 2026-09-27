@@ -7,9 +7,12 @@ import { StyleStudy } from "./story-tv/styles/StyleStudy";
 import { PixelFilm } from "./pixel-film/PixelFilm";
 import { FinalBrand } from "./pixel-film/BrandReveal";
 import { T } from "./film/timeline";
+import { DramaFilm } from "./drama-film/DramaFilm";
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="CatDrama60" component={DramaFilm} durationInFrames={3600} fps={60} width={1920} height={1080} />
+    <Composition id="CatDrama30Vertical" component={DramaFilm} durationInFrames={1800} fps={60} width={1080} height={1920} />
     <Composition id="PixelStory60" component={PixelFilm} durationInFrames={3600} fps={60} width={1920} height={1080} />
     <Composition id="PixelStory30Vertical" component={PixelFilm} durationInFrames={1800} fps={60} width={1080} height={1920} />
     <Composition id="PixelBrandLandscape" component={FinalBrand} durationInFrames={1} fps={60} width={1920} height={1080} />

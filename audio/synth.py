@@ -15,6 +15,10 @@ import wave
 import sys
 import runpy
 
+if __name__ == "__main__" and "--drama" in sys.argv:
+    runpy.run_path(os.path.join(os.path.dirname(__file__), "drama.py"), run_name="__main__")
+    sys.exit(0)
+
 if __name__ == "__main__" and "--cat-planet" in sys.argv:
     runpy.run_path(os.path.join(os.path.dirname(__file__), "cat_planet.py"), run_name="__main__")
     sys.exit(0)
