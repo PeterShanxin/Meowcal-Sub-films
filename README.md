@@ -14,6 +14,12 @@ finally folds into the app icon.
 Landscape, vertical, and under-10 MB web copies are attached to the
 [latest release](https://github.com/PeterShanxin/Meowcal-Sub-launch-film/releases/latest).
 
+## Archived concepts
+
+[Read beyond language](archive/read-beyond-language/README.md) is a retained
+alternative, not the selected launch film. Its final MP4, editable source,
+original assets and verification record are preserved together.
+
 ## Render
 
 Remotion ships no Windows ARM64 renderer, so on ARM64 run it under an x64 Node

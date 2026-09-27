@@ -1,0 +1,17 @@
+{
+  "video": "Meowcal-Sub-Launch-15s.mp4",
+  "durationSeconds": 15,
+  "resolution": [1920, 1080],
+  "fps": 60,
+  "frames": 900,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "audioSampleRate": 48000,
+  "audioChannels": 2,
+  "integratedLufs": -16.20,
+  "truePeakDbtp": -1.45,
+  "sha256": "7CEF03BD535415727412B963787D0F2035D23FBEE66221FB9D67E9061DE9864A",
+  "validation": ["TypeScript and ESLint passed", "FFmpeg full decode: no errors", "Browser playback reached 15.000 seconds without media errors", "Opening, selection, translation, UI crop, payoff and end card visually inspected"],
+  "productSourceCommit": "0df43b6",
+  "nativeRecording": false
+}
