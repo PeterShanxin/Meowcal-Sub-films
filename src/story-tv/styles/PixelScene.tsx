@@ -3,7 +3,7 @@ import {acting} from './motion';
 
 const p = {ink:'#121927', deep:'#202a3e', shade:'#33415a', blue:'#4e6380', edge:'#8194ab', pale:'#bdc7ce', ivory:'#ebe4ce', white:'#fff3da', gold:'#caac7d', rust:'#a37656', brown:'#705849', leaf:'#637d78'};
 
-const PixelBobtail: React.FC<{frame:number}> = ({frame}) => {
+export const PixelBobtail: React.FC<{frame:number}> = ({frame}) => {
   const a=acting(frame);
   const dy=a.head>.6?1:0;
   const eye=a.eye>.5?-1:0;
@@ -35,7 +35,7 @@ const PixelBobtail: React.FC<{frame:number}> = ({frame}) => {
   </g>;
 };
 
-const PixelBack = () => <g>
+export const PixelBack = () => <g>
   <path d="M7 82H66V86H3V84H7Z" fill={p.ink}/>
   <path d="M55 72H72V70H76V62H80V72H77V77H71V80H57Z" fill={p.blue}/>
   <path d="M62 73H66V80H62M73 70H78V73H73" fill={p.shade}/>
@@ -49,7 +49,7 @@ const PixelBack = () => <g>
   <path d="M50 8h2v17h3v14h-2v5h-4v3h-5" stroke={p.pale} fill="none"/>
 </g>;
 
-export const PixelVlog: React.FC<{frame:number}> = ({frame}) => <svg viewBox="0 0 320 180" width="100%" height="100%" shapeRendering="crispEdges">
+export const PixelVlog: React.FC<{frame:number; actor?:React.ReactNode; windowView?:React.ReactNode; caption?:string}> = ({frame,actor,windowView,caption='ここが、いちばん暖かい。'}) => <svg viewBox="0 0 320 180" width="100%" height="100%" shapeRendering="crispEdges">
   <rect width="320" height="180" fill="#c9c3aa"/>
   <path d="M0 0H103V124H0Z" fill="#a9ae98"/>
   <path d="M9 0V122M39 0V122M70 0V122M101 0V122M0 34H103M0 70H103M0 108H103" stroke="#d1c8af" strokeWidth="2"/>
@@ -60,6 +60,7 @@ export const PixelVlog: React.FC<{frame:number}> = ({frame}) => <svg viewBox="0 
   <path d="M182 57v-7h8v-9h6v-6h5v8h6v8h7v6h-8v-3h-7v4h-6v-5h-5v4Z" fill="#d6ddc9"/>
   <path d="M219 96v-4h7v-4h9v-4h8v-4h8v-4h9v-4h8v4h9v4h8v4h10v4h3v17h-79Z" fill="#5d7a7f"/>
   <path d="M232 94v11m20-20v20m20-21v21m18-12v12" stroke="#a1afa1" strokeWidth="2"/>
+  {windowView&&<svg x="139" y="0" width="158" height="105" viewBox="0 0 160 110">{windowView}</svg>}
   <path d="M217 0V107M137 66H299" stroke="#657f7e" strokeWidth="3"/>
   <path d="M219 0V107M137 68H299" stroke="#e0d4b9"/>
   <path d="M132 109H305V115H132Z" fill="#919c89"/>
@@ -74,13 +75,13 @@ export const PixelVlog: React.FC<{frame:number}> = ({frame}) => <svg viewBox="0 
   <path d="M101 134H237V138H243V141H249V145H255V148H262V153H80V148H85V144H91V140H96V137H101Z" fill="#b8c4c0"/>
   {Array.from({length:4},(_,r)=>Array.from({length:17},(_,c)=><rect key={`${r}-${c}`} x={106+c*7-r*4} y={137+r*3} width="5" height="2" fill="#5d7b80"/>))}
   <path d="M145 149H186V151H145Z" fill="#7b9597"/>
-  <g transform="translate(96 71)"><PixelBobtail frame={frame}/></g>
+  <g transform="translate(96 71)">{actor??<PixelBobtail frame={frame}/>}</g>
   <path d="M35 151H53V159H51V162H37V159H35Z" fill="#e1d8bd"/><path d="M36 150H52V153H36Z" fill="#698370"/>
   <rect y="163" width="320" height="17" fill="#253a44"/>
-  <text x="160" y="175" textAnchor="middle" fontFamily="Yu Gothic, Microsoft YaHei, sans-serif" fontSize="9" fontWeight="600" fill="#fff3da" shapeRendering="auto">ここが、いちばん暖かい。</text>
+  <text x="160" y="175" textAnchor="middle" fontFamily="Segoe UI, Yu Gothic, Malgun Gothic, Microsoft YaHei, sans-serif" fontSize="9" fontWeight="600" fill="#fff3da" shapeRendering="auto">{caption}</text>
 </svg>;
 
-export const PixelRoom: React.FC = () => <svg viewBox="0 0 480 270" width="100%" height="100%" shapeRendering="crispEdges">
+export const PixelRoom: React.FC<{viewer?:React.ReactNode; windowView?:React.ReactNode}> = ({viewer,windowView}) => <svg viewBox="0 0 480 270" width="100%" height="100%" shapeRendering="crispEdges">
   <defs><pattern id="pdither" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#788498" opacity=".09"/></pattern></defs>
   <rect width="480" height="270" fill={p.deep}/>
   <path d="M0 0H206V182H0Z" fill="#30394a"/><path d="M206 0H258V170H206Z" fill="#293347"/>
@@ -92,6 +93,7 @@ export const PixelRoom: React.FC = () => <svg viewBox="0 0 480 270" width="100%"
   <path d="M105 44h5v3h2v9h-5v-3h-4v-6h2Z" fill="#344967"/>
   <path d="M28 124v-5h8v-9h8v-7h8v7h7v7h9v-8h7v-11h7v-13h8v13h7v10h7v10h7v-7h8v-9h8v9h9v39H28Z" fill="#344b61"/>
   <path d="M28 139h10v-3h12v-4h12v6h12v4h11v-10h15v3h14v-7h11v5h11v17H28Z" fill="#203849"/>
+  {windowView&&<svg x="28" y="24" width="108" height="126" viewBox="0 0 160 110" preserveAspectRatio="xMidYMid slice">{windowView}</svg>}
   <path d="M79 24V153M27 88H137" stroke="#8494a3" strokeWidth="2"/>
   <rect x="18" y="16" width="133" height="3" fill="#8393a3"/>
   <path d="M18 19H46V29H45V66H43V114H41V155H16V135H17V86H18ZM121 19H150V51H152V91H154V133H156V156H129V116H127V76H124V43H121Z" fill="#596376"/>
@@ -116,7 +118,7 @@ export const PixelRoom: React.FC = () => <svg viewBox="0 0 480 270" width="100%"
   <path d="M216 238H365V236H369V242H382V250H393V255H202V249H210V242H216Z" fill="#697b8d"/><path d="M219 240H361V239H367V244H379V248H386V252H209V249H216V244H219Z" fill="#58687d"/>
   <path d="M65 164H128V170H161V175H178V200H186V248H55V186H61V170H65Z" fill="#61738d"/>
   <path d="M69 168H125V174H157V179H174V199H169V202H60V185H66Z" fill="#78879c"/>
-  <g transform="translate(103 109)"><PixelBack/></g>
+  <g transform="translate(103 109)">{viewer??<PixelBack/>}</g>
   <path d="M56 190H97V194H135V198H174V202H188V206H192V260H186V270H52V245H50V201H53V194H56Z" fill="#4e6584"/>
   <path d="M55 195H96V199H134V203H173V207H187V212H54Z" fill="#8598ab"/>
   <path d="M53 212H94V216H133V220H178V224H186V267H53Z" fill="#59718e"/>
@@ -126,7 +128,7 @@ export const PixelRoom: React.FC = () => <svg viewBox="0 0 480 270" width="100%"
   <rect width="480" height="270" fill="url(#pdither)"/>
 </svg>;
 
-const PixelFace: React.FC<{frame:number}> = ({frame}) => {
+export const PixelFace: React.FC<{frame:number;happy?:boolean}> = ({frame,happy=false}) => {
   const a=acting(frame,true);
   const turn=Math.round(a.head*2),eye=Math.round(a.eye*2);
   return <g>
@@ -145,11 +147,11 @@ const PixelFace: React.FC<{frame:number}> = ({frame}) => {
       <path d="M45 23H49V35H53V31H57V39H61V31H65V36H69V24H73V43H64V40H61V46H56V40H51V43H45Z" fill={p.shade}/>
       <path d="M17 48H31V52H17M20 61H34V65H20M85 48H98V52H85M83 63H93V67H83" fill={p.shade}/>
       <path d="M38 64H50V62H65V64H79V68H82V76H77V80H69V83H46V80H36V76H32V69H38Z" fill="#cfcebb"/>
-      {a.lids>.4?<>
+      {a.lids>.4&&!happy?<>
         <path d="M30 48H45V50H49V57H46V60H34V58H31Z" fill="#aabca7"/><path d="M67 49H82V52H85V58H81V61H70V58H67Z" fill="#aabca7"/>
         <path d={`M${38+eye*2} 49h3v12h-3ZM${74+eye*2} 50h3v12h-3Z`} fill={p.ink}/><path d="M39 49h2v2h-2m36 1h2v2h-2" fill={p.white}/>
         <path d="M30 47H44V49H49M66 48H80V50H85" stroke={p.shade} fill="none"/>
-      </>:<path d="M31 56H47M68 57H84" stroke={p.shade} strokeWidth="2"/>}
+      </>:<path d={happy?'M31 56h3v-3h9v3h4M68 57h3v-3h9v3h4':'M31 56H47M68 57H84'} stroke={p.shade} strokeWidth="2" fill="none"/>}
       <path d="M52 65H64V68H61V72H56V69H52Z" fill="#b89b92"/><path d="M58 72v5h-6m6 0h6" stroke="#738189" fill="none"/>
       <path d="M9 66H29V68H37M6 74H25V73H37M78 69H96V66H111M79 74H96V76H113" stroke="#dedccc" fill="none"/>
       <path d="M24 11v23M27 16h3M89 12h3v26h4v6h3v16h-3v10h-5v6h-9v5h-9" stroke="#d0d9cf" fill="none"/>
@@ -158,13 +160,13 @@ const PixelFace: React.FC<{frame:number}> = ({frame}) => {
   </g>;
 };
 
-export const PixelReaction: React.FC<{frame:number}> = ({frame}) => <svg viewBox="0 0 480 270" width="100%" height="100%" shapeRendering="crispEdges">
+export const PixelReaction: React.FC<{frame:number; actor?:React.ReactNode}> = ({frame,actor}) => <svg viewBox="0 0 480 270" width="100%" height="100%" shapeRendering="crispEdges">
   <rect width="480" height="270" fill={p.deep}/><rect x="24" y="20" width="108" height="130" fill="#4e647e"/><rect x="78" y="20" width="3" height="130" fill="#8192a4"/>
   <path d="M21 16H49V150H21ZM113 16H139V155H120V99H117Z" fill="#414f65"/>
   <path d="M96 105H112V99H132V102H161V106H190V110H219V114H248V118H277V122H306V131H314V208H321V270H91V161H94Z" fill="#607894"/>
   <path d="M103 110H126V107H154V111H184V115H213V119H242V123H271V127H300V132" stroke="#8e9dad" fill="none"/>
   <path d="M168 236H225V230H291V233H317V241H334V270H161Z" fill="#8492a2"/>
-  <g transform="translate(167 30) scale(1.58)"><PixelFace frame={frame}/></g>
+  <g transform="translate(167 30) scale(1.58)">{actor??<PixelFace frame={frame}/>}</g>
   <path d="M89 198H96V193H106V199H113V210H119V231H125V252H132V270H95V239H91Z" fill="#4c6684"/>
   <path d="M376 5H410V22H415V50H422V79H429V111H437V145H445V181H453V218H461V254H468V270H419V242H414V213H407V181H400V149H393V119H387V88H381V58H376Z" fill="#101b2e"/>
   <path d="M376 6V58h5v30h6v31h6v30h7v32h7v32h7v29h5v28" stroke="#a9bfcd" fill="none"/>

@@ -1,93 +1,80 @@
 # Cat Planet
 
-Six cats miss each other's everyday jokes across subtitled vlogs; one selection box helps them discover they all prefer the cardboard box.
+Let cats who speak different languages understand each other's everyday jokes.
 
 ## Review deliverables
 
-The current review contains two silent 12-second style studies: `TVStylePixel12` and `TVStyleCeramic12`. Both compositions are 1920×1080 at 60 fps; review exports are 960×540. Open `out/story/review.html` for synchronized playback and the six-frame contact sheet. The living-room / television narrative direction is accepted; visual style and full production remain pending.
+The pixel style and living-room / television direction are approved. `PixelStory60` and `PixelStory30Vertical` extend that direction into silent 60-second and 30-second animatics at 60 fps. The current review is `out/story/review.html`; MP4 downloads and WebM browser previews are available there. Preview resolutions are 960×540 and 540×960.
 
-The earlier `CatPlanetStory60` and `CatPlanetStory30Vertical` animatics are retained for reference at `out/story/review-v1.html`; they are not approved. Their timing and sound cues live in `src/timeline.json` under `catPlanet`. The existing 15-second launch compositions retain their timing.
+The opening establishes the world and its viewers. Meowcal Sub appears when a cat needs help reading another cat's subtitles. The final selection box becomes the brand mark; the pixel brand progressively resolves into the existing clean logo and wordmark. This resolution change belongs to the brand ending, not a product feature demonstration.
 
-## Story
+The review includes one frame per shot, a four-frame brand transition strip, and a separate five-second ending. Full-resolution delivery and sound remain pending review of these animatics.
 
-| Time | Picture and action |
+## Picture
+
+| Time | Landscape action |
 | --- | --- |
-| 0–5 | Push from space toward a tiny cat-shaped world; six cats watch their screens. |
-| 5–8 | 栗子 chooses a cardboard box over a cat bed; layered hills and tiled roofs. |
-| 8–10.5 | Momo claims a keyboard as a bed; volcanic mountain and low roofs. |
-| 10.5–13 | Bori inspects an empty bowl; mountain city and curved roofline. |
-| 13–15 | Bean, Bleu, Fritz: box, sunbeam, pillow; brick terraces, mansard roofs, timber houses. |
-| 15–27 | Four cats watch other cats' burned-in subtitles and tilt their heads. Each reaction remains affectionate. |
-| 27–30 | Six puzzled faces share the frame. |
-| 30–33 | 栗子 opens Meowcal Sub; actual Home screenshot, English → Simplified Chinese. |
-| 33–35 | Change the subtitle region; draw around existing text; confirm the region. |
-| 35–36 | Return to Home and start translation. |
-| 36–39 | Windows OCR scan metaphor, local translation, equal-width opaque plate below the source. |
-| 39–42 | Japanese → English: keyboard joke. |
-| 42–45 | French → Traditional Chinese: claiming the sunbeam. |
-| 45–49.5 | The world's screens illuminate in sequence. Lines represent understanding, not a sharing feature. |
-| 49.5–55 | A cloud reaches toward a computer; the cat swats it away. Subtitle stays inside. Setup/update network note remains visible. |
-| 55–60 | Selection frame folds into the existing brand cat; exact requested English lockup, public-beta and display boundaries, eight languages. |
+| 0–5 | Push toward a small cat-shaped planet with six illuminated homes. |
+| 5–10 | A tabby watches a Japanese bobtail's keyboard vlog; move from the room into its television. |
+| 10–15 | A Chartreux watches a British cat's cardboard-box vlog; a German Rex watches a Korean cat's empty-bowl vlog. |
+| 15–21 | Cut back to two viewers' puzzled, restrained reactions. |
+| 21–30 | The tabby watches the British cat's box joke, then reacts to the unfamiliar subtitle. |
+| 30–32 | Show the actual App Home screen and select Change. |
+| 32–35 | Frame the existing English subtitle and confirm the area. |
+| 35–36.5 | Return to Home and start translation. |
+| 36.5–40 | Windows OCR scan, local translation, then an equal-width Chinese plate beneath the original. |
+| 40–45 | English → French and Korean → German examples. |
+| 45–48 | Three viewers understand the jokes; their bodies and paws stay planted. |
+| 48–51 | Screens around the planet illuminate in sequence. Connecting paths represent understanding. |
+| 51–55 | A cloud reaches for the subtitles; the tabby swats it away. Text stays on the computer. |
+| 55–60 | Selection frame becomes the pixel brand; its pixels shrink into the clean brand. Hold the clean ending for two seconds. |
 
-Vertical edit: 0–6 conflict, 6–9 Home, 9–12 selection, 12–13 Start, 13–18 translation, 18–22 second language pair, 22–25 recognition, 25–30 brand. Composition uses its own shot list and portrait geometry.
+The portrait edit has its own staging: 0–7 conflict, 7–9 App, 9–12 selection, 12–13.5 Start, 13.5–18 translation, 18–21 recognition, 21–24 a second language pair, and 24–30 brand. It is not a center crop.
 
-## Cast and burned-in dialogue
+## Characters
 
-All communication appears as text. No spoken dialogue or vocal samples.
+All communication is burned-in text. No spoken dialogue or vocal samples are present.
 
-| Cat | Fixed silhouette / markings | Original text | Editorial meaning |
-| --- | --- | --- | --- |
-| 栗子 / Chinese tabby | Brown stripes, angular ears, cream chest | 新买的猫窝？我选纸箱。 | New bed? I choose the box. |
-| Momo / Japanese Bobtail | White calico, split orange/black face, round bobtail | キーボードは、私のベッド。 | The keyboard is my bed. |
-| Bori / Korean Shorthair | Warm orange stripes, white chest, long tail | 밥그릇이 비었어. 또. | The bowl is empty. Again. |
-| Bean / British Shorthair | Round blue-grey head and body, short rounded ears | New bed? I choose the box. | 新猫窝？我选纸箱。 |
-| Bleu / Chartreux | Slate coat, tapered face, copper eyes | Ce rayon de soleil est à moi. | 這束陽光是我的。 |
-| Fritz / German Rex | Slim cream body, large ears, repeated curl marks | Noch fünf Minuten schlafen. | Five more minutes of sleep. |
+| Cat | Silhouette / markings | Vlog text |
+| --- | --- | --- |
+| 栗子 / Chinese tabby | Grey-brown stripes, angular ears, cream muzzle | 买了猫窝，住了纸箱。 |
+| Momo / Japanese Bobtail | White calico, split orange/black face, bobtail | ここが、いちばん暖かい。 |
+| Bori / Korean Shorthair | Cream coat, orange patches, long tail | 분명 방금 채웠는데. |
+| Bean / British Shorthair | Round blue-grey head, short ears, gold eyes | The box was the actual gift. |
+| Bleu / Chartreux | Tapered blue face, copper eyes | Cette place est déjà prise. |
+| Fritz / German Rex | Slim body, large ears, curl marks | Das Kissen gehört jetzt mir. |
 
-These are authored examples, not claimed model outputs. No flags or national dress. Eight supported language labels come from the app's `src/ui/languages.ts`; characters are not added merely to represent the remaining two interface languages.
+The six cats share reusable SVG drawings in `src/pixel-film/PixelCats.tsx` and `src/story-tv/styles/PixelScene.tsx`. Regional landscapes use hills, rooflines, brick terraces, mansards, and timber framing. No flags or national dress. Subtitle examples are authored copy, not recorded model outputs.
 
-## Product grounding and assets
+## Product and asset sources
 
-Product reference: sibling `Meowcal-Sub` checkout, `README.md`, `docs/USAGE.md`, `docs/adr/0001-curated-local-translation-stack.md`, `docs/adr/0003-incremental-lit-frontend.md`, `src/ui/languages.ts`, `src/styles/tokens.css`, and selector markup. Documentation confirms Windows 11 public beta, primary-display capture, Windows OCR, local HY-MT inference, and subtitle-text privacy with setup/repair/update network use.
+Product references: sibling `Meowcal-Sub/README.md`, `docs/USAGE.md`, accepted ADRs 0001 and 0003, `src/ui/languages.ts`, `src/styles/tokens.css`, and selector markup. The product reads visible text with Windows OCR and translates it with a local model; it requires Windows 11 and the primary display and remains a public beta. The television is a PC display, not a standalone smart-TV application. Setup, repair, and updates may use the network.
 
-- `public/story/app-home.png` is copied unchanged from `Meowcal-Sub/docs/assets/screenshot-home.png`. It is a real product screenshot; cursor motion is editorial.
-- `public/story/app-tokens.css` preserves the referenced product token snapshot. Product shots reuse `Capture.tsx`, `Plate.tsx`, and `Brand.tsx`; optional line/scan inputs let the new film retain their rendering without changing the launch film's defaults.
-- `src/story/Cat.tsx` contains all character vectors. `World.tsx` contains all vector landscapes and the parallax planet. No generated or stock images used in this animatic.
-- `audio/cat_planet.py` synthesizes every note and effect from code, invoked by `python audio/synth.py --cat-planet`. Both scores share the picture's frame cues. No external samples or CC0 attribution required.
-- Source and translation remain visibly separate. The scan and reveal are editorial diagrams; no latency or recognition-success measurement is implied.
+- `public/story/app-home.png` is the real product Home screenshot. `PixelSurface` samples it at reduced resolution for the visual style; the cursor is editorial animation.
+- `Capture.tsx`, `Plate.tsx`, and `Brand.tsx` retain the existing selection, scan, translation plate, and brand rendering. The original launch film's defaults and timeline remain unchanged.
+- `public/pixel-film/brand-{landscape,vertical}.png` are canonical renders of `FinalBrand`, which reuses the existing Brand component and real logo path. The ending samples these images at progressively finer resolution, then displays the component directly.
+- All characters and environments are code-drawn SVG. No generated images or stock media are used.
+- The animatics are silent. New sound cue frames are stored under `pixelFilm.audio` in `src/timeline.json`; the rejected synthetic score is not used.
+- Source text remains separate from the opaque translation plate directly beneath it. The demonstration is edited for story rhythm and does not measure processing latency.
 
 ## Reproduction
 
-On Windows ARM64 use the existing x64 Node at `C:/tmp/tools/node-v22.20.0-win-x64/node.exe` and Edge at `C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe`. Do not run the renderer with native ARM64 Node. Keep render concurrency at 1 on this shared workstation.
+On this Windows ARM64 workstation use x64 Node and Edge, software rendering, and concurrency 1. Render canonical brand images before rendering the films whenever the ending layout changes.
 
 ```powershell
-python audio/synth.py --cat-planet
-npm run typecheck
-& 'C:/tmp/tools/node-v22.20.0-win-x64/node.exe' node_modules/@remotion/cli/remotion-cli.js render CatPlanetStory60 out/story/cat-planet-60-animatic.mp4 --scale=0.3333333333333333 --concurrency=1 --crf=25 --x264-preset=veryfast --browser-executable='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
-& 'C:/tmp/tools/node-v22.20.0-win-x64/node.exe' node_modules/@remotion/cli/remotion-cli.js render CatPlanetStory30Vertical out/story/cat-planet-30-animatic.mp4 --scale=0.3333333333333333 --concurrency=1 --crf=25 --x264-preset=veryfast --browser-executable='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
-python scripts/story_review.py
+$filmNode = 'C:/tmp/tools/node-v22.20.0-win-x64/node.exe'
+$filmEdge = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
+$filmCli = 'node_modules/@remotion/cli/remotion-cli.js'
+& $filmNode node_modules/typescript/bin/tsc --noEmit
+& $filmNode $filmCli still PixelBrandLandscape public/pixel-film/brand-landscape.png --frame=0 --gl=swangle --browser-executable=$filmEdge
+& $filmNode $filmCli still PixelBrandVertical public/pixel-film/brand-vertical.png --frame=0 --gl=swangle --browser-executable=$filmEdge
+& $filmNode $filmCli render PixelStory60 out/story/pixel-story-60.mp4 --scale=0.5 --concurrency=1 --crf=19 --x264-preset=veryfast --gl=swangle --browser-executable=$filmEdge
+& $filmNode $filmCli render PixelStory30Vertical out/story/pixel-story-30.mp4 --scale=0.5 --concurrency=1 --crf=19 --x264-preset=veryfast --gl=swangle --browser-executable=$filmEdge
+python scripts/pixel_review.py
 ```
 
-After approval: refine character acting and cloud contact, continuous camera moves, region depth, lighting, motion blur and final mix; export both requested full-resolution H.264 / 320k AAC stereo masters at -14 LUFS. Review every shot at phone size before final delivery.
+`pixel_review.py` checks continuous shot coverage, exact duration and frame count, 60 fps H.264, silent streams, full WebM decoding, and the final frame's agreement with the clean brand. It generates 20 landscape and 9 portrait shot stills, contact sheets, the ending excerpt, and the review page. Results are stored in `out/story/pixel-verification.json`.
 
-## Animatic verification
+The browser previews use VP9 WebM because H.264 previously displayed black in the Codex sidebar. Older reference pages remain at `style-review.html`, `tv-study.html`, and `review-v1.html`; their audio and visual decisions do not supersede this storyboard.
 
-Both H.264 previews decode fully: 3600 and 1800 frames at 60 fps, stereo AAC at a 320 kbps encoder target. Encoded audio measured -14.08 LUFS / -1.46 dBTP (landscape), -13.97 LUFS / -1.48 dBTP (portrait). TypeScript and Python compilation pass. Contact sheets cover all 19 and 9 shots; title collisions and portrait wrapping were corrected. Product screenshot and token snapshot SHA-256 values match their source files. Original launch-film timeline values are unchanged. Detailed local media metadata is in `out/story/verification.json`.
-
-## Review status
-
-The initial Cat Planet animatic is rejected: the synthetic score, presentation-style layout, and shallow staging do not establish the intended story. It must not be treated as an approved direction.
-
-`TVStoryStudy12` is a silent 12-second direction study. A tabby watches a television in its living room; the camera moves past the viewer into the screen, where a Japanese bobtail rests on a keyboard. The Japanese burned-in subtitle means "This is the warmest place." A cut back to the tabby's restrained reaction establishes the viewer/screen relationship without explanatory titles or punctuation graphics.
-
-This study changes the visual direction and camera grammar only. It does not approve or replace the full 60s/30s deliverable. TV scenes in the eventual product demonstration must clearly use the television as a Windows 11 PC's primary display; the app is not a standalone smart-TV app. No soundtrack from the rejected animatic should be reused.
-
-Browser preview uses VP9 WebM. H.264 displayed black in the actual Codex sidebar even when it played in an automation-created tab; validate the user's actual tab. The original MP4 remains available as a file.
-
-## Style comparison
-
-The living-room / television narrative is approved in direction. Visual style is pending selection between `TVStylePixel12` (pixel art) and `TVStyleCeramic12` (cool grey illustration based on the app palette). Both are silent 12-second studies at 60 fps with the same camera and acting cues in `timeline.json` under `styleStudy`.
-
-The characters, sets, and lighting are SVG artwork in `src/story-tv/styles/`. The viewer's body and paws remain planted; eyes lead the neck turn, followed by a held pose and blink. The bobtail's ribcage breathes independently of its paws, rump, and contact shadow. Camera motion ends before the reaction cut. Pixel poses use discrete offsets; the illustration uses eased neck movement.
-
-Render both compositions at scale 0.5 with x64 Node, Edge, `--concurrency=1 --gl=swangle`, then run `python scripts/story_style_review.py` to create the WebM previews, six-frame contact sheet, media checks, and current `out/story/review.html`. Full production and the replacement score remain pending style selection.
+Final delivery still requires a new original score and effects aligned to the shared timeline, stereo AAC at a 320 kbps encoder target, measured -14 LUFS, full-size exports, and a final phone-size readability check.

@@ -4,10 +4,16 @@ import { LaunchFilm } from "./LaunchFilm";
 import { StoryFilm } from "./story/StoryFilm";
 import { TVStoryStudy } from "./story-tv/TVStoryStudy";
 import { StyleStudy } from "./story-tv/styles/StyleStudy";
+import { PixelFilm } from "./pixel-film/PixelFilm";
+import { FinalBrand } from "./pixel-film/BrandReveal";
 import { T } from "./film/timeline";
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="PixelStory60" component={PixelFilm} durationInFrames={3600} fps={60} width={1920} height={1080} />
+    <Composition id="PixelStory30Vertical" component={PixelFilm} durationInFrames={1800} fps={60} width={1080} height={1920} />
+    <Composition id="PixelBrandLandscape" component={FinalBrand} durationInFrames={1} fps={60} width={1920} height={1080} />
+    <Composition id="PixelBrandVertical" component={FinalBrand} durationInFrames={1} fps={60} width={1080} height={1920} />
     <Composition id="TVStylePixel12" component={StyleStudy} defaultProps={{style:'pixel' as const}} durationInFrames={T.styleStudy.duration} fps={T.fps} width={1920} height={1080} />
     <Composition id="TVStyleCeramic12" component={StyleStudy} defaultProps={{style:'ceramic' as const}} durationInFrames={T.styleStudy.duration} fps={T.fps} width={1920} height={1080} />
     <Composition id="TVStoryStudy12" component={TVStoryStudy} durationInFrames={T.tvStudy.duration} fps={T.fps} width={1920} height={1080} />

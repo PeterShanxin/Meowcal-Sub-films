@@ -17,7 +17,7 @@ function wordmarkFont(L: Layout): string {
   return `600 ${(L.portrait ? 118 : 132) * L.u}px ${FONT_DISPLAY}`;
 }
 
-export const Brand: React.FC<{ f: number; L: Layout }> = ({ f, L }) => {
+export const Brand: React.FC<{ f: number; L: Layout; metaFontSize?:number }> = ({ f, L, metaFontSize=32 }) => {
   const { hit, wordmark, tagline, meta } = T.brand;
   if (f < hit) return null;
   const { u } = L;
@@ -168,7 +168,7 @@ export const Brand: React.FC<{ f: number; L: Layout }> = ({ f, L }) => {
           top: taglineTop + tagSize * (L.portrait ? 3.2 : 2.0),
           textAlign: "center",
           whiteSpace: "pre",
-          font: `600 ${32 * u}px ${FONT_TEXT}`,
+          font: `600 ${metaFontSize * u}px ${FONT_TEXT}`,
           letterSpacing: 0.5 * u,
           color: C.text3,
           opacity: tween(f, [meta, meta + 14], [0, 1], ease.outSoft),

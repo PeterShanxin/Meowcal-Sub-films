@@ -322,6 +322,45 @@
       }
     }
   },
+  "pixelFilm": {
+    "landscape": [
+      {"id":"P01","from":0,"duration":300,"kind":"planet","label":"太空到猫猫地球","sample":180},
+      {"id":"P02","from":300,"duration":300,"kind":"watch","viewer":0,"source":1,"label":"狸花猫的客厅，电视里是日本猫","sample":70},
+      {"id":"P03","from":600,"duration":150,"kind":"watch","viewer":4,"source":3,"label":"法国猫看英国猫的纸箱 vlog","sample":75},
+      {"id":"P04","from":750,"duration":150,"kind":"watch","viewer":5,"source":2,"label":"德国猫看韩国猫的饭碗 vlog","sample":75},
+      {"id":"P05","from":900,"duration":180,"kind":"reaction","viewer":4,"label":"陌生字幕，一个停顿","sample":110},
+      {"id":"P06","from":1080,"duration":180,"kind":"reaction","viewer":5,"label":"眼神回看，还是不懂","sample":110},
+      {"id":"P07","from":1260,"duration":300,"kind":"watch","viewer":0,"source":3,"label":"狸花猫也看到同一个纸箱梗","sample":200},
+      {"id":"P08","from":1560,"duration":240,"kind":"reaction","viewer":0,"label":"困惑落到主角身上","sample":130},
+      {"id":"P09","from":1800,"duration":120,"kind":"app","label":"真实 App 界面，选择字幕区域","sample":80},
+      {"id":"P10","from":1920,"duration":180,"kind":"select","label":"框住已有英文字幕","sample":160},
+      {"id":"P11","from":2100,"duration":90,"kind":"start","label":"开始翻译","sample":65},
+      {"id":"P12","from":2190,"duration":210,"kind":"translate","pair":0,"label":"Windows OCR、本机翻译、下方底板","sample":170},
+      {"id":"P13","from":2400,"duration":150,"kind":"translate","pair":1,"label":"同一条英语，法国猫也看懂","sample":115},
+      {"id":"P14","from":2550,"duration":150,"kind":"translate","pair":2,"label":"韩语字幕到德语译文","sample":115},
+      {"id":"P15","from":2700,"duration":60,"kind":"happy","viewer":0,"label":"原来都爱纸箱","sample":36},
+      {"id":"P16","from":2760,"duration":60,"kind":"happy","viewer":4,"label":"法国猫会心眯眼","sample":36},
+      {"id":"P17","from":2820,"duration":60,"kind":"happy","viewer":5,"label":"德国猫也懂了","sample":36},
+      {"id":"P18","from":2880,"duration":180,"kind":"connect","label":"星球的屏幕陆续亮起译文","sample":150},
+      {"id":"P19","from":3060,"duration":240,"kind":"privacy","label":"云想拿字幕，被猫拍开","sample":114},
+      {"id":"P20","from":3300,"duration":300,"kind":"brand","label":"像素选框到真实品牌","sample":240}
+    ],
+    "vertical": [
+      {"id":"V01","from":0,"duration":240,"kind":"watch","viewer":0,"source":3,"label":"猫看电视上的英文 vlog","sample":100},
+      {"id":"V02","from":240,"duration":180,"kind":"reaction","viewer":0,"label":"看不懂字幕","sample":110},
+      {"id":"V03","from":420,"duration":120,"kind":"app","label":"打开 Meowcal Sub","sample":80},
+      {"id":"V04","from":540,"duration":180,"kind":"select","label":"框选已有字幕","sample":160},
+      {"id":"V05","from":720,"duration":90,"kind":"start","label":"开始翻译","sample":65},
+      {"id":"V06","from":810,"duration":270,"kind":"translate","pair":0,"label":"底板在下方出现","sample":190},
+      {"id":"V07","from":1080,"duration":180,"kind":"happy","viewer":0,"label":"看懂纸箱梗","sample":100},
+      {"id":"V08","from":1260,"duration":180,"kind":"translate","pair":1,"label":"法国猫也看懂了","sample":130},
+      {"id":"V09","from":1440,"duration":360,"kind":"brand","label":"像素逐渐细化，真实品牌落版","sample":270}
+    ],
+    "audio": {
+      "landscape":{"select":1980,"release":2085,"start":2160,"scan":2199,"plate":2265,"swat":3170,"resolve":3372,"clear":3480},
+      "vertical":{"select":600,"release":705,"start":780,"scan":819,"plate":885,"resolve":1512,"clear":1620}
+    }
+  },
   "styleStudy": {
     "duration": 720,
     "pushStart": 85,
