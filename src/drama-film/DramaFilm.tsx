@@ -14,8 +14,8 @@ type Shot = {id: string; kind: string; from: number; duration: number};
 export type DramaProps = {cut: Cut; locale: Locale; sound?: boolean};
 
 const COPY = {
-  zh: {world: '今晚，全星球都在追同一部剧。', ocr: 'Windows OCR · 读取选框文字', local: '本机 AI · 翻译', privacy: '字幕文字留在你的电脑上。'},
-  en: {world: 'Tonight, the whole planet is watching the same show.', ocr: 'Windows OCR · reading the selection', local: 'Local AI · translating', privacy: 'Your subtitle text stays on your PC.'},
+  zh: {world: '今晚，全星球都在追同一部剧。', ocr: 'Windows OCR · 读取选框文字', local: '本机 AI · 翻译', privacy: '本地 AI，字幕不上云。'},
+  en: {world: 'Tonight, the whole planet is watching the same show.', ocr: 'Windows OCR · reading the selection', local: 'Local AI · translating', privacy: 'Local AI. Your subtitles stay on your PC.'},
 };
 
 const Super: React.FC<{text: string; portrait: boolean; opacity: number; high?: boolean}> = ({text, portrait, opacity, high = false}) =>

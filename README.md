@@ -77,9 +77,9 @@ The monitor is the cat’s Windows PC primary display. Existing Japanese text
 remains when the familiar translated line stops. The viewer pauses before
 translating, so no sound plays while Meowcal Sub reads that visible text with
 Windows OCR and translates locally; the translation plate sits directly below,
-with the same width. No speech recognition is depicted. The end card states
-Windows 11, public beta, primary-display support and all eight supported
-languages, and uses the app README’s tagline and privacy line.
+with the same width. No speech recognition is depicted. The end card uses the
+app README’s tagline and names Windows, the public beta, local AI and the
+supported languages; its platform line is the product owner's copy.
 
 UI colors and the final logo follow the app source, including
 `src/styles/tokens.css`. The Logo gesture is a visual metaphor, and the action is

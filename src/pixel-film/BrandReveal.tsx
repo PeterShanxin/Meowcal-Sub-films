@@ -10,11 +10,12 @@ import {FONT_DISPLAY} from '../film/theme';
 
 export type Locale = 'en' | 'zh';
 
-const LANGUAGES = '简体中文 · 繁體中文 · 日本語 · 한국어\nEnglish · Español · Français · Deutsch';
-// Tagline and privacy lines follow the app's README and README.zh-CN.
+// Taglines follow the app's README and README.zh-CN.
 const COPY = {
-  en: {tagline: undefined, meta: undefined, lang: 'en-US', note: 'Public beta · Primary display only\nYour subtitle text stays on your PC'},
-  zh: {tagline: '把屏幕上已有的字幕，翻译成你想读的语言。', meta: 'Windows 11  ·  免费开源', lang: 'zh-CN', note: '公开测试版 · 仅主显示器\n字幕文字留在你的电脑上'},
+  en: {tagline: undefined, meta: 'Windows  ·  Free and open source', lang: 'en-US', note: 'Public beta · Local AI · More platforms coming soon',
+    languages: '简体中文 · 繁體中文 · 日本語 · 한국어 · English and more'},
+  zh: {tagline: '把屏幕上已有的字幕，翻译成你想读的语言。', meta: 'Windows  ·  免费开源', lang: 'zh-CN', note: '公开测试版 · 本地 AI · 更多平台，敬请期待',
+    languages: '简体中文 · 繁體中文 · 日本語 · 한국어 · English 等'},
 } as const;
 const LINK = 'github.com/PeterShanxin/Meowcal-Sub';
 const SMALL = '"Segoe UI", "Microsoft YaHei", "Yu Gothic", "Malgun Gothic", sans-serif';
@@ -29,13 +30,12 @@ export const FinalBrand: React.FC<{locale?: Locale}> = ({locale}) => {
   </AbsoluteFill>;
   const copy=COPY[locale];
   // Portrait lines sit above the bottom band that short-video apps cover with captions and buttons.
-  // Landscape keeps each group on one line; portrait breaks it where the copy breaks.
-  const line=(bottom:number,size:number,color:string,text:string,weight=500)=><div style={{position:'absolute',left:40,right:40,bottom,textAlign:'center',font:`${weight} ${size}px ${SMALL}`,lineHeight:1.45,whiteSpace:'pre-line',color}}>{portrait?text:text.replace('\n',' · ')}</div>;
+  const line=(bottom:number,size:number,color:string,text:string,weight=500)=><div style={{position:'absolute',left:40,right:40,bottom,textAlign:'center',font:`${weight} ${size}px ${SMALL}`,lineHeight:1.45,color}}>{text}</div>;
   return <AbsoluteFill style={{background:'#07090f'}}>
     <Brand f={930} L={layout(W,H)} metaFontSize={portrait?40:32} tagline={copy.tagline} meta={copy.meta} lang={copy.lang}/>
     {line(portrait?478:196,portrait?44:34,'#e4ebf5',LINK,600)}
-    {line(portrait?318:124,portrait?32:26,'#b3bdd0',copy.note)}
-    {line(portrait?190:70,portrait?30:24,'#8390aa',LANGUAGES)}
+    {line(portrait?390:124,portrait?32:26,'#b3bdd0',copy.note)}
+    {line(portrait?320:70,portrait?30:24,'#8390aa',copy.languages)}
   </AbsoluteFill>;
 };
 

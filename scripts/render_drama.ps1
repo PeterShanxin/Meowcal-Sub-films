@@ -1,7 +1,7 @@
 param(
     [string]$NodePath = 'node',
     [string]$BrowserPath = 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe',
-    [int]$Concurrency = 3
+    [int]$Concurrency = 1
 )
 $ErrorActionPreference = 'Stop'
 Set-Location (Split-Path $PSScriptRoot -Parent)
