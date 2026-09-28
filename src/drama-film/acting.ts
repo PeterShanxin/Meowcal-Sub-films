@@ -62,8 +62,9 @@ export function facePose(f: number, performance: Performance) {
     whisker = .6 * ease(f, 4, 18);
     stretch = 1 + .03 * ease(f, 4, 14) - .03 * ease(f, 14, 30);
   } else if (performance === 'swat') {
-    // Still unimpressed: the swat happens without the face bothering to change.
+    // Still unimpressed: only the eyes slide over; the swat happens without the face bothering to change.
     lids = mix(.55, .32, ease(f, 34, 40) - ease(f, 52, 64));
+    eyeX = 2 + 2.5 * ease(f, 6, 22) - 2.5 * ease(f, 70, 90);
     pupil = .2;
     ear = 10;
     whisker = -.5;

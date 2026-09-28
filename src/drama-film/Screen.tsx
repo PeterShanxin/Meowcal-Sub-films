@@ -40,6 +40,6 @@ export const selectionFrame = (f: number, press: number, end: number, scan: numb
   if (f <= end) return mix(60, 88, ease(f, press, end));
   if (f < scan) return 90;
   if (f < local) return mix(94, 116, ease(f, scan, local));
-  if (f < plate) return mix(116, 119, ease(f, local, plate));
+  if (f < plate) return mix(116, 123, ease(f, local, plate));
   return Math.min(230, 124 + (f - plate) * .65);
 };

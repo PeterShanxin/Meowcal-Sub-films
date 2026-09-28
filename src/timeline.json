@@ -429,49 +429,49 @@
             "id": "D07",
             "kind": "scan",
             "from": 1620,
-            "duration": 240,
-            "sample": 120
+            "duration": 85,
+            "sample": 84
           },
           {
             "id": "D08",
             "kind": "reveal",
-            "from": 1860,
-            "duration": 240,
+            "from": 1705,
+            "duration": 180,
             "sample": 120
           },
           {
             "id": "D09",
             "kind": "punchline",
-            "from": 2100,
+            "from": 1885,
             "duration": 240,
             "sample": 180
           },
           {
             "id": "D10",
             "kind": "deadpan",
-            "from": 2340,
+            "from": 2125,
             "duration": 180,
             "sample": 120
           },
           {
             "id": "D11",
             "kind": "languages",
-            "from": 2520,
+            "from": 2305,
             "duration": 360,
             "sample": 120
           },
           {
             "id": "D12",
             "kind": "snack",
-            "from": 2880,
-            "duration": 60,
+            "from": 2665,
+            "duration": 120,
             "sample": 42
           },
           {
             "id": "D13",
             "kind": "privacy",
-            "from": 2940,
-            "duration": 180,
+            "from": 2785,
+            "duration": 335,
             "sample": 90
           },
           {
@@ -497,22 +497,25 @@
           "logoMouse": 1412,
           "selectionPress": 1448,
           "selectionEnd": 1595,
-          "ocr": 1630,
-          "local": 1760,
-          "plate": 1860,
-          "resume": 2100,
-          "pillow": 2168,
-          "lieDown": 2192,
-          "deadpan": 2340,
-          "slowBlink": 2388,
-          "earDrop": 2434,
-          "crunch": 2910,
-          "swat": 3040,
+          "ocr": 1622,
+          "local": 1667,
+          "plate": 1705,
+          "resume": 1885,
+          "pillow": 1953,
+          "lieDown": 1977,
+          "snore": 2115,
+          "deadpan": 2125,
+          "slowBlink": 2173,
+          "earDrop": 2219,
+          "cloudPeek": 2265,
+          "crunch": 2695,
+          "cloudGlass": 2715,
+          "snoreEnd": 2785,
+          "cloudIn": 2825,
+          "privacyCut": 2985,
+          "swat": 3030,
           "resolve": 3372,
-          "cleanBrand": 3480,
-          "privacyCut": 3025,
-          "snore": 2330,
-          "snoreEnd": 2940
+          "cleanBrand": 3480
         },
         "voice": [
           {
@@ -581,7 +584,7 @@
           },
           {
             "who": "momo",
-            "at": 2240,
+            "at": 2025,
             "len": 90,
             "clip": "yawn",
             "semitones": -6,
@@ -596,56 +599,56 @@
             "id": "V01",
             "kind": "buildup",
             "from": 0,
-            "duration": 240,
+            "duration": 280,
             "sample": 120
           },
           {
             "id": "V02",
             "kind": "loss",
-            "from": 240,
+            "from": 280,
             "duration": 180,
             "sample": 120
           },
           {
             "id": "V03",
             "kind": "magic",
-            "from": 420,
+            "from": 460,
             "duration": 240,
             "sample": 138
           },
           {
             "id": "V04",
             "kind": "scan",
-            "from": 660,
-            "duration": 180,
-            "sample": 90
+            "from": 700,
+            "duration": 80,
+            "sample": 79
           },
           {
             "id": "V05",
             "kind": "reveal",
-            "from": 840,
-            "duration": 240,
+            "from": 780,
+            "duration": 180,
             "sample": 120
           },
           {
             "id": "V06",
             "kind": "punchline",
-            "from": 1080,
+            "from": 960,
             "duration": 240,
             "sample": 180
           },
           {
             "id": "V07",
             "kind": "deadpan",
-            "from": 1320,
-            "duration": 120,
+            "from": 1200,
+            "duration": 200,
             "sample": 102
           },
           {
             "id": "V08",
             "kind": "snack",
-            "from": 1440,
-            "duration": 60,
+            "from": 1400,
+            "duration": 100,
             "sample": 42
           },
           {
@@ -657,32 +660,32 @@
           }
         ],
         "cues": {
-          "subtitleLoss": 240,
-          "reactionCut": 288,
-          "pause": 402,
-          "logoLift": 435,
-          "logoMouse": 475,
-          "selectionPress": 538,
-          "selectionEnd": 644,
-          "ocr": 668,
-          "local": 767,
-          "plate": 840,
-          "resume": 1080,
-          "pillow": 1148,
-          "lieDown": 1172,
-          "deadpan": 1320,
-          "slowBlink": 1354,
-          "earDrop": 1387,
-          "crunch": 1470,
+          "subtitleLoss": 280,
+          "reactionCut": 328,
+          "pause": 442,
+          "logoLift": 475,
+          "logoMouse": 515,
+          "selectionPress": 578,
+          "selectionEnd": 684,
+          "ocr": 704,
+          "local": 749,
+          "plate": 780,
+          "resume": 960,
+          "pillow": 1028,
+          "lieDown": 1052,
+          "snore": 1190,
+          "deadpan": 1200,
+          "slowBlink": 1248,
+          "earDrop": 1294,
+          "crunch": 1430,
+          "snoreEnd": 1500,
           "resolve": 1572,
-          "cleanBrand": 1680,
-          "snore": 1310,
-          "snoreEnd": 1500
+          "cleanBrand": 1680
         },
         "voice": [
           {
             "who": "momo",
-            "at": 20,
+            "at": 40,
             "len": 28,
             "clip": "impatient_1",
             "semitones": -3,
@@ -690,7 +693,7 @@
           },
           {
             "who": "momo",
-            "at": 70,
+            "at": 100,
             "len": 76,
             "clip": "pleading_2",
             "semitones": -5,
@@ -698,7 +701,7 @@
           },
           {
             "who": "momo",
-            "at": 246,
+            "at": 286,
             "len": 30,
             "clip": "notrip_2",
             "semitones": -4,
@@ -706,7 +709,7 @@
           },
           {
             "who": "momo",
-            "at": 282,
+            "at": 322,
             "len": 60,
             "clip": "pleading_3",
             "semitones": -5,
@@ -714,7 +717,7 @@
           },
           {
             "who": "chestnut",
-            "at": 380,
+            "at": 420,
             "len": 18,
             "clip": "trill",
             "semitones": 2,
@@ -722,7 +725,7 @@
           },
           {
             "who": "momo",
-            "at": 1220,
+            "at": 1100,
             "len": 90,
             "clip": "yawn",
             "semitones": -6,

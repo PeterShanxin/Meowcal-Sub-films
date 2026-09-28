@@ -72,12 +72,17 @@ def samples(shot, short):
         return [(24, '中文消失，日文仍在'), (56, '一愣：炸毛、圆瞳'), (150, '寻找译文')]
     if kind == 'magic':
         return [(46, 'Logo 来到掌心'), (210 if short else 250, '鼠标框住日文')]
+    if kind == 'scan':
+        return [(10, 'Windows OCR 读取'), (60, '本机翻译')]
     if kind == 'deadpan':
-        return [(20, '瞳孔缩成缝'), (70, '慢眨'), (130, '飞机耳，尾巴瘫下')] if not short else [(16, '瞳孔缩成缝'), (95, '飞机耳，尾巴瘫下')]
+        picks = [(20, '瞳孔缩成缝'), (60, '慢眨'), (128, '飞机耳，尾巴瘫下')]
+        return picks if short else picks + [(165, '小云在窗外偷看')]
+    if kind == 'snack' and not short:
+        return [(32, '机械地咬一口'), (90, '小云贴上玻璃')]
     if kind == 'languages':
         return [(72, '日文 → 英文'), (154, 'Bean 的反应'), (252, '日文 → 法文'), (334, 'Bleu 的反应')]
     if kind == 'privacy':
-        return [(40, '小云从窗户溜进来'), (75, '拽住译文'), (102, '被一爪拍开'), (150, '字幕文字留在本机')]
+        return [(20, '小云在窗外'), (52, '挤进窗户'), (120, '踮脚飘过客厅'), (185, '拽住译文'), (220, '眼珠斜过去'), (247, '一爪拍开'), (300, '字幕文字留在本机')]
     return [(shot['sample'], LABELS[kind])]
 
 
@@ -102,8 +107,10 @@ def contact(video, cut, suffix, size):
     still(video, 13 * 60 if cut['duration'] > 3000 else 2 * 60).save(OUT / f'drama-poster-{suffix}.jpg', quality=93)
 
 
-def acting(video):
-    frames = [(956, '一愣'), (1000, '寻找译文'), (2360, '瞳孔缩成缝'), (2400, '慢眨'), (2470, '飞机耳 + 尾巴瘫下'), (2660, 'Bean'), (2840, 'Bleu'), (2910, '机械地咬')]
+def acting(video, cut):
+    cue, at = cut['cues'], {s['kind']: s['from'] for s in cut['shots']}
+    frames = [(cue['reactionCut'] + 8, '一愣'), (cue['reactionCut'] + 52, '寻找译文'), (cue['deadpan'] + 20, '瞳孔缩成缝'), (cue['slowBlink'] + 12, '慢眨'),
+              (cue['deadpan'] + 128, '飞机耳 + 尾巴瘫下'), (at['languages'] + 150, 'Bean'), (at['languages'] + 330, 'Bleu'), (cue['swat'] - 30, '眼珠斜向小云')]
     sheet = Image.new('RGB', (4 * 480, 2 * 330), '#121e2b')
     draw = ImageDraw.Draw(sheet)
     for i, (f, label) in enumerate(frames):
@@ -125,7 +132,7 @@ def main():
         if suffix:
             contact(video, cut, suffix, size)
         if name == 'meowcal-sub-60s':
-            acting(video)
+            acting(video, cut)
         preview = OUT / f'{name}.webm'
         scale = 'scale=960:540' if size[0] > size[1] else 'scale=540:960'
         run([ENCODER, '-v', 'error', '-y', '-i', video, '-vf', scale, '-c:v', 'libvpx-vp9', '-threads', '2', '-deadline', 'realtime', '-cpu-used', '6', '-row-mt', '1',

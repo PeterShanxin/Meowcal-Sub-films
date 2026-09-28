@@ -175,6 +175,12 @@ class Mix:
         body = np.sin(2 * np.pi * np.cumsum(hz * (1 + .6 * np.exp(-t * 40))) / SR) * np.exp(-t / (seconds / 5))
         self.add(bus, frame, body, gain, pan, name)
 
+    def squeak(self, bus, frame, seconds, f0, f1, gain, name, pan=0.):
+        # Rubbery cartoon squeak: a gliding, wobbling sine.
+        t = np.arange(int(seconds * SR)) / SR
+        hz = f0 + (f1 - f0) * t / seconds + 25 * np.sin(2 * np.pi * 14 * t)
+        self.add(bus, frame, np.sin(2 * np.pi * np.cumsum(hz) / SR) * np.sin(np.pi * t / seconds) ** 2, gain, pan, name)
+
     def click(self, bus, frame, gain, name, bright=4200):
         # Key or mouse: a sharp contact, a small plastic body, then the release.
         for offset, g in [(0, 1.), (5, .45)]:
@@ -331,10 +337,11 @@ def score_film(mix, cut):
     for i, pitch in enumerate([52, 59, 64, 68, 71, 76]):
         mix.note(sc, 'harp', plate + 4 + i * 5, pitch, 110, .13, -.3 + i * .12, attack=.002, release=1.2)
     mix.chord(sc, plate, 150, [('cellos', 40, .12, .1), ('violas', 59, .08, -.1)], attack=.25, release=1.2)
-    if 'privacy' in shots:
-        enter = shots['privacy']['from']
-        for i, pitch in enumerate([52, 53, 54, 55, 56]):
-            mix.note(sc, 'violin_a2', enter + 12 + i * 16, pitch, 12, .14, -.3, attack=.002, release=.08)
+    if 'cloudIn' in cue:
+        # Tiptoeing pizzicato while the cloud crosses the room, creeping upward.
+        steps = range(cue['cloudIn'] + 30, cue['privacyCut'] - 45, 14)
+        for i, frame in enumerate(steps):
+            mix.note(sc, 'violin_a2', frame, [52, 55, 53, 56, 54, 57, 55, 58, 56, 59][i % 10], 10, .13, -.3 + .6 * i / len(steps), attack=.002, release=.06)
         mix.note(sc, 'violin_c4', cue['swat'] + 1, 79, 20, .22, .2, attack=.002, release=.2)
         mix.note(sc, 'violin_c4', cue['swat'] + 9, 76, 20, .18, .25, attack=.002, release=.2)
     if 'world_end' in shots:
@@ -377,10 +384,12 @@ def foley(mix, cut):
         mix.noise('room', cue['crunch'] + offset, .075, gain, hz, 'snack crunch' if offset == 0 else '', -.1)
     for k in range(3):
         mix.noise('room', cue['crunch'] + 34 + k * 14, .06, .06, 2600, 'chew' if k == 0 else '', -.1)
-    if 'privacy' in shots:
-        enter = shots['privacy']['from']
-        mix.noise('score', enter + 6, 1.1, .08, (250, 2200), 'cloud drifts in', -.6, 'swell')
-        mix.noise('score', cue['privacyCut'] - 30, .5, .05, (900, 3000), 'cloud tugs', .3, 'rise')
+    if 'cloudIn' in cue:
+        mix.noise('score', cue['cloudPeek'], .9, .03, (250, 2000), 'cloud peeks in', -.6, 'swell')
+        mix.squeak('room', cue['cloudGlass'] + 20, .22, 520, 430, .03, 'cloud presses on the glass', -.5)
+        mix.squeak('room', cue['cloudIn'], .32, 640, 1150, .05, 'cloud squeezes through', -.6)
+        mix.noise('room', cue['cloudIn'] + 18, .12, .1, (300, 2500), 'pop', -.5)
+        mix.squeak('score', cue['privacyCut'] - 35, .45, 900, 700, .04, 'cloud tugs', .3)
         mix.noise('room', cue['swat'] - 6, .15, .14, (1200, 6000), 'paw sweep', .3, 'rise')
         mix.thump('room', cue['swat'], 210, .08, .32, 'swat')
         mix.noise('room', cue['swat'], .07, .3, 2200, '', .3)
