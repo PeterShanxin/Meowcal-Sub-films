@@ -2,12 +2,12 @@ import React from 'react';
 import {CatHead} from './CatActor';
 import {ease, mix} from './acting';
 
-export const Episode: React.FC<{f: number; wide?: boolean}> = ({f, wide = false}) => {
+export const Episode: React.FC<{f: number; wide?: boolean; talk?: number}> = ({f, wide = false, talk = 0}) => {
   const lie = ease(f, 692, 812), raise = ease(f, 280, 570);
   const pat = ease(f, 621, 668) - .22 * ease(f, 668, 692);
   const shotZoom = wide ? 1 : mix(1.62, 1, ease(f, 674, 830));
   const breath = f > 825 ? Math.sin((f - 825) * Math.PI / 137) * .65 : 0;
-  const headX = mix(12, 34, lie), headY = mix(0, 56, lie) + breath;
+  const headX = mix(12, 34, lie), headY = mix(0, 56, lie) + breath - 1.5 * talk;
   const pawX = mix(96, 107, pat), pawY = mix(111 - 51 * raise, 125, pat);
   return <svg viewBox="0 0 640 360" width="100%" height="100%" shapeRendering="crispEdges">
     <defs>
@@ -47,7 +47,7 @@ export const Episode: React.FC<{f: number; wide?: boolean}> = ({f, wide = false}
         <path d="M35 126H50V135H55V143H27V137H32ZM81 127H97V136H108V143H77V138H81Z" fill="#ede5cd"/>
         <path d="M34 139v4m7-4v4m46-4v4m7-4v4" stroke="#899d9b"/>
         <g transform={`translate(${headX} ${headY}) rotate(${mix(-3, 8, lie)} 59 72) scale(${mix(1, .86, lie)})`}>
-          <CatHead id={1} lids={mix(.69, .02, ease(f, 736, 803))} eyeX={-1 + 2 * ease(f, 170, 270)} eyeY={0} ear={mix(-1, 3, lie)}/>
+          <CatHead id={1} lids={mix(.69, .02, ease(f, 736, 803))} eyeX={-1 + 2 * ease(f, 170, 270)} eyeY={0} ear={mix(-1, 3, lie)} jaw={talk * 6}/>
         </g>
         <path d={`M88 99L${pawX} ${pawY}`} stroke="#ede5cd" strokeWidth="14" fill="none"/>
         <g transform={`translate(${pawX} ${pawY})`}><path d="M-7-4H4V0H8V9H3V13H-8V8H-11V0H-7Z" fill="#ece4cd"/><path d="M-5 7v4m6-5v5" stroke="#99aaa3"/></g>

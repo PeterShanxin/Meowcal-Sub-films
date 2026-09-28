@@ -11,8 +11,12 @@ import { DramaFilm } from "./drama-film/DramaFilm";
 
 export const Root: React.FC = () => (
   <>
-    <Composition id="CatDrama60" component={DramaFilm} durationInFrames={3600} fps={60} width={1920} height={1080} />
-    <Composition id="CatDrama30Vertical" component={DramaFilm} durationInFrames={1800} fps={60} width={1080} height={1920} />
+    <Composition id="CatDrama60" component={DramaFilm} defaultProps={{cut: 'full' as const, locale: 'zh' as const}} durationInFrames={3600} fps={60} width={1920} height={1080} />
+    <Composition id="CatDrama60Vertical" component={DramaFilm} defaultProps={{cut: 'full' as const, locale: 'zh' as const}} durationInFrames={3600} fps={60} width={1080} height={1920} />
+    <Composition id="CatDrama30Vertical" component={DramaFilm} defaultProps={{cut: 'short' as const, locale: 'zh' as const}} durationInFrames={1800} fps={60} width={1080} height={1920} />
+    <Composition id="CatDrama30" component={DramaFilm} defaultProps={{cut: 'short' as const, locale: 'zh' as const}} durationInFrames={1800} fps={60} width={1920} height={1080} />
+    <Composition id="DramaBrandLandscape" component={FinalBrand} defaultProps={{locale: 'zh' as const}} durationInFrames={1} fps={60} width={1920} height={1080} />
+    <Composition id="DramaBrandVertical" component={FinalBrand} defaultProps={{locale: 'zh' as const}} durationInFrames={1} fps={60} width={1080} height={1920} />
     <Composition id="PixelStory60" component={PixelFilm} durationInFrames={3600} fps={60} width={1920} height={1080} />
     <Composition id="PixelStory30Vertical" component={PixelFilm} durationInFrames={1800} fps={60} width={1080} height={1920} />
     <Composition id="PixelBrandLandscape" component={FinalBrand} durationInFrames={1} fps={60} width={1920} height={1080} />

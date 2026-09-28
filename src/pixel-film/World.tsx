@@ -6,9 +6,9 @@ import {ease} from '../story-tv/styles/motion';
 const homes=[[141,91],[212,59],[283,93],[129,154],[214,174],[302,158]];
 const land=(x:number,y:number)=>Math.sin(x*.22)+Math.cos(y*.18)+Math.sin((x+y)*.11)>.35;
 
-export const PixelPlanet:React.FC<{f:number;connected?:boolean}> = ({f,connected=false}) => {
-  const zoom=connected?1.12:0.62+ease(f,0,285)*1.2;
-  return <svg viewBox="0 0 480 270" width="100%" height="100%" shapeRendering="crispEdges">
+export const PixelPlanet:React.FC<{f:number;connected?:boolean;portrait?:boolean;children?:React.ReactNode}> = ({f,connected=false,portrait=false,children}) => {
+  const zoom=(connected?1.12:0.62+ease(f,0,285)*1.2)*(portrait?.62:1);
+  return <svg viewBox={portrait?'164 0 152 270':'0 0 480 270'} width="100%" height="100%" shapeRendering="crispEdges">
     <rect width="480" height="270" fill="#111c30"/>
     {Array.from({length:67},(_,i)=><rect key={i} x={(i*73+21)%480} y={(i*47+13)%270} width={i%11===0?2:1} height={i%11===0?2:1} fill={i%3?'#66809b':'#bdc9d1'}/>)}
     <g transform={`translate(240 137) scale(${zoom}) translate(-240 -137)`}>
@@ -30,6 +30,7 @@ export const PixelPlanet:React.FC<{f:number;connected?:boolean}> = ({f,connected
         <rect x="26" y="30" width="15" height="2" fill="#e5dfb7" opacity={connected?ease(f,i*18,i*18+25):.1}/>
         <g transform="translate(4 20) scale(.15)"><CatSprite id={i} frame={0} back/></g>
       </g>)}
+      {children}
     </g>
   </svg>;
 };

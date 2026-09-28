@@ -1,24 +1,32 @@
 # Meowcal Sub — 就差这一句
 
-A 60-second landscape brand film and a separately staged 30-second portrait cut.
-Original SVG pixel cats watch a dramatic declaration, lose their familiar
-translation, and use Meowcal Sub to read the Japanese subtitles. The revelation:
-“I’m going to sleep for five more minutes.” The viewer freezes, slow-blinks, and
-keeps eating. The pixel brand resolves into the real Meowcal Sub mark.
+A 60-second brand film in landscape and portrait, plus a 30-second portrait cut.
+Original SVG pixel cats watch a melodrama whose star speaks in meows. At the
+climax the familiar translation drops out, the viewer pauses, and Meowcal Sub
+reads the Japanese subtitles. The revelation: “I’m going to sleep for five more
+minutes.” The viewer’s pupils shrink to slits, its ears flatten, and it keeps
+eating. The pixel brand resolves into the real Meowcal Sub mark.
 
 ## Deliverables
 
-- `out/story/meowcal-sub-60s.mp4`: 1920 × 1080, 60 fps, H.264.
-- `out/story/meowcal-sub-30s.mp4`: 1080 × 1920, 60 fps, H.264.
-- Both: AAC LC stereo at 320 kbps, 48 kHz, −14 LUFS integrated target.
-- `out/story/review.html`: WebM previews, downloads and contact sheets.
-- `out/story/drama-contact-60.jpg`, `drama-contact-30.jpg`: one frame per shot.
-- `out/story/drama-acting.jpg`: the two reactions and the snack action.
-- `out/story/drama-qc.json`: measured media metadata, loudness and decode checks.
+| File | Cut | Frame |
+| --- | --- | --- |
+| `out/story/meowcal-sub-60s.mp4` | 60 s, Chinese supers | 1920 × 1080 |
+| `out/story/meowcal-sub-60s-vertical.mp4` | 60 s, Chinese supers | 1080 × 1920 |
+| `out/story/meowcal-sub-30s.mp4` | 30 s, Chinese supers | 1080 × 1920 |
+| `out/story/meowcal-sub-60s-en.mp4` | 60 s, English supers | 1920 × 1080 |
 
-The compositions are `CatDrama60` and `CatDrama30Vertical`. Earlier compositions
-remain in the repository as separate studies. Their story and music are not used
-by the current film.
+All are H.264 at 60 fps with AAC LC stereo at 320 kbps, 48 kHz, −14 LUFS
+integrated. `out/story/review.html` shows WebM previews, contact sheets
+(`drama-contact-60.jpg`, `-60v.jpg`, `-30.jpg`) and the acting sheet
+(`drama-acting.jpg`); `drama-qc.json` records media metadata, loudness and decode
+checks.
+
+Length and orientation are independent. `timeline.json` → `dramaFilm.cuts` holds
+the `full` and `short` edits; each renders in either frame through the
+compositions `CatDrama60`, `CatDrama60Vertical`, `CatDrama30Vertical` and
+`CatDrama30`. Every composition takes a `locale` prop (`zh` or `en`). Earlier
+compositions remain in the repository as separate studies.
 
 ## Reproduce
 
@@ -34,39 +42,44 @@ npm run studio
 ./scripts/render_drama.ps1
 ```
 
-On Windows ARM64 use x64 Node under Windows emulation. The renderer uses Edge,
-SwiftShader, and one render worker. The export script accepts both paths:
+On Windows ARM64 use x64 Node under Windows emulation. The renderer uses Edge and
+SwiftShader. The export script accepts both paths:
 
 ```powershell
 ./scripts/render_drama.ps1 -NodePath 'C:/tmp/tools/node-v22.20.0-win-x64/node.exe' -BrowserPath 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
 ```
 
-The export script renders silent pictures, muxes the mastered audio, creates
-WebM preview files, and fully decodes both deliverables. The MP4 picture is copied
-during muxing. Studio playback uses the same mastered WAVs.
+The export script renders silent pictures, muxes each cut's mastered audio,
+creates WebM previews, and fully decodes every deliverable. Studio playback uses
+the same mastered WAVs. After changing the end card, re-render its pixel source
+with `remotion still DramaBrandLandscape|DramaBrandVertical` into
+`public/pixel-film/brand-<frame>-<locale>.png`.
 
 ## Source
 
 | Path | Purpose |
 | --- | --- |
-| `DIRECTOR_SCRIPT.md` | Story, editing and performance directions. |
-| `src/drama-film/DramaFilm.tsx` | Shot assembly, TV continuity and locality gag. |
-| `src/drama-film/CatActor.tsx`, `acting.ts` | Consistent cats, eye/ear/lid performance and planted bodies. |
-| `src/drama-film/Episode.tsx` | The original fictional cat drama, pillow action and sleeping pose. |
-| `src/drama-film/Room.tsx`, `Screen.tsx` | Rooms, monitor framing, selection and subtitle geometry. |
-| `src/timeline.json` → `dramaFilm` | Shared shot boundaries and audio/action cue frames. |
+| `DIRECTOR_SCRIPT.md` | Story, editing, performance and sound directions. |
+| `src/drama-film/DramaFilm.tsx` | Shot assembly, supers, lip sync and the cloud scene. |
+| `src/drama-film/CatActor.tsx`, `acting.ts` | Cats, pupil / ear / whisker / tail performance and planted bodies. |
+| `src/drama-film/Episode.tsx` | The fictional cat drama, pillow action and sleeping pose. |
+| `src/drama-film/Room.tsx`, `Screen.tsx` | Each viewer’s room, monitor framing, selection and subtitle geometry. |
+| `src/drama-film/Cloud.tsx` | The cloud that tries to take the subtitles. |
+| `src/timeline.json` → `dramaFilm` | Shot boundaries, cue frames and Momo’s meowed lines for both cuts. |
 | `src/film/Capture.tsx`, `Plate.tsx` | Reused selection, OCR scan and opaque equal-width translation plate. |
-| `src/pixel-film/BrandReveal.tsx` | Selection-to-logo and pixel-to-clean brand ending. |
-| `audio/drama.py`, `DRAMA_CREDITS.md` | Original score, foley, mastering and sample attribution. |
-| `scripts/drama_stills.mjs` | Representative render frames for visual inspection. |
+| `src/pixel-film/BrandReveal.tsx` | Selection-to-logo, pixel-to-clean ending and the localized end card. |
+| `audio/drama.py`, `DRAMA_CREDITS.md` | Score, cat voices, foley, mastering and attribution. |
+| `scripts/drama_stills.mjs` | Representative frames for visual inspection. |
 
 ## Product accuracy
 
 The monitor is the cat’s Windows PC primary display. Existing Japanese text
-remains when the familiar translated line stops. Meowcal Sub reads that visible
-text with Windows OCR and translates locally; the translation plate sits directly
-below, with the same width. No speech recognition is depicted. The ending states
-Windows 11, public beta, primary-display support, and all eight supported languages.
+remains when the familiar translated line stops. The viewer pauses before
+translating, so no sound plays while Meowcal Sub reads that visible text with
+Windows OCR and translates locally; the translation plate sits directly below,
+with the same width. No speech recognition is depicted. The end card states
+Windows 11, public beta, primary-display support and all eight supported
+languages, and uses the app README’s tagline and privacy line.
 
 UI colors and the final logo follow the app source, including
 `src/styles/tokens.css`. The Logo gesture is a visual metaphor, and the action is
@@ -77,11 +90,12 @@ installation, repair and updates can use the network.
 
 ## Assets and license
 
-All cats and environments used in this film are drawn in code. No generated
-character images or third-party dramatic footage are used. The original score
-uses six CC0 instrument recordings from VSCO 2 Community Edition; the pinned
-source URLs, SHA-256 hashes and full license are in `audio/samples/vsco/`.
-See [audio/DRAMA_CREDITS.md](audio/DRAMA_CREDITS.md). No vocal recordings are used.
+All cats and environments are drawn in code. No generated character images or
+third-party footage are used. Instrument samples are CC0 recordings from VSCO 2
+Community Edition; cat voices are CC0 or public-domain recordings from Wikimedia
+Commons. `audio/fetch_drama_samples.py` downloads the pinned files; source URLs,
+licenses and SHA-256 hashes are in `audio/samples/*/manifest.json`. See
+[audio/DRAMA_CREDITS.md](audio/DRAMA_CREDITS.md).
 
 Source: [AGPL-3.0-only](LICENSE), as for Meowcal Sub. The license does not grant
 rights to the Meowcal Sub name or logo; see the app’s

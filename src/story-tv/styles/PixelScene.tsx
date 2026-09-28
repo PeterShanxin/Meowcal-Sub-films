@@ -81,11 +81,15 @@ export const PixelVlog: React.FC<{frame:number; actor?:React.ReactNode; windowVi
   <text x="160" y="175" textAnchor="middle" fontFamily="Segoe UI, Yu Gothic, Malgun Gothic, Microsoft YaHei, sans-serif" fontSize="9" fontWeight="600" fill="#fff3da" shapeRendering="auto">{caption}</text>
 </svg>;
 
-export const PixelRoom: React.FC<{viewer?:React.ReactNode; windowView?:React.ReactNode}> = ({viewer,windowView}) => <svg viewBox="0 0 480 270" width="100%" height="100%" shapeRendering="crispEdges">
+export type RoomPalette = {back:string; wall:string; column:string; floor:string};
+const ROOM: RoomPalette = {back:p.deep, wall:'#30394a', column:'#293347', floor:'#344059'};
+
+export const PixelRoom: React.FC<{viewer?:React.ReactNode; windowView?:React.ReactNode; palette?:RoomPalette; decor?:React.ReactNode}> = ({viewer,windowView,palette=ROOM,decor}) => <svg viewBox="0 0 480 270" width="100%" height="100%" shapeRendering="crispEdges">
   <defs><pattern id="pdither" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#788498" opacity=".09"/></pattern></defs>
-  <rect width="480" height="270" fill={p.deep}/>
-  <path d="M0 0H206V182H0Z" fill="#30394a"/><path d="M206 0H258V170H206Z" fill="#293347"/>
-  <path d="M0 185H75V181H156V177H237V173H318V169H399V165H480V270H0Z" fill="#344059"/>
+  <rect width="480" height="270" fill={palette.back}/>
+  <path d="M0 0H206V182H0Z" fill={palette.wall}/><path d="M206 0H258V170H206Z" fill={palette.column}/>
+  {decor}
+  <path d="M0 185H75V181H156V177H237V173H318V169H399V165H480V270H0Z" fill={palette.floor}/>
   <path d="M0 219H85V215H170V211H255V207H340V203H425V199H480M80 182v25h-5v27h-5v36m183-98v28h5v25h5v25h5v20m102-103v22h15v24h15v24h15v24h8v9" fill="none" stroke="#42516b"/>
   <rect x="24" y="20" width="116" height="137" fill="#0e192b"/><rect x="28" y="24" width="108" height="126" fill="#59718b"/>
   <path d="M28 24H136V71H28Z" fill="#344967"/><path d="M28 71H136V93H28Z" fill="#455d77"/>
@@ -160,8 +164,10 @@ export const PixelFace: React.FC<{frame:number;happy?:boolean}> = ({frame,happy=
   </g>;
 };
 
-export const PixelReaction: React.FC<{frame:number; actor?:React.ReactNode}> = ({frame,actor}) => <svg viewBox="0 0 480 270" width="100%" height="100%" shapeRendering="crispEdges">
-  <rect width="480" height="270" fill={p.deep}/><rect x="24" y="20" width="108" height="130" fill="#4e647e"/><rect x="78" y="20" width="3" height="130" fill="#8192a4"/>
+export const PixelReaction: React.FC<{frame:number; actor?:React.ReactNode; wall?:string; windowView?:React.ReactNode; decor?:React.ReactNode}> = ({frame,actor,wall=p.deep,windowView,decor}) => <svg viewBox="0 0 480 270" width="100%" height="100%" shapeRendering="crispEdges">
+  <rect width="480" height="270" fill={wall}/>{decor}<rect x="24" y="20" width="108" height="130" fill="#4e647e"/>
+  {windowView&&<svg x="24" y="20" width="108" height="130" viewBox="0 0 160 110" preserveAspectRatio="xMidYMid slice" opacity=".8">{windowView}</svg>}
+  <rect x="78" y="20" width="3" height="130" fill="#8192a4"/>
   <path d="M21 16H49V150H21ZM113 16H139V155H120V99H117Z" fill="#414f65"/>
   <path d="M96 105H112V99H132V102H161V106H190V110H219V114H248V118H277V122H306V131H314V208H321V270H91V161H94Z" fill="#607894"/>
   <path d="M103 110H126V107H154V111H184V115H213V119H242V123H271V127H300V132" stroke="#8e9dad" fill="none"/>

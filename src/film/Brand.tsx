@@ -17,7 +17,9 @@ function wordmarkFont(L: Layout): string {
   return `600 ${(L.portrait ? 118 : 132) * L.u}px ${FONT_DISPLAY}`;
 }
 
-export const Brand: React.FC<{ f: number; L: Layout; metaFontSize?:number }> = ({ f, L, metaFontSize=32 }) => {
+export const Brand: React.FC<{ f: number; L: Layout; metaFontSize?: number; tagline?: string; meta?: string; lang?: string }> = ({
+  f, L, metaFontSize = 32, tagline: taglineText = TAGLINE, meta: metaText = META, lang = "en-US",
+}) => {
   const { hit, wordmark, tagline, meta } = T.brand;
   if (f < hit) return null;
   const { u } = L;
@@ -142,7 +144,7 @@ export const Brand: React.FC<{ f: number; L: Layout; metaFontSize?:number }> = (
           color: C.text2,
         }}
       >
-        {units(TAGLINE, "en-US").map((word, i) => {
+        {units(taglineText, lang).map((word, i) => {
           const rise = sp(f, tagline + i * 1.6, { damping: 18, stiffness: 200 });
           return (
             <span
@@ -175,7 +177,7 @@ export const Brand: React.FC<{ f: number; L: Layout; metaFontSize?:number }> = (
           transform: `translateY(${tween(f, [meta, meta + 18], [16, 0], ease.out) * u}px)`,
         }}
       >
-        {META}
+        {metaText}
       </div>
     </div>
   );
