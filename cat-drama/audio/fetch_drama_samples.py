@@ -6,7 +6,7 @@ from urllib.parse import quote
 from urllib.request import Request, urlopen
 
 HERE = Path(__file__).resolve().parent / 'samples'
-AGENT = {'User-Agent': 'meowcal-sub-launch-film/1.0 (https://github.com/PeterShanxin/Meowcal-Sub-launch-film)'}
+AGENT = {'User-Agent': 'meowcal-sub-films/1.0 (https://github.com/PeterShanxin/Meowcal-Sub-films)'}
 
 VSCO_REV = '440300901dfe9275fd84e0b7763af1f8443ae62e'
 VSCO_BASE = f'https://raw.githubusercontent.com/sgossner/VSCO-2-CE/{VSCO_REV}/'

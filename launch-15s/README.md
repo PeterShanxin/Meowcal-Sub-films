@@ -12,7 +12,7 @@ finally folds into the app icon.
 ## Watch
 
 Landscape, vertical, and under-10 MB web copies are attached to the
-[latest release](https://github.com/PeterShanxin/Meowcal-Sub-launch-film/releases/latest).
+[latest release](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/latest).
 
 ## Render
 
