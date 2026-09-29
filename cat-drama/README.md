@@ -7,6 +7,9 @@ reads the Japanese subtitles. The revelation: “I’m going to sleep for five m
 minutes.” The viewer’s pupils shrink to slits, its ears flatten, and it keeps
 eating. The pixel brand resolves into the real Meowcal Sub mark.
 
+The four cuts are attached to the
+[cat-drama-v1.0.0 release](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.0.0).
+
 Paths in this file are relative to `cat-drama/`; commands run from the
 repository root.
 
