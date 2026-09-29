@@ -1,14 +1,16 @@
 {
-  "name": "meowcal-sub-launch-film",
+  "name": "meowcal-sub-films",
   "private": true,
   "version": "1.0.0",
   "license": "AGPL-3.0-only",
   "type": "module",
   "scripts": {
-    "studio": "remotion studio",
-    "audio": "python audio/synth.py",
-    "render": "remotion render LaunchFilm out/meowcal-sub-launch-film.mp4",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "studio:15s": "remotion studio launch-15s/src/index.ts --public-dir=launch-15s/public",
+    "studio:cat-drama": "remotion studio cat-drama/src/index.ts --public-dir=cat-drama/public",
+    "audio:15s": "python launch-15s/audio/synth.py",
+    "audio:cat-drama": "python cat-drama/audio/drama.py",
+    "render:15s": "remotion render launch-15s/src/index.ts LaunchFilm launch-15s/out/meowcal-sub-launch-film.mp4 --public-dir=launch-15s/public"
   },
   "dependencies": {
     "@remotion/cli": "4.0.529",
