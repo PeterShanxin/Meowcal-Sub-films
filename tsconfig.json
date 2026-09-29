@@ -11,5 +11,5 @@
     "skipLibCheck": true,
     "lib": ["DOM", "ES2022"]
   },
-  "include": ["src", "remotion.config.ts"]
+  "include": ["launch-15s/src", "cat-drama/src", "remotion.config.ts"]
 }
