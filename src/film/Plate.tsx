@@ -8,7 +8,7 @@ import { fitSize, units } from "./text";
 import { C, FONT_TEXT, fontFor } from "./theme";
 import { T } from "./timeline";
 
-interface PlateLine {
+export interface PlateLine {
   start: number;
   // When the line before it leaves: montage cuts clear the plate as the new
   // footage arrives, so a translation is never shown against the wrong scene.
@@ -79,12 +79,12 @@ const Words: React.FC<{ line: PlateLine; f: number; L: Layout; exit: number }> =
 
 // The app's floating subtitle plate: opaque, same width as the capture box,
 // directly below it (overlay-geometry.js: resolveSubtitlePlacement).
-export const Plate: React.FC<{ f: number; L: Layout }> = ({ f, L }) => {
+export const Plate: React.FC<{ f: number; L: Layout; lines?: readonly PlateLine[] }> = ({ f, L, lines = PLATE_LINES }) => {
   if (f < T.magic.drop) return null;
   const { u, plate, box } = L;
-  const index = PLATE_LINES.reduce((acc, line, i) => (f >= line.clear ? i : acc), 0);
-  const current = PLATE_LINES[index];
-  const previous = index > 0 ? PLATE_LINES[index - 1] : null;
+  const index = lines.reduce((acc, line, i) => (f >= line.clear ? i : acc), 0);
+  const current = lines[index];
+  const previous = index > 0 ? lines[index - 1] : null;
   const themeMix = previous && previous.light !== current.light
     ? tween(f, [current.start, current.start + 6], [0, 1])
     : 1;

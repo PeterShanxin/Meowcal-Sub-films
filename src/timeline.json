@@ -23,12 +23,27 @@
     "line2Drop": 254
   },
   "montage": {
-    "cuts": [300, 330, 360, 390, 420, 450, 480, 495, 510, 525],
+    "cuts": [
+      300,
+      330,
+      360,
+      390,
+      420,
+      450,
+      480,
+      495,
+      510,
+      525
+    ],
     "translateDelay": 5
   },
   "payoff": {
     "start": 540,
-    "labels": [582, 598, 614],
+    "labels": [
+      582,
+      598,
+      614
+    ],
     "statement": 660,
     "collapse": 720,
     "flat": 746
@@ -39,5 +54,685 @@
     "tagline": 806,
     "meta": 822,
     "end": 900
+  },
+  "catPlanet": {
+    "fps": 60,
+    "bpm": 100,
+    "landscape": [
+      {
+        "id": "01",
+        "duration": 300,
+        "kind": "planet",
+        "label": "太空推向猫猫地球",
+        "sample": 195,
+        "from": 0
+      },
+      {
+        "id": "02",
+        "duration": 180,
+        "kind": "intro",
+        "label": "栗子：纸箱胜过猫窝",
+        "sample": 117,
+        "from": 300,
+        "cat": 0
+      },
+      {
+        "id": "03",
+        "duration": 150,
+        "kind": "intro",
+        "label": "Momo：键盘就是床",
+        "sample": 97,
+        "from": 480,
+        "cat": 1
+      },
+      {
+        "id": "04",
+        "duration": 150,
+        "kind": "intro",
+        "label": "Bori：饭碗又空了",
+        "sample": 97,
+        "from": 630,
+        "cat": 2
+      },
+      {
+        "id": "05",
+        "duration": 120,
+        "kind": "trio",
+        "label": "Bean / Bleu / Fritz 的日常",
+        "sample": 78,
+        "from": 780
+      },
+      {
+        "id": "06",
+        "duration": 180,
+        "kind": "watch",
+        "label": "栗子看日语 vlog",
+        "sample": 117,
+        "from": 900,
+        "cat": 0,
+        "source": 1
+      },
+      {
+        "id": "07",
+        "duration": 180,
+        "kind": "watch",
+        "label": "Bean 看法语 vlog",
+        "sample": 117,
+        "from": 1080,
+        "cat": 3,
+        "source": 4
+      },
+      {
+        "id": "08",
+        "duration": 180,
+        "kind": "watch",
+        "label": "Bleu 看德语 vlog",
+        "sample": 117,
+        "from": 1260,
+        "cat": 4,
+        "source": 5
+      },
+      {
+        "id": "09",
+        "duration": 180,
+        "kind": "watch",
+        "label": "Fritz 看韩语 vlog",
+        "sample": 117,
+        "from": 1440,
+        "cat": 5,
+        "source": 2
+      },
+      {
+        "id": "10",
+        "duration": 180,
+        "kind": "confusion",
+        "label": "困惑累积，仍然可爱",
+        "sample": 117,
+        "from": 1620
+      },
+      {
+        "id": "11",
+        "duration": 180,
+        "kind": "app",
+        "label": "真实 App：选择字幕区",
+        "sample": 117,
+        "from": 1800
+      },
+      {
+        "id": "12",
+        "duration": 120,
+        "kind": "select",
+        "label": "框住烧录字幕",
+        "sample": 78,
+        "from": 1980
+      },
+      {
+        "id": "13",
+        "duration": 60,
+        "kind": "start",
+        "label": "确认选区后开始翻译",
+        "sample": 39,
+        "from": 2100
+      },
+      {
+        "id": "14",
+        "duration": 180,
+        "kind": "magic",
+        "label": "识别 → 本机翻译 → 等宽底板",
+        "sample": 126,
+        "from": 2160
+      },
+      {
+        "id": "15",
+        "duration": 180,
+        "kind": "pair",
+        "label": "日语 → 英语",
+        "sample": 117,
+        "from": 2340,
+        "cat": 1
+      },
+      {
+        "id": "16",
+        "duration": 180,
+        "kind": "pair",
+        "label": "法语 → 繁体中文",
+        "sample": 117,
+        "from": 2520,
+        "cat": 4
+      },
+      {
+        "id": "17",
+        "duration": 270,
+        "kind": "connect",
+        "label": "屏幕陆续亮起译文",
+        "sample": 175,
+        "from": 2700
+      },
+      {
+        "id": "18",
+        "duration": 330,
+        "kind": "privacy",
+        "label": "猫拍开想叼走字幕的云",
+        "sample": 132,
+        "from": 2970
+      },
+      {
+        "id": "19",
+        "duration": 300,
+        "kind": "end",
+        "label": "选框变为 Logo",
+        "sample": 195,
+        "from": 3300
+      }
+    ],
+    "vertical": [
+      {
+        "id": "V01",
+        "duration": 180,
+        "kind": "watch",
+        "label": "栗子看不懂日语",
+        "sample": 117,
+        "from": 0,
+        "cat": 0,
+        "source": 1
+      },
+      {
+        "id": "V02",
+        "duration": 180,
+        "kind": "watch",
+        "label": "Bean 看不懂法语",
+        "sample": 117,
+        "from": 180,
+        "cat": 3,
+        "source": 4
+      },
+      {
+        "id": "V03",
+        "duration": 180,
+        "kind": "app",
+        "label": "打开真实 App",
+        "sample": 117,
+        "from": 360
+      },
+      {
+        "id": "V04",
+        "duration": 180,
+        "kind": "select",
+        "label": "框住烧录字幕",
+        "sample": 117,
+        "from": 540
+      },
+      {
+        "id": "V05",
+        "duration": 60,
+        "kind": "start",
+        "label": "开始翻译",
+        "sample": 39,
+        "from": 720
+      },
+      {
+        "id": "V06",
+        "duration": 300,
+        "kind": "magic",
+        "label": "纸箱梗，终于看懂",
+        "sample": 180,
+        "from": 780
+      },
+      {
+        "id": "V07",
+        "duration": 240,
+        "kind": "pair",
+        "label": "日语 → 英语",
+        "sample": 156,
+        "from": 1080,
+        "cat": 1
+      },
+      {
+        "id": "V08",
+        "duration": 180,
+        "kind": "happy",
+        "label": "原来你也这样",
+        "sample": 117,
+        "from": 1320
+      },
+      {
+        "id": "V09",
+        "duration": 300,
+        "kind": "end",
+        "label": "Logo 与产品边界",
+        "sample": 195,
+        "from": 1500
+      }
+    ],
+    "audio": {
+      "landscape": {
+        "press": 2032,
+        "release": 2080,
+        "scan": 2160,
+        "drop": 2190,
+        "swat": 3093,
+        "logo": 3345
+      },
+      "vertical": {
+        "press": 592,
+        "release": 640,
+        "scan": 780,
+        "drop": 810,
+        "logo": 1545
+      }
+    }
+  },
+  "pixelFilm": {
+    "landscape": [
+      {"id":"P01","from":0,"duration":300,"kind":"planet","label":"太空到猫猫地球","sample":180},
+      {"id":"P02","from":300,"duration":300,"kind":"watch","viewer":0,"source":1,"label":"狸花猫的客厅，电视里是日本猫","sample":70},
+      {"id":"P03","from":600,"duration":150,"kind":"watch","viewer":4,"source":3,"label":"法国猫看英国猫的纸箱 vlog","sample":75},
+      {"id":"P04","from":750,"duration":150,"kind":"watch","viewer":5,"source":2,"label":"德国猫看韩国猫的饭碗 vlog","sample":75},
+      {"id":"P05","from":900,"duration":180,"kind":"reaction","viewer":4,"label":"陌生字幕，一个停顿","sample":110},
+      {"id":"P06","from":1080,"duration":180,"kind":"reaction","viewer":5,"label":"眼神回看，还是不懂","sample":110},
+      {"id":"P07","from":1260,"duration":300,"kind":"watch","viewer":0,"source":3,"label":"狸花猫也看到同一个纸箱梗","sample":200},
+      {"id":"P08","from":1560,"duration":240,"kind":"reaction","viewer":0,"label":"困惑落到主角身上","sample":130},
+      {"id":"P09","from":1800,"duration":120,"kind":"app","label":"真实 App 界面，选择字幕区域","sample":80},
+      {"id":"P10","from":1920,"duration":180,"kind":"select","label":"框住已有英文字幕","sample":160},
+      {"id":"P11","from":2100,"duration":90,"kind":"start","label":"开始翻译","sample":65},
+      {"id":"P12","from":2190,"duration":210,"kind":"translate","pair":0,"label":"Windows OCR、本机翻译、下方底板","sample":170},
+      {"id":"P13","from":2400,"duration":150,"kind":"translate","pair":1,"label":"同一条英语，法国猫也看懂","sample":115},
+      {"id":"P14","from":2550,"duration":150,"kind":"translate","pair":2,"label":"韩语字幕到德语译文","sample":115},
+      {"id":"P15","from":2700,"duration":60,"kind":"happy","viewer":0,"label":"原来都爱纸箱","sample":36},
+      {"id":"P16","from":2760,"duration":60,"kind":"happy","viewer":4,"label":"法国猫会心眯眼","sample":36},
+      {"id":"P17","from":2820,"duration":60,"kind":"happy","viewer":5,"label":"德国猫也懂了","sample":36},
+      {"id":"P18","from":2880,"duration":180,"kind":"connect","label":"星球的屏幕陆续亮起译文","sample":150},
+      {"id":"P19","from":3060,"duration":240,"kind":"privacy","label":"云想拿字幕，被猫拍开","sample":114},
+      {"id":"P20","from":3300,"duration":300,"kind":"brand","label":"像素选框到真实品牌","sample":240}
+    ],
+    "vertical": [
+      {"id":"V01","from":0,"duration":240,"kind":"watch","viewer":0,"source":3,"label":"猫看电视上的英文 vlog","sample":100},
+      {"id":"V02","from":240,"duration":180,"kind":"reaction","viewer":0,"label":"看不懂字幕","sample":110},
+      {"id":"V03","from":420,"duration":120,"kind":"app","label":"打开 Meowcal Sub","sample":80},
+      {"id":"V04","from":540,"duration":180,"kind":"select","label":"框选已有字幕","sample":160},
+      {"id":"V05","from":720,"duration":90,"kind":"start","label":"开始翻译","sample":65},
+      {"id":"V06","from":810,"duration":270,"kind":"translate","pair":0,"label":"底板在下方出现","sample":190},
+      {"id":"V07","from":1080,"duration":180,"kind":"happy","viewer":0,"label":"看懂纸箱梗","sample":100},
+      {"id":"V08","from":1260,"duration":180,"kind":"translate","pair":1,"label":"法国猫也看懂了","sample":130},
+      {"id":"V09","from":1440,"duration":360,"kind":"brand","label":"像素逐渐细化，真实品牌落版","sample":270}
+    ],
+    "audio": {
+      "landscape":{"select":1980,"release":2085,"start":2160,"scan":2199,"plate":2265,"swat":3170,"resolve":3372,"clear":3480},
+      "vertical":{"select":600,"release":705,"start":780,"scan":819,"plate":885,"resolve":1512,"clear":1620}
+    }
+  },
+  "styleStudy": {
+    "duration": 720,
+    "pushStart": 85,
+    "pushEnd": 420,
+    "reaction": 480,
+    "vlogLook": 220,
+    "vlogBlinks": [155, 366],
+    "viewerLook": 42,
+    "viewerBlinks": [12, 177]
+  },
+  "tvStudy": {
+    "duration": 720,
+    "pushStart": 70,
+    "pushEnd": 525,
+    "reaction": 540
+  },
+  "dramaFilm": {
+    "fps": 60,
+    "cuts": {
+      "full": {
+        "duration": 3600,
+        "shots": [
+          {
+            "id": "D01",
+            "kind": "world",
+            "from": 0,
+            "duration": 240,
+            "sample": 120
+          },
+          {
+            "id": "D02",
+            "kind": "viewers",
+            "from": 240,
+            "duration": 300,
+            "sample": 72
+          },
+          {
+            "id": "D03",
+            "kind": "buildup",
+            "from": 540,
+            "duration": 360,
+            "sample": 240
+          },
+          {
+            "id": "D04",
+            "kind": "loss",
+            "from": 900,
+            "duration": 240,
+            "sample": 138
+          },
+          {
+            "id": "D05",
+            "kind": "pause",
+            "from": 1140,
+            "duration": 180,
+            "sample": 60
+          },
+          {
+            "id": "D06",
+            "kind": "magic",
+            "from": 1320,
+            "duration": 300,
+            "sample": 132
+          },
+          {
+            "id": "D07",
+            "kind": "scan",
+            "from": 1620,
+            "duration": 85,
+            "sample": 84
+          },
+          {
+            "id": "D08",
+            "kind": "reveal",
+            "from": 1705,
+            "duration": 180,
+            "sample": 120
+          },
+          {
+            "id": "D09",
+            "kind": "punchline",
+            "from": 1885,
+            "duration": 240,
+            "sample": 180
+          },
+          {
+            "id": "D10",
+            "kind": "deadpan",
+            "from": 2125,
+            "duration": 180,
+            "sample": 120
+          },
+          {
+            "id": "D11",
+            "kind": "languages",
+            "from": 2305,
+            "duration": 360,
+            "sample": 120
+          },
+          {
+            "id": "D12",
+            "kind": "snack",
+            "from": 2665,
+            "duration": 120,
+            "sample": 42
+          },
+          {
+            "id": "D13",
+            "kind": "privacy",
+            "from": 2785,
+            "duration": 335,
+            "sample": 90
+          },
+          {
+            "id": "D14",
+            "kind": "world_end",
+            "from": 3120,
+            "duration": 180,
+            "sample": 120
+          },
+          {
+            "id": "D15",
+            "kind": "brand",
+            "from": 3300,
+            "duration": 300,
+            "sample": 240
+          }
+        ],
+        "cues": {
+          "subtitleLoss": 900,
+          "reactionCut": 948,
+          "pause": 1140,
+          "logoLift": 1340,
+          "logoMouse": 1412,
+          "selectionPress": 1448,
+          "selectionEnd": 1595,
+          "ocr": 1622,
+          "local": 1667,
+          "plate": 1705,
+          "resume": 1885,
+          "pillow": 1953,
+          "lieDown": 1977,
+          "snore": 2115,
+          "deadpan": 2125,
+          "slowBlink": 2173,
+          "earDrop": 2219,
+          "cloudPeek": 2265,
+          "crunch": 2695,
+          "cloudGlass": 2715,
+          "snoreEnd": 2785,
+          "cloudIn": 2825,
+          "privacyCut": 2985,
+          "swat": 3030,
+          "resolve": 3372,
+          "cleanBrand": 3480
+        },
+        "voice": [
+          {
+            "who": "momo",
+            "at": 262,
+            "len": 58,
+            "clip": "pleading_1",
+            "semitones": -3,
+            "gain": 0.7
+          },
+          {
+            "who": "momo",
+            "at": 352,
+            "len": 92,
+            "clip": "impatient_3",
+            "semitones": -4,
+            "gain": 0.55
+          },
+          {
+            "who": "momo",
+            "at": 590,
+            "len": 36,
+            "clip": "notrip_3",
+            "semitones": -3,
+            "gain": 0.8
+          },
+          {
+            "who": "momo",
+            "at": 704,
+            "len": 28,
+            "clip": "impatient_1",
+            "semitones": -3,
+            "gain": 1.0
+          },
+          {
+            "who": "momo",
+            "at": 752,
+            "len": 76,
+            "clip": "pleading_2",
+            "semitones": -5,
+            "gain": 1.1
+          },
+          {
+            "who": "momo",
+            "at": 906,
+            "len": 30,
+            "clip": "notrip_2",
+            "semitones": -4,
+            "gain": 1.0
+          },
+          {
+            "who": "momo",
+            "at": 942,
+            "len": 60,
+            "clip": "pleading_3",
+            "semitones": -5,
+            "gain": 1.0
+          },
+          {
+            "who": "chestnut",
+            "at": 1070,
+            "len": 20,
+            "clip": "trill",
+            "semitones": 2,
+            "gain": 0.7
+          },
+          {
+            "who": "momo",
+            "at": 2025,
+            "len": 90,
+            "clip": "yawn",
+            "semitones": -6,
+            "gain": 0.9
+          }
+        ]
+      },
+      "short": {
+        "duration": 1800,
+        "shots": [
+          {
+            "id": "V01",
+            "kind": "buildup",
+            "from": 0,
+            "duration": 280,
+            "sample": 120
+          },
+          {
+            "id": "V02",
+            "kind": "loss",
+            "from": 280,
+            "duration": 180,
+            "sample": 120
+          },
+          {
+            "id": "V03",
+            "kind": "magic",
+            "from": 460,
+            "duration": 240,
+            "sample": 138
+          },
+          {
+            "id": "V04",
+            "kind": "scan",
+            "from": 700,
+            "duration": 80,
+            "sample": 79
+          },
+          {
+            "id": "V05",
+            "kind": "reveal",
+            "from": 780,
+            "duration": 180,
+            "sample": 120
+          },
+          {
+            "id": "V06",
+            "kind": "punchline",
+            "from": 960,
+            "duration": 240,
+            "sample": 180
+          },
+          {
+            "id": "V07",
+            "kind": "deadpan",
+            "from": 1200,
+            "duration": 200,
+            "sample": 102
+          },
+          {
+            "id": "V08",
+            "kind": "snack",
+            "from": 1400,
+            "duration": 100,
+            "sample": 42
+          },
+          {
+            "id": "V09",
+            "kind": "brand",
+            "from": 1500,
+            "duration": 300,
+            "sample": 240
+          }
+        ],
+        "cues": {
+          "subtitleLoss": 280,
+          "reactionCut": 328,
+          "pause": 442,
+          "logoLift": 475,
+          "logoMouse": 515,
+          "selectionPress": 578,
+          "selectionEnd": 684,
+          "ocr": 704,
+          "local": 749,
+          "plate": 780,
+          "resume": 960,
+          "pillow": 1028,
+          "lieDown": 1052,
+          "snore": 1190,
+          "deadpan": 1200,
+          "slowBlink": 1248,
+          "earDrop": 1294,
+          "crunch": 1430,
+          "snoreEnd": 1500,
+          "resolve": 1572,
+          "cleanBrand": 1680
+        },
+        "voice": [
+          {
+            "who": "momo",
+            "at": 40,
+            "len": 28,
+            "clip": "impatient_1",
+            "semitones": -3,
+            "gain": 1.0
+          },
+          {
+            "who": "momo",
+            "at": 100,
+            "len": 76,
+            "clip": "pleading_2",
+            "semitones": -5,
+            "gain": 1.1
+          },
+          {
+            "who": "momo",
+            "at": 286,
+            "len": 30,
+            "clip": "notrip_2",
+            "semitones": -4,
+            "gain": 1.0
+          },
+          {
+            "who": "momo",
+            "at": 322,
+            "len": 60,
+            "clip": "pleading_3",
+            "semitones": -5,
+            "gain": 1.0
+          },
+          {
+            "who": "chestnut",
+            "at": 420,
+            "len": 18,
+            "clip": "trill",
+            "semitones": 2,
+            "gain": 0.7
+          },
+          {
+            "who": "momo",
+            "at": 1100,
+            "len": 90,
+            "clip": "yawn",
+            "semitones": -6,
+            "gain": 0.9
+          }
+        ]
+      }
+    }
   }
 }

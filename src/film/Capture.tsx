@@ -57,7 +57,7 @@ function cursorAt(f: number, L: Layout): { x: number; y: number; opacity: number
   };
 }
 
-interface ScanEvent {
+export interface ScanEvent {
   start: number;
   end: number;
   line: Line;
@@ -88,8 +88,8 @@ export function glyphRects(line: Line, lang: string, L: Layout): { rects: Rect[]
   return { rects, left, right: left + width };
 }
 
-const Scan: React.FC<{ f: number; L: Layout; box: Rect }> = ({ f, L, box }) => {
-  const scan = SCANS.find((s) => f >= s.start && f < s.end + 26);
+const Scan: React.FC<{ f: number; L: Layout; box: Rect; scans: readonly ScanEvent[] }> = ({ f, L, box, scans }) => {
+  const scan = scans.find((s) => f >= s.start && f < s.end + 26);
   if (!scan) return null;
   const { rects, left, right } = glyphRects(scan.line, scan.lang, L);
   const p = tween(f, [scan.start, scan.end], [0, 1], ease.linear);
@@ -167,7 +167,7 @@ const Crosshair: React.FC<{ size: number; u: number }> = ({ size, u }) => (
 );
 
 // Selection dim, the box itself, the OCR scan, and the cursor (world space).
-export const Capture: React.FC<{ f: number; L: Layout; opacity: number }> = ({ f, L, opacity }) => {
+export const Capture: React.FC<{ f: number; L: Layout; opacity: number; scans?: readonly ScanEvent[] }> = ({ f, L, opacity, scans = SCANS }) => {
   const { u } = L;
   const box = boxAt(f, L);
   const dim =
@@ -277,7 +277,7 @@ export const Capture: React.FC<{ f: number; L: Layout; opacity: number }> = ({ f
         </div>
       ) : null}
 
-      {box && f < T.payoff.start ? <Scan f={f} L={L} box={box} /> : null}
+      {box && f < T.payoff.start ? <Scan f={f} L={L} box={box} scans={scans} /> : null}
 
       {cursor.opacity > 0 ? (
         <div

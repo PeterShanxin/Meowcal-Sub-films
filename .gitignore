@@ -1,2 +1,6 @@
 node_modules/
 out/
+__pycache__/
+audio/samples/**/*.wav
+audio/samples/**/*.ogg
+audio/samples/**/*.oga
