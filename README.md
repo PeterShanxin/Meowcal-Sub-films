@@ -10,7 +10,7 @@ frame-based timeline per film.
 | Folder | Film | Cuts | Status |
 | --- | --- | --- | --- |
 | [`launch-15s/`](launch-15s/) | Launch film: the capture box is the whole film. | 15 s, landscape, vertical and square | Released: [v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/v1.0.0) |
-| [`cat-drama/`](cat-drama/) | 就差这一句: cats watch a melodrama, the translation drops out at the climax, and Meowcal Sub reads the subtitle. | 60 s landscape and portrait, 30 s portrait, English 60 s | Released: [cat-drama-v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.0.0) |
+| [`cat-drama/`](cat-drama/) | 就差这一句: cats watch a melodrama, the translation drops out at the climax, and Meowcal Sub reads the subtitle. | 60 s landscape and portrait, 30 s portrait, English 60 s | Released: [cat-drama-v1.1.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.1.0) |
 | [`read-beyond-language/`](read-beyond-language/) | Read beyond language: a subtitle selection opens into understanding. | 15 s | Alternative concept, kept as its own project |
 | [`early-launch/`](early-launch/) | Earlier launch video, preserved for reference. | 15 s | Needs improvement |
 
