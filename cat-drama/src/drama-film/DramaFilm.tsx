@@ -17,6 +17,9 @@ type Shot = {id: string; kind: string; from: number; duration: number};
 type Line = {line: keyof typeof COPY.zh.lines; at: number; show: number} & ({mode: 'say'; len: number} | {mode: 'think'});
 export type DramaProps = {cut: Cut; locale: Locale; sound?: boolean};
 
+// Zoom reached by the viewers montage, where the build-up's push picks up; frames per room dissolve.
+const MONTAGE_PUSH = .12, DISSOLVE = 16;
+
 const Super: React.FC<{text: string; portrait: boolean; opacity: number}> = ({text, portrait, opacity}) =>
   <div style={{position: 'absolute', left: 60, right: 60, bottom: portrait ? 470 : 70, textAlign: 'center', color: '#eef3ee',
     font: `600 ${portrait ? 56 : 52}px "Segoe UI","Microsoft YaHei",sans-serif`, textShadow: '0 3px 12px #050b14', opacity}}>{text}</div>;
@@ -98,13 +101,18 @@ const FilmShot: React.FC<{shot: Shot; cut: CutData; locale: Locale}> = ({shot, c
         {g >= C.title && <Title text={copy.title} f={g - C.title} portrait={p}/>}
       </AbsoluteFill>;
     }
+    // The three homes share one layout, so hard cuts between them read as a skip. The camera pushes
+    // in without stopping while each room dissolves into the next, ending in Chestnut's room where
+    // the build-up takes over at the same zoom and episode frame.
     case 'viewers': {
-      const block = Math.floor(f / 100), viewer = [0, 3, 4][Math.min(block, 2)];
-      return room(<Screen episode={80 + f} line={0} familiar target={Math.min(block, 2)} talk={talk}/>, .04 * ease(f % 100, 0, 100), viewer);
+      const zoom = MONTAGE_PUSH * f / shot.duration;
+      const home = (i: number) => room(<Screen episode={80 + f} line={0} familiar target={i % 3} portrait={p} talk={talk}/>, zoom, [0, 3, 4, 0][i]);
+      const block = Math.min(Math.floor(f / 100), 2), next = ease(f, 100 * (block + 1) - DISSOLVE, 100 * (block + 1));
+      return <>{home(block)}{next > 0 && <AbsoluteFill style={{opacity: next}}>{home(block + 1)}</AbsoluteFill>}</>;
     }
     case 'buildup': return <>
-      {room(<Screen episode={short ? 280 + f * 300 / shot.duration : 240 + f} line={!short && f < shot.duration * .44 ? 0 : 1} familiar portrait={p} talk={talk}/>,
-        short ? .5 + .5 * ease(f, 0, 180) : .12 + .88 * ease(f, 0, 240))}
+      {room(<Screen episode={short ? 300 + f * 300 / shot.duration : 380 + f * 220 / shot.duration} line={!short && f < shot.duration * .44 ? 0 : 1} familiar portrait={p} talk={talk}/>,
+        short ? .5 + .5 * ease(f, 0, 180) : MONTAGE_PUSH + (1 - MONTAGE_PUSH) * ease(f, 0, 240))}
       {'premise' in C && <Typewriter lines={[{text: copy.premise, at: C.premise}]} f={g} rate={copy.typeRate} out={C.premiseOut} portrait={p} top/>}
     </>;
     case 'loss': return g < C.reactionCut ? room(<Screen episode={600} portrait={p} talk={talk}/>) : <ReactionView W={W} H={H} f={g - C.reactionCut} performance="lost" talk={chat}/>;
@@ -116,7 +124,7 @@ const FilmShot: React.FC<{shot: Shot; cut: CutData; locale: Locale}> = ({shot, c
     case 'deadpan': return <ReactionView W={W} H={H} f={f} performance="deadpan" overlay={'cloudPeek' in C &&
       <CloudOutside p={p} x={p ? 30 : 62} y={mix(p ? 150 : 158, p ? 100 : 112, ease(g, C.cloudPeek, C.cloudPeek + 25))} s={p ? .45 : .5} f={f} mood="curious"/>}/>;
     // Bean and Bleu catch up mid-deflation, a beat apart; Chestnut has already given up.
-    case 'languages': return <ReactionTriptych W={W} H={H} panels={[[3, 96 + f, translations[1]], [0, 180 + f, translations[0]], [4, 82 + f, translations[2]]]}/>;
+    case 'languages': return <ReactionTriptych W={W} H={H} f={f} duration={shot.duration} panels={[[3, 96 + f, translations[1]], [0, 180 + f, translations[0]], [4, 82 + f, translations[2]]]}/>;
     case 'snack': return <ReactionView W={W} H={H} f={f} performance="snack" overlay={'cloudGlass' in C &&
       <CloudOutside p={p} x={mix(p ? -10 : 20, p ? 32 : 62, ease(g, C.cloudGlass, C.cloudGlass + 18))} y={p ? 60 : 70} s={p ? .5 : .55} f={f} mood="grab" press={ease(g, C.cloudGlass + 20, C.cloudGlass + 28)}/>}/>;
     case 'privacy': {

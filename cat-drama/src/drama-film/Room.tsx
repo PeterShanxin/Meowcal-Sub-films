@@ -163,21 +163,38 @@ const FACE = {landscape: [1032, 540], portrait: [540, 939]};
 // Portrait rows keep this much room under the chin for the subtitle.
 const PLATE_ROOM = 70;
 
+const GAP = 6, SLIDE = 14;
+
 /**
  * Three homes, one anticlimax: side by side (stacked when portrait), each viewer half-lidded
- * over the same line in its own language. `panels` are [viewer, performance frame, line].
+ * over the same line in its own language. The shot opens and closes on Chestnut's full-frame
+ * close-up: the other two panels slide in from the edges and back out, so the cuts on either
+ * side join the same framing. `panels` are [viewer, performance frame, line]; Chestnut is the middle one.
  */
-export const ReactionTriptych: React.FC<{W: number; H: number; panels: [number, number, string][]}> = ({W, H, panels}) => {
+export const ReactionTriptych: React.FC<{W: number; H: number; f: number; duration: number; panels: [number, number, string][]}> = ({W, H, f, duration, panels}) => {
   const p = H > W, [cx, cy] = FACE[p ? 'portrait' : 'landscape'];
   const pw = p ? W : W / 3, ph = p ? H / 3 : H;
+  const open = ease(f, 0, SLIDE) * (1 - ease(f, duration - SLIDE, duration));
+  const plate = (line: string) => <div style={{position: 'absolute', left: 24, right: 24, bottom: p ? 14 : 90, padding: p ? '6px 16px' : '10px 16px', textAlign: 'center',
+    background: '#0b0b0bd9', color: '#f6f3e8', font: `500 ${p ? 36 : 34}px "Segoe UI","Microsoft YaHei",sans-serif`, lineHeight: 1.3}}>{line}</div>;
+  // The middle panel's face centre in the frame once the panels are in.
+  const [mx, my] = p ? [W / 2, ph + (ph - PLATE_ROOM) / 2] : [pw * 1.5, H / 2];
+  const [, mf, mline] = panels[1];
   return <AbsoluteFill style={{background: '#0a131f'}}>
-    {panels.map(([viewer, f, line], i) => <div key={viewer} style={{position: 'absolute', overflow: 'hidden', left: p ? 0 : i * pw, top: p ? i * ph : 0,
-      width: pw - (!p && i < 2 ? 6 : 0), height: ph - (p && i < 2 ? 6 : 0)}}>
-      <div style={{position: 'absolute', width: W, height: H, left: pw / 2 - cx, top: p ? (ph - PLATE_ROOM) / 2 - cy : 0}}>
-        <ReactionView W={W} H={H} f={f} performance="deadpan" viewer={viewer}/>
-      </div>
-      <div style={{position: 'absolute', left: 24, right: 24, bottom: p ? 14 : 90, padding: p ? '6px 16px' : '10px 16px', textAlign: 'center', background: '#0b0b0bd9',
-        color: '#f6f3e8', font: `500 ${p ? 36 : 34}px "Segoe UI","Microsoft YaHei",sans-serif`, lineHeight: 1.3}}>{line}</div>
-    </div>)}
+    <div style={{position: 'absolute', width: W, height: H, left: p ? 0 : (mx - cx) * open, top: p ? (my - cy) * open : 0}}>
+      <ReactionView W={W} H={H} f={mf} performance="deadpan" viewer={panels[1][0]}/>
+    </div>
+    <div style={{position: 'absolute', left: p ? 0 : pw, top: p ? ph : 0, width: pw, height: ph, opacity: open}}>{plate(mline)}</div>
+    {[0, 2].map(i => {
+      const [viewer, pf, line] = panels[i], out = (i ? 1 : -1) * (1 - open);
+      return <div key={viewer} style={{position: 'absolute', overflow: 'hidden', background: '#0a131f', width: pw, height: ph,
+        left: p ? 0 : i * pw + out * pw, top: p ? i * ph + out * ph : 0}}>
+        <div style={{position: 'absolute', width: W, height: H, left: pw / 2 - cx, top: p ? (ph - PLATE_ROOM) / 2 - cy : 0}}>
+          <ReactionView W={W} H={H} f={pf} performance="deadpan" viewer={viewer}/>
+        </div>
+        {plate(line)}
+        <div style={{position: 'absolute', background: '#0a131f', ...(p ? {left: 0, right: 0, height: GAP, [i ? 'top' : 'bottom']: 0} : {top: 0, bottom: 0, width: GAP, [i ? 'left' : 'right']: 0})}}/>
+      </div>;
+    })}
   </AbsoluteFill>;
 };
