@@ -116,10 +116,12 @@
 
 中文版与英文版各自统一语言，文案取自应用的 README。
 
+英文版换成英文观众的语境：旁白是英文字幕只翻到一半，栗子看英文字幕、吐槽“Huh? Where's the English?”，Meowcal Sub 译成英文；Bean 改看中文，三分屏仍是中、英、法三种译文。
+
 | | 中文版 | 英文版 |
 | --- | --- | --- |
 | 品牌句 | 把屏幕上已有的字幕，翻译成你想读的语言。 | Translate the subtitles already on your screen. |
-| 辅助行 | Windows · 免费开源 | Windows · Free and open source |
+| 辅助行 | Windows · 免费开源 · 已上架 Microsoft Store | Windows · Free & open source · Microsoft Store |
 | 行动 | github.com/PeterShanxin/Meowcal-Sub | 同左 |
 | 说明 | 公开测试版 · 本地 AI · 更多平台，敬请期待 | Public beta · Local AI · More platforms coming soon |
 | 语言 | 简体中文 · 繁體中文 · 日本語 · 한국어 · English 等 | 简体中文 · 繁體中文 · 日本語 · 한국어 · English and more |

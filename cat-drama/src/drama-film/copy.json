@@ -27,16 +27,16 @@
     "intro": [
       "Cat Planet, 8 p.m.",
       "Every cat on the planet is watching the same finale.",
-      "But the Chinese subtitles stop halfway."
+      "But the English subtitles stop halfway."
     ],
-    "premise": "The Chinese subtitles stop halfway…",
+    "premise": "The English subtitles stop halfway…",
     "title": "One Line Short",
     "epilogue": "That night, every cat on the planet slept five more minutes.",
     "ocr": "Windows OCR · reading the selection",
     "local": "Local AI · translating",
     "privacy": "Local AI. Your subtitles stay on your PC.",
     "lines": {
-      "where": "Huh? No Chinese?",
+      "where": "Huh? Where's the English?",
       "notThis": "Not this line!",
       "lost": "Huh? Not this line!",
       "summon": "Come out, Meowcal Sub!",

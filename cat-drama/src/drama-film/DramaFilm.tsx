@@ -19,6 +19,8 @@ export type DramaProps = {cut: Cut; locale: Locale; sound?: boolean};
 
 // Zoom reached by the viewers montage, where the build-up's push picks up; frames per room dissolve.
 const MONTAGE_PUSH = .12, DISSOLVE = 16;
+// Subtitle language (index into translations) of Chestnut, Bean and Bleu. Chestnut reads the audience's language.
+const READS: Record<Locale, readonly number[]> = {zh: [0, 1, 2], en: [1, 0, 2]};
 
 const Super: React.FC<{text: string; portrait: boolean; opacity: number}> = ({text, portrait, opacity}) =>
   <div style={{position: 'absolute', left: 60, right: 60, bottom: portrait ? 470 : 70, textAlign: 'center', color: '#eef3ee',
@@ -63,7 +65,7 @@ const Privacy: React.FC<{f: number; inAt: number; split: number; hit: number; W:
       <CloudAt x={x} y={y} s={s} f={f} mood={tug > .2 ? 'grab' : 'curious'} look={look} reach={f > split - 45 ? reach : undefined}/>
     </g>;
     return <RoomView W={W} H={H} viewer={0} f={f} overlay={inside ? cloud : <Glass rect={glass}>{cloud}</Glass>}>
-      <Screen episode={940 + f} translated plateFrame={230} portrait={p} tug={tug}/>
+      <Screen episode={940 + f} translated plateFrame={230} target={READS[locale][0]} portrait={p} tug={tug}/>
     </RoomView>;
   }
   const g = f - split, flight = ease(g, hit + 2, hit + 26);
@@ -84,12 +86,12 @@ const Privacy: React.FC<{f: number; inAt: number; split: number; hit: number; W:
 const FilmShot: React.FC<{shot: Shot; cut: CutData; locale: Locale}> = ({shot, cut, locale}) => {
   const f = useCurrentFrame(), {width: W, height: H} = useVideoConfig(), p = H > W;
   const short = cut.duration < 3000;
-  const g = shot.from + f, C = cut.cues, copy = COPY[locale];
+  const g = shot.from + f, C = cut.cues, copy = COPY[locale], reads = READS[locale];
   const talk = talking(g, cut.voice);
   const chat = talking(g, (cut.lines as Line[]).flatMap(l => l.mode === 'say' ? [l] : []));
   const select = selectionFrame(g, C.selectionPress, C.selectionEnd, C.ocr, C.local, C.plate);
   const room = (screen: React.ReactNode, zoom = 1, viewer = 0) => <RoomView W={W} H={H} zoom={zoom} viewer={viewer} f={f}>{screen}</RoomView>;
-  const product = (episode = 600, paused = true) => room(<Screen episode={episode} capture={select} translated={g >= C.plate} plateFrame={select} paused={paused} portrait={p} talk={talk}/>);
+  const product = (episode = 600, paused = true) => room(<Screen episode={episode} capture={select} translated={g >= C.plate} plateFrame={select} target={reads[0]} paused={paused} portrait={p} talk={talk}/>);
   switch (shot.kind) {
     case 'world': {
       if (!('intro' in C)) throw new Error('The world shot needs intro, introOut and title cues');
@@ -106,17 +108,17 @@ const FilmShot: React.FC<{shot: Shot; cut: CutData; locale: Locale}> = ({shot, c
     // the build-up takes over at the same zoom and episode frame.
     case 'viewers': {
       const zoom = MONTAGE_PUSH * f / shot.duration;
-      const home = (i: number) => room(<Screen episode={80 + f} line={0} familiar target={i % 3} portrait={p} talk={talk}/>, zoom, [0, 3, 4, 0][i]);
+      const home = (i: number) => room(<Screen episode={80 + f} line={0} familiar target={reads[i % 3]} portrait={p} talk={talk}/>, zoom, [0, 3, 4, 0][i]);
       const block = Math.min(Math.floor(f / 100), 2), next = ease(f, 100 * (block + 1) - DISSOLVE, 100 * (block + 1));
       return <>{home(block)}{next > 0 && <AbsoluteFill style={{opacity: next}}>{home(block + 1)}</AbsoluteFill>}</>;
     }
     case 'buildup': return <>
-      {room(<Screen episode={short ? 300 + f * 300 / shot.duration : 380 + f * 220 / shot.duration} line={!short && f < shot.duration * .44 ? 0 : 1} familiar portrait={p} talk={talk}/>,
+      {room(<Screen episode={short ? 300 + f * 300 / shot.duration : 380 + f * 220 / shot.duration} line={!short && f < shot.duration * .44 ? 0 : 1} familiar target={reads[0]} portrait={p} talk={talk}/>,
         short ? .5 + .5 * ease(f, 0, 180) : MONTAGE_PUSH + (1 - MONTAGE_PUSH) * ease(f, 0, 240))}
       {'premise' in C && <Typewriter lines={[{text: copy.premise, at: C.premise}]} f={g} rate={copy.typeRate} out={C.premiseOut} portrait={p} top/>}
     </>;
-    case 'loss': return g < C.reactionCut ? room(<Screen episode={600} portrait={p} talk={talk}/>) : <ReactionView W={W} H={H} f={g - C.reactionCut} performance="lost" talk={chat}/>;
-    case 'pause': return room(<Screen episode={600} paused portrait={p}/>);
+    case 'loss': return g < C.reactionCut ? room(<Screen episode={600} target={reads[0]} portrait={p} talk={talk}/>) : <ReactionView W={W} H={H} f={g - C.reactionCut} performance="lost" talk={chat}/>;
+    case 'pause': return room(<Screen episode={600} target={reads[0]} paused portrait={p}/>);
     case 'magic': return f < (short ? 100 : 120) ? <ReactionView W={W} H={H} f={f * (short ? 1.15 : 1)} performance="magic" talk={chat}/> : product();
     case 'scan': return <>{product()}<div style={{position: 'absolute', left: p ? 80 : 100, top: p ? 290 : 70, color: '#e6eeee', font: `600 ${p ? 46 : 42}px "Segoe UI","Microsoft YaHei"`, textShadow: '0 2px 8px #050b14'}}>{g < C.local ? copy.ocr : `${copy.local}${'.'.repeat(1 + Math.floor((g - C.local) / 8) % 3)}`}</div></>;
     case 'reveal': return product();
@@ -124,7 +126,7 @@ const FilmShot: React.FC<{shot: Shot; cut: CutData; locale: Locale}> = ({shot, c
     case 'deadpan': return <ReactionView W={W} H={H} f={f} performance="deadpan" overlay={'cloudPeek' in C &&
       <CloudOutside p={p} x={p ? 30 : 62} y={mix(p ? 150 : 158, p ? 100 : 112, ease(g, C.cloudPeek, C.cloudPeek + 25))} s={p ? .45 : .5} f={f} mood="curious"/>}/>;
     // Bean and Bleu catch up mid-deflation, a beat apart; Chestnut has already given up.
-    case 'languages': return <ReactionTriptych W={W} H={H} f={f} duration={shot.duration} panels={[[3, 96 + f, translations[1]], [0, 180 + f, translations[0]], [4, 82 + f, translations[2]]]}/>;
+    case 'languages': return <ReactionTriptych W={W} H={H} f={f} duration={shot.duration} panels={[[3, 96 + f, translations[reads[1]]], [0, 180 + f, translations[reads[0]]], [4, 82 + f, translations[reads[2]]]]}/>;
     case 'snack': return <ReactionView W={W} H={H} f={f} performance="snack" overlay={'cloudGlass' in C &&
       <CloudOutside p={p} x={mix(p ? -10 : 20, p ? 32 : 62, ease(g, C.cloudGlass, C.cloudGlass + 18))} y={p ? 60 : 70} s={p ? .5 : .55} f={f} mood="grab" press={ease(g, C.cloudGlass + 20, C.cloudGlass + 28)}/>}/>;
     case 'privacy': {
