@@ -22,9 +22,31 @@ const MONTAGE_PUSH = .12, DISSOLVE = 16;
 // Subtitle language (index into translations) of Chestnut, Bean and Bleu. Chestnut reads the audience's language.
 const READS: Record<Locale, readonly number[]> = {zh: [0, 1, 2], en: [1, 0, 2]};
 
-const Super: React.FC<{text: string; portrait: boolean; opacity: number}> = ({text, portrait, opacity}) =>
-  <div style={{position: 'absolute', left: 60, right: 60, bottom: portrait ? 470 : 70, textAlign: 'center', color: '#eef3ee',
-    font: `600 ${portrait ? 56 : 52}px "Segoe UI","Microsoft YaHei",sans-serif`, textShadow: '0 3px 12px #050b14', opacity}}>{text}</div>;
+/** An off-centre feature title: an accent rule, then its lines sliding in one after another from its own side. With `caption`, lines after the first are set small. */
+const FeatureTitle: React.FC<{lines: string[]; f: number; size: number; at: {left?: number; right?: number; top: number}; opacity?: number; caption?: boolean}> = ({lines, f, size, at, opacity = 1, caption = false}) => {
+  const fromRight = at.right !== undefined;
+  const rise = (delay: number) => ({opacity: ease(f, delay, delay + 14), transform: `translateX(${(fromRight ? 1 : -1) * 36 * (1 - ease(f, delay, delay + 18))}px)`});
+  return <div style={{position: 'absolute', ...at, textAlign: fromRight ? 'right' : 'left', opacity, color: '#f3efe0',
+    font: `700 ${size}px "Segoe UI","Microsoft YaHei",sans-serif`, lineHeight: 1.12, textShadow: '0 4px 18px #03070e'}}>
+    <div style={{display: 'inline-block', width: size * .8, height: 6, marginBottom: size * .3, background: '#f0dcc3', ...rise(0)}}/>
+    {lines.map((line, i) => <div key={i} style={{...rise(4 + 5 * i), ...(caption && i ? {fontSize: size * .6, fontWeight: 600, marginTop: size * .12} : {})}}>{line}</div>)}
+  </div>;
+};
+
+// The privacy line in the room's empty side: left of Chestnut in landscape, right of the window in portrait.
+const PrivacyTitle: React.FC<{lines: string[]; f: number; portrait: boolean}> = ({lines, f, portrait}) => {
+  const size = portrait ? (lines.length > 2 ? 58 : 72) : (lines.length > 2 ? 72 : 84);
+  return <FeatureTitle lines={lines} f={f} size={size} at={portrait ? {right: 160, top: 110} : {left: 90, top: 330}}/>;
+};
+
+// Windows OCR lands on one side and stays; local AI answers on the other, and both hold until the translation has been read.
+const PipelineTitles: React.FC<{g: number; ocr: number; local: number; plate: number; portrait: boolean; copy: {ocr: string[]; local: string[]}}> = ({g, ocr, local, plate, portrait, copy}) => {
+  const out = 1 - ease(g, plate + 85, plate + 100), size = portrait ? 76 : 80;
+  return <>
+    <FeatureTitle caption lines={copy.ocr} f={g - ocr} size={size} at={portrait ? {left: 80, top: 80} : {left: 100, top: 70}} opacity={out}/>
+    {g >= local && <FeatureTitle caption lines={copy.local} f={g - local} size={size} at={portrait ? {right: 160, top: 215} : {right: 110, top: 210}} opacity={out}/>}
+  </>;
+};
 
 const CloudAt: React.FC<{x: number; y: number; s: number; mood: CloudMood; f: number; reach?: [number, number]; look?: number; turn?: number}> = ({x, y, s, turn = 0, ...cloud}) =>
   <g transform={`translate(${Math.round(x)} ${Math.round(y)}) rotate(${turn}) scale(${s})`}><Cloud {...cloud}/></g>;
@@ -79,7 +101,7 @@ const Privacy: React.FC<{f: number; inAt: number; split: number; hit: number; W:
   </>;
   return <>
     <ReactionView W={W} H={H} f={g - hit + 45} performance="swat" viewer={0} overlay={overlay}/>
-    <Super text={COPY[locale].privacy} portrait={p} opacity={ease(g, hit + 8, hit + 24)}/>
+    <PrivacyTitle lines={COPY[locale].privacy} f={g - hit - 8} portrait={p}/>
   </>;
 };
 
@@ -120,8 +142,7 @@ const FilmShot: React.FC<{shot: Shot; cut: CutData; locale: Locale}> = ({shot, c
     case 'loss': return g < C.reactionCut ? room(<Screen episode={600} target={reads[0]} portrait={p} talk={talk}/>) : <ReactionView W={W} H={H} f={g - C.reactionCut} performance="lost" talk={chat}/>;
     case 'pause': return room(<Screen episode={600} target={reads[0]} paused portrait={p}/>);
     case 'magic': return f < (short ? 100 : 120) ? <ReactionView W={W} H={H} f={f * (short ? 1.15 : 1)} performance="magic" talk={chat}/> : product();
-    case 'scan': return <>{product()}<div style={{position: 'absolute', left: p ? 80 : 100, top: p ? 290 : 70, color: '#e6eeee', font: `600 ${p ? 46 : 42}px "Segoe UI","Microsoft YaHei"`, textShadow: '0 2px 8px #050b14'}}>{g < C.local ? copy.ocr : `${copy.local}${'.'.repeat(1 + Math.floor((g - C.local) / 8) % 3)}`}</div></>;
-    case 'reveal': return product();
+    case 'scan': case 'reveal': return <>{product()}<PipelineTitles g={g} ocr={C.ocr} local={C.local} plate={C.plate} portrait={p} copy={copy}/></>;
     case 'punchline': return product(600 + f, false);
     case 'deadpan': return <ReactionView W={W} H={H} f={f} performance="deadpan" overlay={'cloudPeek' in C &&
       <CloudOutside p={p} x={p ? 30 : 62} y={mix(p ? 150 : 158, p ? 100 : 112, ease(g, C.cloudPeek, C.cloudPeek + 25))} s={p ? .45 : .5} f={f} mood="curious"/>}/>;
