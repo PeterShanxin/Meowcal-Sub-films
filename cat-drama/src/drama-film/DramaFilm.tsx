@@ -39,7 +39,7 @@ const PrivacyTitle: React.FC<{lines: string[]; f: number; portrait: boolean}> = 
   return <FeatureTitle lines={lines} f={f} size={size} at={portrait ? {right: 160, top: 110} : {left: 90, top: 330}}/>;
 };
 
-// Windows OCR lands on one side and stays; local AI answers on the other, and both hold until the translation has been read.
+// OCR lands on one side and stays; local AI answers on the other, and both hold until the translation has been read.
 const PipelineTitles: React.FC<{g: number; ocr: number; local: number; plate: number; portrait: boolean; copy: {ocr: string[]; local: string[]}}> = ({g, ocr, local, plate, portrait, copy}) => {
   const out = 1 - ease(g, plate + 85, plate + 100), size = portrait ? 76 : 80;
   return <>
