@@ -13,7 +13,7 @@ in manga bubbles. That night every cat on the planet sleeps five more minutes,
 and the pixel brand resolves into the real Meowcal Sub mark.
 
 The four cuts are attached to the
-[cat-drama-v1.1.0 release](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.1.0).
+[cat-drama-v1.2.0 release](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.2.0).
 
 Paths in this file are relative to `cat-drama/`; commands run from the
 repository root.
