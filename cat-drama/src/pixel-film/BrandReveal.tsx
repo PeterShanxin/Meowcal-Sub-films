@@ -39,15 +39,18 @@ export const FinalBrand: React.FC<{locale?: Locale}> = ({locale}) => {
   </AbsoluteFill>;
 };
 
-export const BrandReveal: React.FC<{locale?: Locale}> = ({locale}) => {
-  const f=useCurrentFrame(),{width:W,height:H}=useVideoConfig(),p=H>W;
+// Frames of the selection-frame morph that `fromPixels` skips: the pixel brand fades straight in.
+const MORPH=44;
+
+export const BrandReveal: React.FC<{locale?: Locale; fromPixels?: boolean}> = ({locale,fromPixels=false}) => {
+  const f=useCurrentFrame()+(fromPixels?MORPH:0),{width:W,height:H}=useVideoConfig(),p=H>W;
   const L=layout(W,H),morph=746+Math.min(f,45)*34/45;
   const resolve=ease(f,72,169),cell=1+19*(1-resolve)**2;
   const shiftX=p?0:-(50*L.u+measure('Meowcal Sub',`600 ${132*L.u}px ${FONT_DISPLAY}`))/2;
   const shiftY=(p?-170:-44)*L.u;
   const still=`pixel-film/brand-${p?'vertical':'landscape'}${locale?`-${locale}`:''}.png`;
   return <AbsoluteFill style={{background:'#07090f'}}>
-    <div style={{position:'absolute',inset:0,opacity:1-ease(f,43,66),transform:`translate(${shiftX*ease(f,12,48)}px,${shiftY*ease(f,12,48)}px)`}}><Capture f={morph} L={L} opacity={1} scans={[]}/></div>
+    {!fromPixels&&<div style={{position:'absolute',inset:0,opacity:1-ease(f,43,66),transform:`translate(${shiftX*ease(f,12,48)}px,${shiftY*ease(f,12,48)}px)`}}><Capture f={morph} L={L} opacity={1} scans={[]}/></div>}
     <div style={{position:'absolute',inset:0,opacity:ease(f,44,70)}}>
       {f<180?<PixelSurface src={still} width={W} height={H} cell={cell}/>:<FinalBrand locale={locale}/>}
     </div>

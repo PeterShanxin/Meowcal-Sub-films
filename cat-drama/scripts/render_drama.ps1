@@ -1,6 +1,7 @@
 param(
     [string]$NodePath = 'node',
-    [string]$BrowserPath = 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe',
+    # Empty: Remotion's own headless Chrome. Edge 154 exits at launch under Remotion 4.0.529.
+    [string]$BrowserPath = '',
     [int]$Concurrency = 1
 )
 $ErrorActionPreference = 'Stop'
@@ -20,9 +21,10 @@ $films = @(
     @('CatDrama30Vertical', 'zh', 'picture-30'),
     @('CatDrama60', 'en', 'picture-60-en')
 )
+$browser = if ($BrowserPath) { @("--browser-executable=$BrowserPath") } else { @() }
 foreach ($film in $films) {
     Set-Content -LiteralPath cat-drama/out/drama/props.json -Value "{`"sound`":false,`"locale`":`"$($film[1])`"}"
-    & $NodePath node_modules/@remotion/cli/remotion-cli.js render cat-drama/src/index.ts $film[0] "cat-drama/out/drama/$($film[2]).mp4" --public-dir=cat-drama/public --props=cat-drama/out/drama/props.json --concurrency=$Concurrency --crf=16 --x264-preset=veryfast --gl=swangle --timeout=60000 "--browser-executable=$BrowserPath"
+    & $NodePath node_modules/@remotion/cli/remotion-cli.js render cat-drama/src/index.ts $film[0] "cat-drama/out/drama/$($film[2]).mp4" --public-dir=cat-drama/public --props=cat-drama/out/drama/props.json --concurrency=$Concurrency --crf=16 --x264-preset=veryfast --gl=swangle --timeout=60000 @browser
     if ($LASTEXITCODE -ne 0) { throw "Picture rendering failed: $($film[0]) $($film[1])" }
 }
 python cat-drama/scripts/drama_review.py

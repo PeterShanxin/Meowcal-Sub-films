@@ -5,8 +5,8 @@ export type CloudMood = 'curious' | 'grab' | 'hit' | 'sulk';
 const BODY = 'M0 15H8V7H21V0H45V7H58V15H68V34H0Z';
 
 /**
- * The cloud that wants everyone's subtitles. Drawn at 68 x 34 units; `reach` is the
- * hand position in the cloud's own units.
+ * The cloud that wants everyone's subtitles, with an upload arrow floating over it so it reads
+ * as cloud upload. Drawn at 68 x 34 units; `reach` is the hand position in the cloud's own units.
  */
 export const Cloud: React.FC<{mood?: CloudMood; f?: number; reach?: [number, number]; look?: number}> = ({mood = 'curious', f = 0, reach, look = 0}) => {
   const squash = mood === 'hit' ? .78 : 1;
@@ -16,6 +16,7 @@ export const Cloud: React.FC<{mood?: CloudMood; f?: number; reach?: [number, num
   return <g shapeRendering="crispEdges" transform={`translate(34 ${34 + bob}) scale(${1 / squash} ${squash}) translate(-34 -34)`}>
     {reach && <path d={`M58 26H${Math.round((58 + hx) / 2)}V${hy}H${hx}`} fill="none" stroke="#c9d6dc" strokeWidth="4"/>}
     {reach && <path d={`M${hx - 4} ${hy - 3}h8v7h-2v2h-2v-2h-2v2h-2Z`} fill="#c9d6dc"/>}
+    {mood !== 'hit' && <path d={`M30 ${-4 - bob}h8v-6h4l-8-8-8 8h4Z`} fill="#8fb4cf"/>}
     <path d={BODY} fill="#c9d6dc"/>
     <path d="M0 27H68V34H0Z" fill="#9fb2bd"/>
     <path d="M21 1H45V4H21ZM9 8H21V11H9Z" fill="#eef3f2"/>

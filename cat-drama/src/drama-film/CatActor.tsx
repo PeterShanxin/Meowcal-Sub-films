@@ -104,9 +104,11 @@ const tailPoints = (puff: number, flop: number) => TAIL_REST.map(([x, y], i) => 
   return `${Math.round(mix(ux, TAIL_FLAT[i][0], flop))},${Math.round(mix(uy, TAIL_FLAT[i][1], flop))}`;
 }).join(' ');
 
-export const CatActor: React.FC<{id?: number; f: number; performance?: Performance; snack?: boolean}> = ({id = 0, f, performance = 'watch', snack = false}) => {
+/** `talk` (0..1) opens the mouth for a spoken line on top of the performance. */
+export const CatActor: React.FC<{id?: number; f: number; performance?: Performance; snack?: boolean; talk?: number}> = ({id = 0, f, performance = 'watch', snack = false, talk = 0}) => {
   const c = cats[id], pose = facePose(f, performance);
-  const {stretch, puff, flop, headY, ...face} = pose;
+  const {stretch, puff, flop, headY, ...expression} = pose;
+  const face = {...expression, jaw: Math.max(expression.jaw, 4 * talk)};
   const frozen = performance === 'lost' || performance === 'deadpan';
   const breath = frozen ? 0 : Math.sin(f / 60 * Math.PI * 2 / 4.8) * .002;
   const eat = performance === 'snack' ? ease(f, 0, 30) : 0;

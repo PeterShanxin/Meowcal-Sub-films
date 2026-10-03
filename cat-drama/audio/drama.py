@@ -4,9 +4,13 @@ Three buses keep the story legible by ear:
 - tv: the cat drama itself (Momo's meowed lines, its melodramatic strings, rain,
   the pillow and the snore). It plays through a small TV speaker in the room and
   opens to full range while the camera is inside the screen. Pausing cuts it dead.
-- room: the viewer's side of the screen (keys, mouse, snack, room tone, the trill).
-- score: the film's own music, used only outside the drama (opening, the product
-  moment, the cloud, the ending).
+- room: the viewer's side of the screen (keys, mouse, snack, room tone) and the
+  meows behind Chestnut's spoken lines. Its thoughts are silent.
+- score: the film's own music and the typed narration, used only outside the drama
+  (opening, the product moment, the cloud, the ending).
+
+Each cut is mastered once per locale, because the narration types for a different
+length in each language: public/audio/drama-<cut>-<locale>.wav.
 
 Instruments are CC0 VSCO 2 CE recordings; cat voices are CC0 / public-domain
 Wikimedia Commons recordings (see samples/*/manifest.json). Foley is procedural.
@@ -24,6 +28,7 @@ from scipy.signal import butter, fftconvolve, lfilter, resample_poly, sosfilt
 ROOT = Path(__file__).resolve().parent.parent
 SR = 48000
 TL = json.loads((ROOT / 'src/timeline.json').read_text(encoding='utf-8'))['dramaFilm']
+COPY = json.loads((ROOT / 'src/drama-film/copy.json').read_text(encoding='utf-8'))
 SAMPLES = ROOT / 'audio/samples'
 OUT = ROOT / 'public/audio'
 OUT.mkdir(exist_ok=True)
@@ -189,7 +194,7 @@ class Mix:
 
     def voice(self, bus, frame, frames, clip, semitones, gain, pan=0., name=''):
         if clip == 'trill':
-            # A questioning chirp: a rising meow (the recording reversed) rolled at 27 Hz.
+            # The sonic-logo chirp: a rising meow (the recording reversed) rolled at 27 Hz.
             data = pitched(CATS['meow_impatient'][int(2.18 * SR):int(2.5 * SR)][::-1], SR, semitones)
             t = np.arange(len(data)) / SR
             data = data * (.62 + .38 * np.sin(2 * np.pi * 27 * t)) * np.minimum(1, t / .03)
@@ -244,10 +249,6 @@ def perspective(cut, n):
             near[a:b] = ramp(b - a, *(round(x / 60 * SR) for x in ((0, 180) if short else (20, 240))))
         elif kind in ('loss', 'punchline'):
             near[a:b] = 1
-        elif kind == 'languages':
-            for block in range(2):
-                o = shot['from'] + block * 180
-                near[s(o):s(o + 118)] = 1
         elif kind in ('world_end', 'brand'):
             gate[a:b] = 0
     near[s(cue['reactionCut']):s(cue['pause'])] = 0
@@ -308,16 +309,43 @@ def score_drama(mix, cut):
     mix.note(tv, 'harp', pillow + 26, 52, 160, .12, .1, attack=.003, release=1.4, name='')
 
 
-def score_film(mix, cut):
-    """Non-diegetic music: the opening motif, the product moment, the cloud and the ending."""
+def type_schedule(texts, first, rate, gap=16):
+    """Start frames of lines typed one after another; mirrors typeSchedule in Overlays.tsx."""
+    starts, at = [], first
+    for text in texts:
+        starts.append(at)
+        at += len(text) * rate + gap
+    return starts
+
+
+def typing(mix, texts, first, rate, name):
+    # Soft key ticks while each line types, at most one every 4 frames so fast English stays a patter.
+    step = max(rate, 4)
+    for text, at in zip(texts, type_schedule(texts, first, rate)):
+        for k, frame in enumerate(range(at, at + len(text) * rate, step)):
+            mix.noise('score', frame, .014, .05 if k % 3 else .065, (2800, 9000), name if k == 0 else '', -.1 + .2 * (k % 2))
+
+
+def score_film(mix, cut, locale):
+    """Non-diegetic music: the opening motif, the narration, the product moment, the cloud and the ending."""
     shots = {s['kind']: s for s in cut['shots']}
-    cue, sc = cut['cues'], 'score'
+    cue, sc, copy = cut['cues'], 'score', COPY[locale]
     if 'world' in shots:
         for frame, pitch, velocity in [(34, 64, .38), (83, 67, .31), (164, 66, .24)]:
             mix.note(sc, 'violin_c4', frame, pitch, 42, velocity, -.24, attack=.004, release=.15)
         mix.note(sc, 'cello_b1', 28, 40, 83, .22, .2, attack=.004, release=.2)
         mix.note(sc, 'harp', 150, 76, 90, .14, .3, attack=.002, release=.8)
-        mix.noise(sc, 0, 4, .02, (180, 1400), 'space air', shape='swell')
+        mix.noise(sc, 0, shots['world']['duration'] / 60, .02, (180, 1400), 'space air', shape='swell')
+        mix.chord(sc, 200, 130, [('cellos', 40, .1, .1), ('violas', 59, .06, -.1)], attack=1., release=.6)
+        typing(mix, copy['intro'], cue['intro'], copy['typeRate'], 'intro typing')
+        # The title lands on a low E with a rising harp and a single glockenspiel note.
+        title = cue['title']
+        mix.note(sc, 'cello_b1', title, 40, 80, .26, .15, attack=.004, release=.4, name='title')
+        for i, pitch in enumerate([52, 59, 64, 67, 71]):
+            mix.note(sc, 'harp', title + i * 4, pitch, 90, .12, -.3 + i * .15, attack=.002, release=1.)
+        mix.note(sc, 'glock_c5', title + 22, 83, 60, .07, .2, attack=.002, release=.8)
+    if 'premise' in cue:
+        typing(mix, [copy['premise']], cue['premise'], copy['typeRate'], 'premise typing')
     lift = cue['logoLift']
     for offset, pitch, gain in [(0, 76, .13), (7, 79, .11), (14, 83, .1), (22, 88, .09), (32, 91, .07)]:
         mix.note(sc, 'glock_c5', lift + offset, pitch, 70, gain, -.2 + offset / 60, attack=.002, release=.5)
@@ -345,15 +373,19 @@ def score_film(mix, cut):
         mix.note(sc, 'violin_c4', cue['swat'] + 1, 79, 20, .22, .2, attack=.002, release=.2)
         mix.note(sc, 'violin_c4', cue['swat'] + 9, 76, 20, .18, .25, attack=.002, release=.2)
     if 'world_end' in shots:
-        a = shots['world_end']['from']
-        mix.chord(sc, a - 40, 240, [('cellos', 40, .13, .1), ('violas', 59, .09, -.1), ('violins', 76, .06, -.3)], attack=1.2, release=1.)
-        for i, pitch in enumerate([76, 79, 83, 81, 79, 83]):
-            mix.note(sc, 'glock_c5', a + 25 + i * 20, pitch, 50, .07, -.5 + i * .2, attack=.002, release=.6)
+        a, span = shots['world_end']['from'], shots['world_end']['duration']
+        mix.chord(sc, a - 40, span + 40, [('cellos', 40, .13, .1), ('violas', 59, .09, -.1), ('violins', 76, .06, -.3)], attack=1.2, release=1.)
+        typing(mix, [copy['epilogue']], cue['epilogue'], copy['typeRate'], 'epilogue typing')
+        # Each home's light goes out on a falling glockenspiel note.
+        out, end = cue['lightsOut'], cue['lightsOutEnd']
+        for i, pitch in enumerate([83, 81, 79, 76, 74, 71]):
+            mix.note(sc, 'glock_c5', round(out + (end - out) * (i + .5) / 6), pitch, 50, .07, -.5 + i * .2, attack=.002, release=.6,
+                     name='lights out' if i == 0 else '')
     brand = shots['brand']['from']
-    mix.note(sc, 'cello_b1', brand + 12, 40, 90, .25, .17, attack=.004, release=.3)
-    for offset, pitch, gain in [(20, 64, .31), (66, 67, .27), (120, 66, .23), (180, 64, .24)]:
+    mix.note(sc, 'cello_b1', brand + 6, 40, 90, .25, .17, attack=.004, release=.3)
+    for offset, pitch, gain in [(14, 64, .31), (52, 67, .27), (94, 66, .23), (cue['cleanBrand'] - brand, 64, .24)]:
         mix.note(sc, 'marimba_c4', brand + offset, pitch, 98, gain, -.12, attack=.002, release=.4)
-    mix.chord(sc, brand + 110, 190, [('cellos', 40, .12, .12), ('violas', 59, .08, -.08), ('violins', 76, .05, -.25)], attack=1.4, release=1.2)
+    mix.chord(sc, brand + 80, 190, [('cellos', 40, .12, .12), ('violas', 59, .08, -.08), ('violins', 76, .05, -.25)], attack=1.4, release=1.2)
     clean = cue['cleanBrand']
     for i, pitch in enumerate([52, 59, 64, 71, 76]):
         mix.note(sc, 'harp', clean - 30 + i * 6, pitch, 100, .1, -.25 + i * .12, attack=.002, release=1.2)
@@ -400,8 +432,11 @@ def foley(mix, cut):
 
 def voices(mix, cut):
     for line in cut['voice']:
-        bus = 'tv' if line['who'] == 'momo' else 'room'
-        mix.voice(bus, line['at'], line['len'], line['clip'], line['semitones'], .3 * line['gain'], 0, f"{line['who']} {line['clip']}")
+        mix.voice('tv', line['at'], line['len'], line['clip'], line['semitones'], .3 * line['gain'], 0, f"momo {line['clip']}")
+    # Chestnut meows what it says, like Momo; the bubble carries the words.
+    for line in cut['lines']:
+        if line['mode'] == 'say':
+            mix.voice('room', line['at'], line['len'], line['clip'], line['semitones'], .3 * line['gain'], .05, f"chestnut {line['line']}")
     mix.purr('tv', cut['cues']['snore'], cut['cues']['snoreEnd'], .16)
     if any(s['kind'] == 'world' for s in cut['shots']):
         # Every window on the planet plays the same drama: faint, far and overlapping.
@@ -429,43 +464,45 @@ def limit(audio, ceiling):
     return audio * np.roll(smoothed, -look)[:, None]
 
 
-def master(cut_name, cut):
+def master(cut_name, cut, locale):
+    name = f'{cut_name}-{locale}'
     mix = Mix(cut['duration'] / 60, 29)
     score_drama(mix, cut)
     voices(mix, cut)
     foley(mix, cut)
-    score_film(mix, cut)
+    score_film(mix, cut, locale)
     room = reverb(mix.bus['room'], impulse(.5, .004, 6000, 6), .18)
     score = reverb(mix.bus['score'], impulse(2.2, .02, 6500, 7), .3)
     audio = filt(tv_master(mix, cut) * 1.05 + room + score * .9, 'highpass', 30)
     audio[-int(.3 * SR):] *= np.linspace(1, 0, int(.3 * SR))[:, None] ** 2
     audio = audio / max(np.max(np.abs(audio)), 1e-9) * .89
-    dry = ROOT / f'out/drama/drama-{cut_name}-premaster.wav'
+    dry = ROOT / f'out/drama/drama-{name}-premaster.wav'
     wavfile.write(dry, SR, np.float32(audio))
     for attempt in range(5):
-        levels = loudness(dry, 'loudnorm=I=-14:TP=-1.5:LRA=15:print_format=json')
+        levels = loudness(dry, 'loudnorm=I=-14:TP=-1.5:LRA=20:print_format=json')
         excess = float(levels['input_tp']) - 14 - float(levels['input_i']) + 1.5 + .4
         if excess <= 0:
             break
         audio = limit(audio, np.max(np.abs(audio)) * 10 ** (-(excess + .3 * attempt) / 20))
         wavfile.write(dry, SR, np.float32(audio))
-    chain = ('loudnorm=I=-14:TP=-1.5:LRA=15:linear=true:'
+    chain = ('loudnorm=I=-14:TP=-1.5:LRA=20:linear=true:'
              f'measured_I={levels["input_i"]}:measured_TP={levels["input_tp"]}:'
              f'measured_LRA={levels["input_lra"]}:measured_thresh={levels["input_thresh"]}:'
              f'offset={levels["target_offset"]}:print_format=json')
-    out = OUT / f'drama-{cut_name}.wav'
+    out = OUT / f'drama-{name}.wav'
     render = subprocess.run(['ffmpeg', '-y', '-hide_banner', '-i', str(dry), '-af', chain, '-ar', str(SR), '-c:a', 'pcm_s24le', str(out)], capture_output=True, text=True, check=True)
     normalized = json.loads(re.findall(r'\{[\s\S]*?\}', render.stderr)[-1])
     correction = round(-14 - float(normalized['output_i']), 2)
     trimmed = out.with_name(out.stem + '-trim.wav')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(out), '-af', f'volume={correction}dB', '-c:a', 'pcm_s24le', str(trimmed)], check=True)
     trimmed.replace(out)
-    report = {'cut': cut_name, 'firstPass': levels, 'master': normalized, 'trimDb': correction,
+    report = {'cut': cut_name, 'locale': locale, 'firstPass': levels, 'master': normalized, 'trimDb': correction,
               'events': sorted(mix.events, key=lambda e: e['frame'])}
-    (ROOT / f'out/drama/audio-{cut_name}.json').write_text(json.dumps(report, indent=2))
-    print(cut_name, normalized['output_i'], 'LUFS', normalized['output_tp'], 'dBTP', normalized.get('normalization_type'))
+    (ROOT / f'out/drama/audio-{name}.json').write_text(json.dumps(report, indent=2))
+    print(name, normalized['output_i'], 'LUFS', normalized['output_tp'], 'dBTP', normalized.get('normalization_type'))
 
 
 if __name__ == '__main__':
-    for name, cut in TL['cuts'].items():
-        master(name, cut)
+    for cut_name, cut in TL['cuts'].items():
+        for locale in COPY:
+            master(cut_name, cut, locale)

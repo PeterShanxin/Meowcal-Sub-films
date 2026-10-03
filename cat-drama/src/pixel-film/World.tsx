@@ -6,7 +6,8 @@ import {ease} from '../story-tv/styles/motion';
 const homes=[[141,91],[212,59],[283,93],[129,154],[214,174],[302,158]];
 const land=(x:number,y:number)=>Math.sin(x*.22)+Math.cos(y*.18)+Math.sin((x+y)*.11)>.35;
 
-export const PixelPlanet:React.FC<{f:number;connected?:boolean;portrait?:boolean;children?:React.ReactNode}> = ({f,connected=false,portrait=false,children}) => {
+/** `lightsOut` (0..1) switches the homes' lights off one after another. */
+export const PixelPlanet:React.FC<{f:number;connected?:boolean;portrait?:boolean;lightsOut?:number;children?:React.ReactNode}> = ({f,connected=false,portrait=false,lightsOut=0,children}) => {
   const zoom=(connected?1.12:0.62+ease(f,0,285)*1.2)*(portrait?.62:1);
   return <svg viewBox={portrait?'164 0 152 270':'0 0 480 270'} width="100%" height="100%" shapeRendering="crispEdges">
     <rect width="480" height="270" fill="#111c30"/>
@@ -29,6 +30,7 @@ export const PixelPlanet:React.FC<{f:number;connected?:boolean;portrait?:boolean
         <rect x="26" y="20" width="15" height="9" fill="#344e60"/>
         <rect x="26" y="30" width="15" height="2" fill="#e5dfb7" opacity={connected?ease(f,i*18,i*18+25):.1}/>
         <g transform="translate(4 20) scale(.15)"><CatSprite id={i} frame={0} back/></g>
+        {lightsOut>0&&<rect y="10" width="48" height="35" fill="#060c18" opacity={.72*Math.max(0,Math.min(1,lightsOut*homes.length-i))}/>}
       </g>)}
       {children}
     </g>
