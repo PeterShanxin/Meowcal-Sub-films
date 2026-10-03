@@ -2,7 +2,8 @@
 
 A 60-second brand film in landscape and portrait, plus a 30-second portrait cut.
 Typed narration sets the premise: every cat on the planet is watching the same
-finale, and the Chinese subtitles stop halfway. Original SVG pixel cats watch a
+finale, and the viewer's subtitles stop halfway (Chinese in the Chinese cut,
+English in the English cut). Original SVG pixel cats watch a
 melodrama whose star speaks in meows. At the climax the familiar translation
 drops out, the viewer meows a complaint, pauses, and calls up Meowcal Sub, which
 reads the Japanese subtitles. The revelation: “I’m going to sleep for five more
@@ -12,7 +13,7 @@ in manga bubbles. That night every cat on the planet sleeps five more minutes,
 and the pixel brand resolves into the real Meowcal Sub mark.
 
 The four cuts are attached to the
-[cat-drama-v1.1.0 release](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.1.0).
+[cat-drama-v1.2.0 release](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.2.0).
 
 Paths in this file are relative to `cat-drama/`; commands run from the
 repository root.
@@ -24,7 +25,7 @@ repository root.
 | `out/story/meowcal-sub-60s.mp4` | 60 s, Chinese narration and bubbles | 1920 × 1080 |
 | `out/story/meowcal-sub-60s-vertical.mp4` | 60 s, Chinese narration and bubbles | 1080 × 1920 |
 | `out/story/meowcal-sub-30s.mp4` | 30 s, Chinese narration and bubbles | 1080 × 1920 |
-| `out/story/meowcal-sub-60s-en.mp4` | 60 s, English narration and bubbles | 1920 × 1080 |
+| `out/story/meowcal-sub-60s-en.mp4` | 60 s, English narration, bubbles and subtitles | 1920 × 1080 |
 
 All are H.264 at 60 fps with AAC LC stereo at 320 kbps, 48 kHz, −14 LUFS
 integrated. `out/` is not committed. `out/story/review.html` shows WebM previews,
