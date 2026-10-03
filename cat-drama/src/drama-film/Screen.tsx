@@ -5,7 +5,8 @@ import {layout} from '../../../launch-15s/src/film/layout';
 import {Episode} from './Episode';
 import {ease, mix} from './acting';
 
-export const JP = ['ずっと、この時を待っていた。', 'もう、決めた。', 'あと5分だけ寝る。'];
+// The decisive line is all kana: kanji such as 5分 and 寝 would let a Chinese reader guess it.
+export const JP = ['ずっと、この時を待っていた。', 'もう、決めた。', 'あと ごふんだけ ねる。'];
 export const CN = ['我一直在等这一刻。', '我已经决定了——', '我要再睡五分钟。'];
 export const translations = [CN[2], 'I’m going to sleep for five more minutes.', 'Je vais dormir encore cinq minutes.'];
 export const targetLanguages = ['zh-CN', 'en-US', 'fr-FR'];

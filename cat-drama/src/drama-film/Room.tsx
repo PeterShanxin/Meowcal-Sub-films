@@ -122,10 +122,10 @@ export const RoomView: React.FC<{
 };
 
 export const ReactionView: React.FC<{
-  W: number; H: number; f: number; performance: Performance; viewer?: number; overlay?: React.ReactNode;
-}> = ({W, H, f, performance, viewer = 0, overlay}) => {
+  W: number; H: number; f: number; performance: Performance; viewer?: number; overlay?: React.ReactNode; talk?: number;
+}> = ({W, H, f, performance, viewer = 0, overlay, talk}) => {
   const p = H > W, {palette, wall} = home(viewer);
-  const actor = <CatActor id={viewer} f={f} performance={performance} snack={performance === 'lost' || performance === 'watch'}/>;
+  const actor = <CatActor id={viewer} f={f} performance={performance} snack={performance === 'lost' || performance === 'watch'} talk={talk}/>;
   return <AbsoluteFill style={{background: palette.back}}>
     {p ? <svg width="100%" height="100%" viewBox="0 0 270 480" shapeRendering="crispEdges">
       <rect width="270" height="480" fill={palette.wall}/><WallTexture kind={wall} x={0} y={0} w={270} h={216}/>
@@ -155,5 +155,46 @@ export const ReactionView: React.FC<{
     {p && performance === 'magic' && f < 114 && <div style={{position: 'absolute', left: mix(935, 733, ease(f, 5, 43)) + 95 * ease(f, 79, 112), top: mix(810, 1175, ease(f, 5, 43)) + 380 * ease(f, 79, 112), opacity: 1 - ease(f, 93, 115), transform: 'rotate(-9deg)'}}><PixelLogo size={110}/></div>}
     <div style={{position: 'absolute', inset: 0, pointerEvents: 'none', background: 'linear-gradient(105deg,rgba(7,18,32,.16),transparent 65%,rgba(162,193,204,.08))'}}/>
     <Atmosphere/>
+  </AbsoluteFill>;
+};
+
+// Centre of the reaction close-up's head (ears to chin) in frame pixels, for cropping it into a panel.
+const FACE = {landscape: [1032, 540], portrait: [540, 939]};
+// Portrait rows keep this much room under the chin for the subtitle.
+const PLATE_ROOM = 70;
+
+const GAP = 6, SLIDE = 14;
+
+/**
+ * Three homes, one anticlimax: side by side (stacked when portrait), each viewer half-lidded
+ * over the same line in its own language. The shot opens and closes on Chestnut's full-frame
+ * close-up: the other two panels slide in from the edges and back out, so the cuts on either
+ * side join the same framing. `panels` are [viewer, performance frame, line]; Chestnut is the middle one.
+ */
+export const ReactionTriptych: React.FC<{W: number; H: number; f: number; duration: number; panels: [number, number, string][]}> = ({W, H, f, duration, panels}) => {
+  const p = H > W, [cx, cy] = FACE[p ? 'portrait' : 'landscape'];
+  const pw = p ? W : W / 3, ph = p ? H / 3 : H;
+  const open = ease(f, 0, SLIDE) * (1 - ease(f, duration - SLIDE, duration));
+  const plate = (line: string) => <div style={{position: 'absolute', left: 24, right: 24, bottom: p ? 14 : 90, padding: p ? '6px 16px' : '10px 16px', textAlign: 'center',
+    background: '#0b0b0bd9', color: '#f6f3e8', font: `500 ${p ? 36 : 34}px "Segoe UI","Microsoft YaHei",sans-serif`, lineHeight: 1.3}}>{line}</div>;
+  // The middle panel's face centre in the frame once the panels are in.
+  const [mx, my] = p ? [W / 2, ph + (ph - PLATE_ROOM) / 2] : [pw * 1.5, H / 2];
+  const [, mf, mline] = panels[1];
+  return <AbsoluteFill style={{background: '#0a131f'}}>
+    <div style={{position: 'absolute', width: W, height: H, left: p ? 0 : (mx - cx) * open, top: p ? (my - cy) * open : 0}}>
+      <ReactionView W={W} H={H} f={mf} performance="deadpan" viewer={panels[1][0]}/>
+    </div>
+    <div style={{position: 'absolute', left: p ? 0 : pw, top: p ? ph : 0, width: pw, height: ph, opacity: open}}>{plate(mline)}</div>
+    {[0, 2].map(i => {
+      const [viewer, pf, line] = panels[i], out = (i ? 1 : -1) * (1 - open);
+      return <div key={viewer} style={{position: 'absolute', overflow: 'hidden', background: '#0a131f', width: pw, height: ph,
+        left: p ? 0 : i * pw + out * pw, top: p ? i * ph + out * ph : 0}}>
+        <div style={{position: 'absolute', width: W, height: H, left: pw / 2 - cx, top: p ? (ph - PLATE_ROOM) / 2 - cy : 0}}>
+          <ReactionView W={W} H={H} f={pf} performance="deadpan" viewer={viewer}/>
+        </div>
+        {plate(line)}
+        <div style={{position: 'absolute', background: '#0a131f', ...(p ? {left: 0, right: 0, height: GAP, [i ? 'top' : 'bottom']: 0} : {top: 0, bottom: 0, width: GAP, [i ? 'left' : 'right']: 0})}}/>
+      </div>;
+    })}
   </AbsoluteFill>;
 };

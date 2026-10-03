@@ -581,140 +581,146 @@
             "id": "D01",
             "kind": "world",
             "from": 0,
-            "duration": 240,
-            "sample": 120
+            "duration": 400,
+            "sample": 200
           },
           {
             "id": "D02",
             "kind": "viewers",
-            "from": 240,
+            "from": 400,
             "duration": 300,
             "sample": 72
           },
           {
             "id": "D03",
             "kind": "buildup",
-            "from": 540,
+            "from": 700,
             "duration": 360,
             "sample": 240
           },
           {
             "id": "D04",
             "kind": "loss",
-            "from": 900,
+            "from": 1060,
             "duration": 240,
             "sample": 138
           },
           {
             "id": "D05",
             "kind": "pause",
-            "from": 1140,
-            "duration": 180,
+            "from": 1300,
+            "duration": 120,
             "sample": 60
           },
           {
             "id": "D06",
             "kind": "magic",
-            "from": 1320,
+            "from": 1420,
             "duration": 300,
             "sample": 132
           },
           {
             "id": "D07",
             "kind": "scan",
-            "from": 1620,
+            "from": 1720,
             "duration": 85,
             "sample": 84
           },
           {
             "id": "D08",
             "kind": "reveal",
-            "from": 1705,
+            "from": 1805,
             "duration": 180,
             "sample": 120
           },
           {
             "id": "D09",
             "kind": "punchline",
-            "from": 1885,
+            "from": 1985,
             "duration": 240,
             "sample": 180
           },
           {
             "id": "D10",
             "kind": "deadpan",
-            "from": 2125,
+            "from": 2225,
             "duration": 180,
             "sample": 120
           },
           {
             "id": "D11",
             "kind": "languages",
-            "from": 2305,
-            "duration": 360,
-            "sample": 120
+            "from": 2405,
+            "duration": 150,
+            "sample": 110
           },
           {
             "id": "D12",
             "kind": "snack",
-            "from": 2665,
-            "duration": 120,
-            "sample": 42
+            "from": 2555,
+            "duration": 180,
+            "sample": 120
           },
           {
             "id": "D13",
             "kind": "privacy",
-            "from": 2785,
+            "from": 2735,
             "duration": 335,
             "sample": 90
           },
           {
             "id": "D14",
             "kind": "world_end",
-            "from": 3120,
-            "duration": 180,
-            "sample": 120
+            "from": 3070,
+            "duration": 260,
+            "sample": 200
           },
           {
             "id": "D15",
             "kind": "brand",
-            "from": 3300,
-            "duration": 300,
+            "from": 3330,
+            "duration": 270,
             "sample": 240
           }
         ],
         "cues": {
-          "subtitleLoss": 900,
-          "reactionCut": 948,
-          "pause": 1140,
-          "logoLift": 1340,
-          "logoMouse": 1412,
-          "selectionPress": 1448,
-          "selectionEnd": 1595,
-          "ocr": 1622,
-          "local": 1667,
-          "plate": 1705,
-          "resume": 1885,
-          "pillow": 1953,
-          "lieDown": 1977,
-          "snore": 2115,
-          "deadpan": 2125,
-          "slowBlink": 2173,
-          "earDrop": 2219,
-          "cloudPeek": 2265,
-          "crunch": 2695,
-          "cloudGlass": 2715,
-          "snoreEnd": 2785,
-          "cloudIn": 2825,
-          "privacyCut": 2985,
-          "swat": 3030,
-          "resolve": 3372,
-          "cleanBrand": 3480
+          "subtitleLoss": 1060,
+          "reactionCut": 1108,
+          "pause": 1300,
+          "logoLift": 1440,
+          "logoMouse": 1512,
+          "selectionPress": 1548,
+          "selectionEnd": 1695,
+          "ocr": 1722,
+          "local": 1767,
+          "plate": 1805,
+          "resume": 1985,
+          "pillow": 2053,
+          "lieDown": 2077,
+          "snore": 2215,
+          "deadpan": 2225,
+          "slowBlink": 2273,
+          "earDrop": 2319,
+          "cloudPeek": 2365,
+          "crunch": 2585,
+          "cloudGlass": 2605,
+          "snoreEnd": 2735,
+          "cloudIn": 2775,
+          "privacyCut": 2935,
+          "swat": 2980,
+          "resolve": 3358,
+          "cleanBrand": 3466,
+          "intro": 20,
+          "introOut": 300,
+          "title": 322,
+          "epilogue": 3110,
+          "lightsOut": 3140,
+          "lightsOutEnd": 3270
         },
         "voice": [
           {
             "who": "momo",
-            "at": 262,
+            "at": 422,
             "len": 58,
             "clip": "pleading_1",
             "semitones": -3,
@@ -722,7 +728,7 @@
           },
           {
             "who": "momo",
-            "at": 352,
+            "at": 512,
             "len": 92,
             "clip": "impatient_3",
             "semitones": -4,
@@ -730,7 +736,7 @@
           },
           {
             "who": "momo",
-            "at": 590,
+            "at": 750,
             "len": 36,
             "clip": "notrip_3",
             "semitones": -3,
@@ -738,7 +744,7 @@
           },
           {
             "who": "momo",
-            "at": 704,
+            "at": 864,
             "len": 28,
             "clip": "impatient_1",
             "semitones": -3,
@@ -746,7 +752,7 @@
           },
           {
             "who": "momo",
-            "at": 752,
+            "at": 912,
             "len": 76,
             "clip": "pleading_2",
             "semitones": -5,
@@ -754,7 +760,7 @@
           },
           {
             "who": "momo",
-            "at": 906,
+            "at": 1066,
             "len": 30,
             "clip": "notrip_2",
             "semitones": -4,
@@ -762,27 +768,69 @@
           },
           {
             "who": "momo",
-            "at": 942,
+            "at": 1102,
             "len": 60,
             "clip": "pleading_3",
             "semitones": -5,
             "gain": 1.0
           },
           {
-            "who": "chestnut",
-            "at": 1070,
-            "len": 20,
-            "clip": "trill",
-            "semitones": 2,
-            "gain": 0.7
-          },
-          {
             "who": "momo",
-            "at": 2025,
+            "at": 2125,
             "len": 90,
             "clip": "yawn",
             "semitones": -6,
             "gain": 0.9
+          }
+        ],
+        "lines": [
+          {
+            "line": "where",
+            "at": 1118,
+            "mode": "say",
+            "show": 110,
+            "clip": "trill",
+            "semitones": 2,
+            "len": 20,
+            "gain": 0.8
+          },
+          {
+            "line": "notThis",
+            "at": 1232,
+            "mode": "say",
+            "show": 68,
+            "clip": "impatient_1",
+            "semitones": 3,
+            "len": 28,
+            "gain": 0.8
+          },
+          {
+            "line": "summon",
+            "at": 1424,
+            "mode": "say",
+            "show": 116,
+            "clip": "notrip_3",
+            "semitones": 2,
+            "len": 36,
+            "gain": 0.9
+          },
+          {
+            "line": "thatsIt",
+            "at": 2285,
+            "mode": "think",
+            "show": 80
+          },
+          {
+            "line": "fine",
+            "at": 2600,
+            "mode": "think",
+            "show": 135
+          },
+          {
+            "line": "nope",
+            "at": 2945,
+            "mode": "think",
+            "show": 82
           }
         ]
       },
@@ -873,8 +921,10 @@
           "earDrop": 1294,
           "crunch": 1430,
           "snoreEnd": 1500,
-          "resolve": 1572,
-          "cleanBrand": 1680
+          "resolve": 1528,
+          "cleanBrand": 1636,
+          "premise": 24,
+          "premiseOut": 250
         },
         "voice": [
           {
@@ -910,20 +960,40 @@
             "gain": 1.0
           },
           {
-            "who": "chestnut",
-            "at": 420,
-            "len": 18,
-            "clip": "trill",
-            "semitones": 2,
-            "gain": 0.7
-          },
-          {
             "who": "momo",
             "at": 1100,
             "len": 90,
             "clip": "yawn",
             "semitones": -6,
             "gain": 0.9
+          }
+        ],
+        "lines": [
+          {
+            "line": "lost",
+            "at": 334,
+            "mode": "say",
+            "show": 108,
+            "clip": "impatient_1",
+            "semitones": 3,
+            "len": 28,
+            "gain": 0.8
+          },
+          {
+            "line": "summon",
+            "at": 464,
+            "mode": "say",
+            "show": 96,
+            "clip": "notrip_3",
+            "semitones": 2,
+            "len": 36,
+            "gain": 0.9
+          },
+          {
+            "line": "thatsIt",
+            "at": 1262,
+            "mode": "think",
+            "show": 80
           }
         ]
       }

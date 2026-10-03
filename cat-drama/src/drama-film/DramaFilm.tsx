@@ -4,23 +4,25 @@ import timeline from '../timeline.json';
 import {PixelPlanet} from '../pixel-film/World';
 import {BrandReveal, type Locale} from '../pixel-film/BrandReveal';
 import {Cloud, type CloudMood} from './Cloud';
-import {RoomView, ReactionView} from './Room';
-import {Screen, selectionFrame} from './Screen';
+import {RoomView, ReactionView, ReactionTriptych} from './Room';
+import {Screen, selectionFrame, translations} from './Screen';
+import {Bubble, Title, Typewriter, typeSchedule} from './Overlays';
 import {ease, mix, talking} from './acting';
+import COPY from './copy.json';
 
 export type Cut = keyof typeof timeline.dramaFilm.cuts;
 type CutData = (typeof timeline.dramaFilm.cuts)[Cut];
 type Shot = {id: string; kind: string; from: number; duration: number};
+// A spoken line is meowed (len frames of mouth movement); a thought is silent.
+type Line = {line: keyof typeof COPY.zh.lines; at: number; show: number} & ({mode: 'say'; len: number} | {mode: 'think'});
 export type DramaProps = {cut: Cut; locale: Locale; sound?: boolean};
 
-const COPY = {
-  zh: {world: '今晚，全星球都在追同一部剧。', ocr: 'Windows OCR · 读取选框文字', local: '本机 AI · 翻译', privacy: '本地 AI，字幕不上云。'},
-  en: {world: 'Tonight, the whole planet is watching the same show.', ocr: 'Windows OCR · reading the selection', local: 'Local AI · translating', privacy: 'Local AI. Your subtitles stay on your PC.'},
-};
+// Zoom reached by the viewers montage, where the build-up's push picks up; frames per room dissolve.
+const MONTAGE_PUSH = .12, DISSOLVE = 16;
 
-const Super: React.FC<{text: string; portrait: boolean; opacity: number; high?: boolean}> = ({text, portrait, opacity, high = false}) =>
-  <div style={{position: 'absolute', left: portrait ? 72 : 96, right: portrait ? 72 : undefined, ...(portrait && high ? {top: 230} : {bottom: portrait ? 470 : 80}), color: '#e3eae4',
-    font: `500 ${portrait ? 46 : 40}px "Segoe UI","Microsoft YaHei",sans-serif`, textShadow: '0 2px 10px #07101c', opacity}}>{text}</div>;
+const Super: React.FC<{text: string; portrait: boolean; opacity: number}> = ({text, portrait, opacity}) =>
+  <div style={{position: 'absolute', left: 60, right: 60, bottom: portrait ? 470 : 70, textAlign: 'center', color: '#eef3ee',
+    font: `600 ${portrait ? 56 : 52}px "Segoe UI","Microsoft YaHei",sans-serif`, textShadow: '0 3px 12px #050b14', opacity}}>{text}</div>;
 
 const CloudAt: React.FC<{x: number; y: number; s: number; mood: CloudMood; f: number; reach?: [number, number]; look?: number; turn?: number}> = ({x, y, s, turn = 0, ...cloud}) =>
   <g transform={`translate(${Math.round(x)} ${Math.round(y)}) rotate(${turn}) scale(${s})`}><Cloud {...cloud}/></g>;
@@ -83,53 +85,78 @@ const FilmShot: React.FC<{shot: Shot; cut: CutData; locale: Locale}> = ({shot, c
   const f = useCurrentFrame(), {width: W, height: H} = useVideoConfig(), p = H > W;
   const short = cut.duration < 3000;
   const g = shot.from + f, C = cut.cues, copy = COPY[locale];
-  const talk = talking(g, cut.voice.filter(v => v.who === 'momo'));
+  const talk = talking(g, cut.voice);
+  const chat = talking(g, (cut.lines as Line[]).flatMap(l => l.mode === 'say' ? [l] : []));
   const select = selectionFrame(g, C.selectionPress, C.selectionEnd, C.ocr, C.local, C.plate);
   const room = (screen: React.ReactNode, zoom = 1, viewer = 0) => <RoomView W={W} H={H} zoom={zoom} viewer={viewer} f={f}>{screen}</RoomView>;
   const product = (episode = 600, paused = true) => room(<Screen episode={episode} capture={select} translated={g >= C.plate} plateFrame={select} paused={paused} portrait={p} talk={talk}/>);
   switch (shot.kind) {
-    case 'world': return <AbsoluteFill>
-      <PixelPlanet f={f} portrait={p}>
-        <CloudAt x={mix(360, 262, ease(f, 10, 150))} y={mix(46, 64, ease(f, 10, 150))} s={.45} f={f} mood={f > 165 ? 'grab' : 'curious'} look={-1}/>
-      </PixelPlanet>
-      <Super text={copy.world} portrait={p} opacity={ease(f, 28, 55)} high/>
-    </AbsoluteFill>;
-    case 'viewers': {
-      const block = Math.floor(f / 100), viewer = [0, 3, 4][Math.min(block, 2)];
-      return room(<Screen episode={80 + f} line={0} familiar target={Math.min(block, 2)} talk={talk}/>, .04 * ease(f % 100, 0, 100), viewer);
+    case 'world': {
+      if (!('intro' in C)) throw new Error('The world shot needs intro, introOut and title cues');
+      return <AbsoluteFill>
+        <PixelPlanet f={f} portrait={p}>
+          <CloudAt x={mix(360, 262, ease(f, 10, 150))} y={mix(46, 64, ease(f, 10, 150))} s={.45} f={f} mood={f > 165 ? 'grab' : 'curious'} look={-1}/>
+        </PixelPlanet>
+        <Typewriter lines={typeSchedule(copy.intro, C.intro, copy.typeRate)} f={g} rate={copy.typeRate} out={C.introOut} portrait={p}/>
+        {g >= C.title && <Title text={copy.title} f={g - C.title} portrait={p}/>}
+      </AbsoluteFill>;
     }
-    case 'buildup': return room(<Screen episode={short ? 280 + f * 300 / shot.duration : 240 + f} line={!short && f < shot.duration * .44 ? 0 : 1} familiar portrait={p} talk={talk}/>,
-      short ? .5 + .5 * ease(f, 0, 180) : .12 + .88 * ease(f, 0, 240));
-    case 'loss': return g < C.reactionCut ? room(<Screen episode={600} portrait={p} talk={talk}/>) : <ReactionView W={W} H={H} f={g - C.reactionCut} performance="lost"/>;
+    // The three homes share one layout, so hard cuts between them read as a skip. The camera pushes
+    // in without stopping while each room dissolves into the next, ending in Chestnut's room where
+    // the build-up takes over at the same zoom and episode frame.
+    case 'viewers': {
+      const zoom = MONTAGE_PUSH * f / shot.duration;
+      const home = (i: number) => room(<Screen episode={80 + f} line={0} familiar target={i % 3} portrait={p} talk={talk}/>, zoom, [0, 3, 4, 0][i]);
+      const block = Math.min(Math.floor(f / 100), 2), next = ease(f, 100 * (block + 1) - DISSOLVE, 100 * (block + 1));
+      return <>{home(block)}{next > 0 && <AbsoluteFill style={{opacity: next}}>{home(block + 1)}</AbsoluteFill>}</>;
+    }
+    case 'buildup': return <>
+      {room(<Screen episode={short ? 300 + f * 300 / shot.duration : 380 + f * 220 / shot.duration} line={!short && f < shot.duration * .44 ? 0 : 1} familiar portrait={p} talk={talk}/>,
+        short ? .5 + .5 * ease(f, 0, 180) : MONTAGE_PUSH + (1 - MONTAGE_PUSH) * ease(f, 0, 240))}
+      {'premise' in C && <Typewriter lines={[{text: copy.premise, at: C.premise}]} f={g} rate={copy.typeRate} out={C.premiseOut} portrait={p} top/>}
+    </>;
+    case 'loss': return g < C.reactionCut ? room(<Screen episode={600} portrait={p} talk={talk}/>) : <ReactionView W={W} H={H} f={g - C.reactionCut} performance="lost" talk={chat}/>;
     case 'pause': return room(<Screen episode={600} paused portrait={p}/>);
-    case 'magic': return f < (short ? 100 : 120) ? <ReactionView W={W} H={H} f={f * (short ? 1.15 : 1)} performance="magic"/> : product();
-    case 'scan': return <>{product()}<div style={{position: 'absolute', left: p ? 90 : 110, top: p ? 300 : 86, color: '#dce5e6', font: `500 ${p ? 36 : 28}px "Segoe UI","Microsoft YaHei"`, opacity: .88}}>{g < C.local ? copy.ocr : `${copy.local}${'.'.repeat(1 + Math.floor((g - C.local) / 8) % 3)}`}</div></>;
+    case 'magic': return f < (short ? 100 : 120) ? <ReactionView W={W} H={H} f={f * (short ? 1.15 : 1)} performance="magic" talk={chat}/> : product();
+    case 'scan': return <>{product()}<div style={{position: 'absolute', left: p ? 80 : 100, top: p ? 290 : 70, color: '#e6eeee', font: `600 ${p ? 46 : 42}px "Segoe UI","Microsoft YaHei"`, textShadow: '0 2px 8px #050b14'}}>{g < C.local ? copy.ocr : `${copy.local}${'.'.repeat(1 + Math.floor((g - C.local) / 8) % 3)}`}</div></>;
     case 'reveal': return product();
     case 'punchline': return product(600 + f, false);
     case 'deadpan': return <ReactionView W={W} H={H} f={f} performance="deadpan" overlay={'cloudPeek' in C &&
       <CloudOutside p={p} x={p ? 30 : 62} y={mix(p ? 150 : 158, p ? 100 : 112, ease(g, C.cloudPeek, C.cloudPeek + 25))} s={p ? .45 : .5} f={f} mood="curious"/>}/>;
-    case 'languages': {
-      const second = f >= 180, local = f % 180, viewer = second ? 4 : 3;
-      return local < 118 ? room(<Screen episode={850 + local} translated target={second ? 2 : 1} portrait={p}/>, 1, viewer) : <ReactionView W={W} H={H} f={90 + (local - 118)} performance="deadpan" viewer={viewer}/>;
-    }
+    // Bean and Bleu catch up mid-deflation, a beat apart; Chestnut has already given up.
+    case 'languages': return <ReactionTriptych W={W} H={H} f={f} duration={shot.duration} panels={[[3, 96 + f, translations[1]], [0, 180 + f, translations[0]], [4, 82 + f, translations[2]]]}/>;
     case 'snack': return <ReactionView W={W} H={H} f={f} performance="snack" overlay={'cloudGlass' in C &&
       <CloudOutside p={p} x={mix(p ? -10 : 20, p ? 32 : 62, ease(g, C.cloudGlass, C.cloudGlass + 18))} y={p ? 60 : 70} s={p ? .5 : .55} f={f} mood="grab" press={ease(g, C.cloudGlass + 20, C.cloudGlass + 28)}/>}/>;
     case 'privacy': {
       if (!('privacyCut' in C)) throw new Error('The privacy shot needs privacyCut and swat cues');
       return <Privacy f={f} inAt={C.cloudIn - shot.from} split={C.privacyCut - shot.from} hit={C.swat - C.privacyCut} W={W} H={H} locale={locale}/>;
     }
-    case 'world_end': return <PixelPlanet f={f} connected portrait={p}>
-      <CloudAt x={mix(300, 430, ease(f, 20, 170))} y={mix(62, 40, ease(f, 20, 170))} s={.28} f={f} mood="sulk" look={1}/>
-    </PixelPlanet>;
-    case 'brand': return <BrandReveal locale={locale}/>;
+    case 'world_end': {
+      if (!('epilogue' in C)) throw new Error('The closing world shot needs epilogue and lightsOut cues');
+      return <AbsoluteFill>
+        <PixelPlanet f={f} connected portrait={p} lightsOut={Math.max(0, Math.min(1, (g - C.lightsOut) / (C.lightsOutEnd - C.lightsOut)))}>
+          <CloudAt x={mix(300, 430, ease(f, 20, 170))} y={mix(62, 40, ease(f, 20, 170))} s={.28} f={f} mood="sulk" look={1}/>
+        </PixelPlanet>
+        <Typewriter lines={[{text: copy.epilogue, at: C.epilogue}]} f={g} rate={copy.typeRate} out={shot.from + shot.duration} portrait={p}/>
+      </AbsoluteFill>;
+    }
+    case 'brand': return <BrandReveal locale={locale} fromPixels/>;
     default: throw new Error(`Unknown drama shot: ${shot.kind}`);
   }
+};
+
+/** Chestnut's lines as bubbles, so they read with the sound off too. */
+const Lines: React.FC<{lines: Line[]; locale: Locale}> = ({lines, locale}) => {
+  const g = useCurrentFrame(), {width, height} = useVideoConfig();
+  return <>{lines.filter(l => g >= l.at && g < l.at + l.show).map(l =>
+    <Bubble key={l.line} text={COPY[locale].lines[l.line]} mode={l.mode} f={g - l.at} show={l.show} portrait={height > width}/>)}</>;
 };
 
 export const DramaFilm: React.FC<DramaProps> = ({cut: name, locale, sound = true}) => {
   const cut = timeline.dramaFilm.cuts[name];
   return <AbsoluteFill style={{background: '#111c30'}}>
     {cut.shots.map(shot => <Sequence key={shot.id} from={shot.from} durationInFrames={shot.duration} name={`${shot.id} ${shot.kind}`}><FilmShot shot={shot} cut={cut} locale={locale}/></Sequence>)}
-    {sound && <Audio src={staticFile(`audio/drama-${name}.wav`)}/>}
+    <Lines lines={cut.lines as Line[]} locale={locale}/>
+    {sound && <Audio src={staticFile(`audio/drama-${name}-${locale}.wav`)}/>}
   </AbsoluteFill>;
 };

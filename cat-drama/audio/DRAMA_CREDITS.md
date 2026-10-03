@@ -3,8 +3,9 @@
 Original composition and sound design: the frame-based score in `drama.py`.
 The fictional drama's music uses sustained violin, viola and cello sections,
 violin tremolo, timpani, suspended cymbal and harp. The film's own music uses
-violin and cello pizzicato, marimba, glockenspiel and harp. Momo's lines and the
-viewer's chirp are edited cat recordings; the snore and all foley are procedural.
+violin and cello pizzicato, marimba, glockenspiel and harp. Momo's lines, the
+viewer's spoken lines and the closing chirp are edited cat recordings; the snore,
+the typing and all foley are procedural.
 
 ## Instrument recordings
 
@@ -31,13 +32,16 @@ hashes are in `samples/cats/manifest.json`.
 
 Momo's meowed lines are voiced segments of these recordings, pitched down and
 placed on the cue frames in `cat-drama/src/timeline.json` (`dramaFilm.cuts.*.voice`), which
-also drive her lip sync. The viewer's questioning chirp is a reversed, trilled
-segment. Meows carry no words; the subtitles carry the meaning.
+also drive her lip sync. Chestnut's spoken lines (`dramaFilm.cuts.*.lines`) are
+shorter segments pitched up; its thoughts are silent. The questioning trill and
+the closing chirp are a reversed, trilled segment. Meows carry no words; the
+subtitles and bubbles carry the meaning.
 
 ## Rebuild
 
-`python cat-drama/audio/drama.py` (from the repository root) rebuilds one 48 kHz stereo master per cut
-(`cat-drama/public/audio/drama-full.wav`, `drama-short.wav`). Every musical section and
+`python cat-drama/audio/drama.py` (from the repository root) rebuilds one 48 kHz
+stereo master per cut and locale
+(`cat-drama/public/audio/drama-<full|short>-<zh|en>.wav`). Every musical section and
 narrative sound is anchored to `dramaFilm` shot starts or cue frames. Instrument
 notes are explicitly scored; there is no generative music service or random note
 selection. A fixed random seed is used only for noise textures in the foley.

@@ -1,14 +1,18 @@
 # Meowcal Sub — 就差这一句
 
 A 60-second brand film in landscape and portrait, plus a 30-second portrait cut.
-Original SVG pixel cats watch a melodrama whose star speaks in meows. At the
-climax the familiar translation drops out, the viewer pauses, and Meowcal Sub
+Typed narration sets the premise: every cat on the planet is watching the same
+finale, and the Chinese subtitles stop halfway. Original SVG pixel cats watch a
+melodrama whose star speaks in meows. At the climax the familiar translation
+drops out, the viewer meows a complaint, pauses, and calls up Meowcal Sub, which
 reads the Japanese subtitles. The revelation: “I’m going to sleep for five more
 minutes.” The viewer’s pupils shrink to slits, its ears flatten, and it keeps
-eating. The pixel brand resolves into the real Meowcal Sub mark.
+eating. Like the star, the viewer only meows; its lines and thoughts are written
+in manga bubbles. That night every cat on the planet sleeps five more minutes,
+and the pixel brand resolves into the real Meowcal Sub mark.
 
 The four cuts are attached to the
-[cat-drama-v1.0.0 release](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.0.0).
+[cat-drama-v1.1.0 release](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.1.0).
 
 Paths in this file are relative to `cat-drama/`; commands run from the
 repository root.
@@ -17,10 +21,10 @@ repository root.
 
 | File | Cut | Frame |
 | --- | --- | --- |
-| `out/story/meowcal-sub-60s.mp4` | 60 s, Chinese supers | 1920 × 1080 |
-| `out/story/meowcal-sub-60s-vertical.mp4` | 60 s, Chinese supers | 1080 × 1920 |
-| `out/story/meowcal-sub-30s.mp4` | 30 s, Chinese supers | 1080 × 1920 |
-| `out/story/meowcal-sub-60s-en.mp4` | 60 s, English supers | 1920 × 1080 |
+| `out/story/meowcal-sub-60s.mp4` | 60 s, Chinese narration and bubbles | 1920 × 1080 |
+| `out/story/meowcal-sub-60s-vertical.mp4` | 60 s, Chinese narration and bubbles | 1080 × 1920 |
+| `out/story/meowcal-sub-30s.mp4` | 30 s, Chinese narration and bubbles | 1080 × 1920 |
+| `out/story/meowcal-sub-60s-en.mp4` | 60 s, English narration and bubbles | 1920 × 1080 |
 
 All are H.264 at 60 fps with AAC LC stereo at 320 kbps, 48 kHz, −14 LUFS
 integrated. `out/` is not committed. `out/story/review.html` shows WebM previews,
@@ -31,7 +35,8 @@ to `storyboard/`, which is committed and embedded in `STORYBOARD.md`.
 Length and orientation are independent. `src/timeline.json` → `dramaFilm.cuts`
 holds the `full` and `short` edits; each renders in either frame through the
 compositions `CatDrama60`, `CatDrama60Vertical`, `CatDrama30Vertical` and
-`CatDrama30`. Every composition takes a `locale` prop (`zh` or `en`).
+`CatDrama30`. Every composition takes a `locale` prop (`zh` or `en`), which picks
+the narration, the bubbles and the matching audio master.
 
 ## Reproduce
 
@@ -48,12 +53,13 @@ npm run studio:cat-drama
 ./cat-drama/scripts/render_drama.ps1
 ```
 
-On Windows ARM64 use x64 Node under Windows emulation, and keep the renderer at
-one browser tab: higher concurrency crashed or hung Edge on that host. The renderer
-uses Edge and SwiftShader. The export script accepts both paths:
+On Windows ARM64 use x64 Node under Windows emulation. The renderer uses
+Remotion's own headless Chrome with SwiftShader; Edge 154 exits at launch under
+Remotion 4.0.529. `-BrowserPath` overrides the browser and `-Concurrency` the
+number of tabs:
 
 ```powershell
-./cat-drama/scripts/render_drama.ps1 -NodePath 'C:/tmp/tools/node-v22.20.0-win-x64/node.exe' -BrowserPath 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
+./cat-drama/scripts/render_drama.ps1 -NodePath 'C:/tmp/tools/node-v22.20.0-win-x64/node.exe' -Concurrency 3
 ```
 
 The export script renders silent pictures, muxes each cut's mastered audio,
@@ -73,12 +79,13 @@ npx remotion still cat-drama/src/index.ts DramaBrandLandscape cat-drama/public/p
 | `DIRECTOR_SCRIPT.md` | Story, editing, performance and sound directions. |
 | `STORYBOARD.md` | Contact sheets and shot list. |
 | `src/drama-film/DramaFilm.tsx` | Shot assembly, supers, lip sync and the cloud scene. |
+| `src/drama-film/Overlays.tsx`, `copy.json` | Typed narration, title, speech and thought bubbles; all on-screen copy in both languages. |
 | `src/drama-film/CatActor.tsx`, `acting.ts` | Cats, pupil / ear / whisker / tail performance and planted bodies. |
 | `src/drama-film/Episode.tsx` | The fictional cat drama, pillow action and sleeping pose. |
-| `src/drama-film/Room.tsx`, `Screen.tsx` | Each viewer’s room, monitor framing, selection and subtitle geometry. |
+| `src/drama-film/Room.tsx`, `Screen.tsx` | Each viewer’s room, the three-home split screen, monitor framing, selection and subtitle geometry. |
 | `src/drama-film/Cloud.tsx` | The cloud that tries to take the subtitles. |
-| `src/timeline.json` → `dramaFilm` | Shot boundaries, cue frames and Momo’s meowed lines for both cuts. |
-| `src/pixel-film/BrandReveal.tsx` | Selection-to-logo, pixel-to-clean ending and the localized end card. |
+| `src/timeline.json` → `dramaFilm` | Shot boundaries, cue frames, Momo’s meowed lines and the viewer’s lines for both cuts. |
+| `src/pixel-film/BrandReveal.tsx` | Pixel-to-clean ending and the localized end card. |
 | `src/pixel-film/`, `src/story-tv/styles/PixelScene.tsx` | Pixel world, cats, places and the room the final film builds on. |
 | `audio/drama.py`, `audio/DRAMA_CREDITS.md` | Score, cat voices, foley, mastering and attribution. |
 | `scripts/drama_stills.mjs` | Representative frames for visual inspection (run from the repository root). |
@@ -118,7 +125,8 @@ generated character images or third-party footage. Instrument samples are CC0
 recordings from VSCO 2 Community Edition; cat voices are CC0 or public-domain
 recordings from Wikimedia Commons. `audio/fetch_drama_samples.py` downloads the
 pinned files; source URLs, licenses and SHA-256 hashes are in
-`audio/samples/*/manifest.json`. See [audio/DRAMA_CREDITS.md](audio/DRAMA_CREDITS.md).
+`audio/samples/*/manifest.json`.
+See [audio/DRAMA_CREDITS.md](audio/DRAMA_CREDITS.md).
 
 Source: [AGPL-3.0-only](../LICENSE), as for Meowcal Sub. The license does not
 grant rights to the Meowcal Sub name or logo; see the app’s

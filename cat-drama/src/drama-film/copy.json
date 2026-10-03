@@ -1,0 +1,48 @@
+{
+  "zh": {
+    "typeRate": 5,
+    "intro": [
+      "猫猫星，晚上八点。",
+      "全星球的猫，都在追同一部剧的大结局。",
+      "可惜，中文字幕只翻到了一半。"
+    ],
+    "premise": "中文字幕，只翻到了一半……",
+    "title": "就差这一句",
+    "epilogue": "那一晚，全星球的猫都多睡了五分钟。",
+    "ocr": "Windows OCR · 读取选框文字",
+    "local": "本机 AI · 翻译",
+    "privacy": "本地 AI，字幕不上云。",
+    "lines": {
+      "where": "诶？中文呢？",
+      "notThis": "偏偏这句没翻译？！",
+      "lost": "诶？偏偏这句没翻译？！",
+      "summon": "出来吧——Meowcal Sub！",
+      "thatsIt": "……就这？",
+      "fine": "……算了，接着看。",
+      "nope": "想得美。"
+    }
+  },
+  "en": {
+    "typeRate": 2,
+    "intro": [
+      "Cat Planet, 8 p.m.",
+      "Every cat on the planet is watching the same finale.",
+      "But the Chinese subtitles stop halfway."
+    ],
+    "premise": "The Chinese subtitles stop halfway…",
+    "title": "One Line Short",
+    "epilogue": "That night, every cat on the planet slept five more minutes.",
+    "ocr": "Windows OCR · reading the selection",
+    "local": "Local AI · translating",
+    "privacy": "Local AI. Your subtitles stay on your PC.",
+    "lines": {
+      "where": "Huh? No Chinese?",
+      "notThis": "Not this line!",
+      "lost": "Huh? Not this line!",
+      "summon": "Come out, Meowcal Sub!",
+      "thatsIt": "…That's it?",
+      "fine": "Fine. Whatever.",
+      "nope": "Nice try."
+    }
+  }
+}
