@@ -12,9 +12,9 @@ export type Locale = 'en' | 'zh';
 
 // Taglines follow the app's README and README.zh-CN.
 const COPY = {
-  en: {tagline: undefined, meta: 'Windows  ·  Free and open source', lang: 'en-US', note: 'Public beta · Local AI · More platforms coming soon',
+  en: {tagline: undefined, meta: 'Windows  ·  Free & open source  ·  Microsoft Store', lang: 'en-US', note: 'Public beta · Local AI · More platforms coming soon',
     languages: '简体中文 · 繁體中文 · 日本語 · 한국어 · English and more'},
-  zh: {tagline: '把屏幕上已有的字幕，翻译成你想读的语言。', meta: 'Windows  ·  免费开源', lang: 'zh-CN', note: '公开测试版 · 本地 AI · 更多平台，敬请期待',
+  zh: {tagline: '把屏幕上已有的字幕，翻译成你想读的语言。', meta: 'Windows  ·  免费开源  ·  已上架 Microsoft Store', lang: 'zh-CN', note: '公开测试版 · 本地 AI · 更多平台，敬请期待',
     languages: '简体中文 · 繁體中文 · 日本語 · 한국어 · English 等'},
 } as const;
 const LINK = 'github.com/PeterShanxin/Meowcal-Sub';
