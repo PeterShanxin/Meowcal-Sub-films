@@ -1,4 +1,6 @@
 node_modules/
+reading-test/audio/samples/*.wav
+reading-test/public/audio/unmastered.wav
 out/
 __pycache__/
 cat-drama/audio/samples/**/*.wav

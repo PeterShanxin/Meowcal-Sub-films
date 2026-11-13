@@ -1,0 +1,296 @@
+[
+  {
+    "instrument": "cello",
+    "seconds": 0,
+    "frame": 0,
+    "midi": 38
+  },
+  {
+    "instrument": "piano",
+    "seconds": 0,
+    "frame": 0,
+    "midi": 57
+  },
+  {
+    "instrument": "piano",
+    "seconds": 0.1,
+    "frame": 6,
+    "midi": 62
+  },
+  {
+    "instrument": "piano",
+    "seconds": 0.2,
+    "frame": 12,
+    "midi": 65
+  },
+  {
+    "instrument": "piano",
+    "seconds": 0.85,
+    "frame": 51,
+    "midi": 64
+  },
+  {
+    "instrument": "piano",
+    "seconds": 1.45,
+    "frame": 87,
+    "midi": 62
+  },
+  {
+    "instrument": "cello",
+    "seconds": 2.05,
+    "frame": 123,
+    "midi": 45
+  },
+  {
+    "instrument": "cello",
+    "seconds": 2.82,
+    "frame": 169,
+    "midi": 47
+  },
+  {
+    "instrument": "cello",
+    "seconds": 3.13,
+    "frame": 188,
+    "midi": 48
+  },
+  {
+    "instrument": "cello",
+    "seconds": 3.45,
+    "frame": 207,
+    "midi": 45
+  },
+  {
+    "instrument": "cello",
+    "seconds": 4.0,
+    "frame": 240,
+    "midi": 50
+  },
+  {
+    "instrument": "cello",
+    "seconds": 4.65,
+    "frame": 279,
+    "midi": 49
+  },
+  {
+    "instrument": "cello",
+    "seconds": 5.55,
+    "frame": 333,
+    "midi": 38
+  },
+  {
+    "instrument": "clave",
+    "seconds": 2.05,
+    "frame": 123,
+    "midi": 52
+  },
+  {
+    "instrument": "clave",
+    "seconds": 4.0,
+    "frame": 240,
+    "midi": 52
+  },
+  {
+    "instrument": "clave",
+    "seconds": 5.55,
+    "frame": 333,
+    "midi": 52
+  },
+  {
+    "instrument": "clave",
+    "seconds": 7.3,
+    "frame": 438,
+    "midi": 52
+  },
+  {
+    "instrument": "clave",
+    "seconds": 8.05,
+    "frame": 483,
+    "midi": 52
+  },
+  {
+    "instrument": "cello",
+    "seconds": 9.1,
+    "frame": 546,
+    "midi": 38
+  },
+  {
+    "instrument": "piano",
+    "seconds": 10.95,
+    "frame": 657,
+    "midi": 58
+  },
+  {
+    "instrument": "piano",
+    "seconds": 11.07,
+    "frame": 664,
+    "midi": 61
+  },
+  {
+    "instrument": "cello",
+    "seconds": 12.1,
+    "frame": 726,
+    "midi": 38
+  },
+  {
+    "instrument": "cello",
+    "seconds": 12.85,
+    "frame": 771,
+    "midi": 45
+  },
+  {
+    "instrument": "cello",
+    "seconds": 13.6,
+    "frame": 816,
+    "midi": 48
+  },
+  {
+    "instrument": "cello",
+    "seconds": 14.4,
+    "frame": 864,
+    "midi": 41
+  },
+  {
+    "instrument": "cello",
+    "seconds": 15.15,
+    "frame": 909,
+    "midi": 48
+  },
+  {
+    "instrument": "cello",
+    "seconds": 15.9,
+    "frame": 954,
+    "midi": 45
+  },
+  {
+    "instrument": "cello",
+    "seconds": 16.65,
+    "frame": 999,
+    "midi": 43
+  },
+  {
+    "instrument": "cello",
+    "seconds": 17.4,
+    "frame": 1044,
+    "midi": 38
+  },
+  {
+    "instrument": "cello",
+    "seconds": 18.15,
+    "frame": 1089,
+    "midi": 45
+  },
+  {
+    "instrument": "cello",
+    "seconds": 18.9,
+    "frame": 1134,
+    "midi": 50
+  },
+  {
+    "instrument": "piano",
+    "seconds": 12.1,
+    "frame": 726,
+    "midi": 53
+  },
+  {
+    "instrument": "piano",
+    "seconds": 12.145,
+    "frame": 729,
+    "midi": 57
+  },
+  {
+    "instrument": "piano",
+    "seconds": 12.19,
+    "frame": 731,
+    "midi": 62
+  },
+  {
+    "instrument": "piano",
+    "seconds": 13.6,
+    "frame": 816,
+    "midi": 52
+  },
+  {
+    "instrument": "piano",
+    "seconds": 13.645,
+    "frame": 819,
+    "midi": 55
+  },
+  {
+    "instrument": "piano",
+    "seconds": 13.69,
+    "frame": 821,
+    "midi": 60
+  },
+  {
+    "instrument": "piano",
+    "seconds": 14.4,
+    "frame": 864,
+    "midi": 53
+  },
+  {
+    "instrument": "piano",
+    "seconds": 14.445,
+    "frame": 867,
+    "midi": 57
+  },
+  {
+    "instrument": "piano",
+    "seconds": 14.49,
+    "frame": 869,
+    "midi": 60
+  },
+  {
+    "instrument": "piano",
+    "seconds": 15.9,
+    "frame": 954,
+    "midi": 55
+  },
+  {
+    "instrument": "piano",
+    "seconds": 15.945,
+    "frame": 957,
+    "midi": 58
+  },
+  {
+    "instrument": "piano",
+    "seconds": 15.99,
+    "frame": 959,
+    "midi": 62
+  },
+  {
+    "instrument": "piano",
+    "seconds": 17.4,
+    "frame": 1044,
+    "midi": 50
+  },
+  {
+    "instrument": "piano",
+    "seconds": 17.445,
+    "frame": 1047,
+    "midi": 57
+  },
+  {
+    "instrument": "piano",
+    "seconds": 17.49,
+    "frame": 1049,
+    "midi": 62
+  },
+  {
+    "instrument": "piano",
+    "seconds": 18.9,
+    "frame": 1134,
+    "midi": 53
+  },
+  {
+    "instrument": "piano",
+    "seconds": 18.945,
+    "frame": 1137,
+    "midi": 57
+  },
+  {
+    "instrument": "piano",
+    "seconds": 18.99,
+    "frame": 1139,
+    "midi": 62
+  }
+]

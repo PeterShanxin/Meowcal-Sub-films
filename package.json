@@ -5,6 +5,10 @@
   "license": "AGPL-3.0-only",
   "type": "module",
   "scripts": {
+    "studio:reading-test": "remotion studio reading-test/src/index.tsx --public-dir=reading-test/public --no-open",
+    "audio:reading-test": "python reading-test/audio/score.py",
+    "render:reading-test": "remotion render reading-test/src/index.tsx ReadingTest reading-test/out/meowcal-reading-test-v1.mp4 --public-dir=reading-test/public",
+    "cover:reading-test": "remotion still reading-test/src/index.tsx ReadingTestCover reading-test/out/cover-v1.png --public-dir=reading-test/public",
     "typecheck": "tsc --noEmit",
     "studio:15s": "remotion studio launch-15s/src/index.ts --public-dir=launch-15s/public",
     "studio:cat-drama": "remotion studio cat-drama/src/index.ts --public-dir=cat-drama/public",

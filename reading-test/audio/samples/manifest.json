@@ -1,0 +1,23 @@
+[
+  {
+    "file": "piano.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Keys/Upright%20Piano/Player_dyn1_rr1_020.wav",
+    "root_midi": 61,
+    "sha256": "08242e8d1c865c8cdc794cc7921d3d9663bedb5a12bfefe0de13aaa86fd23133",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "cello.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/pizzT/pizzT_B1_v1_RR1.wav",
+    "root_midi": 47,
+    "sha256": "33bbfc9664e8536e8931fba5c53ab4e06abeb6f75fc3b6186bcdb159d6000604",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "clave.wav",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Percussion/Claves1_Hit_v1_rr1_Sum.wav",
+    "root_midi": 60,
+    "sha256": "569812aca160bf35d71ac16e678f5528b2093ece086300cd97a0064e17d23f20",
+    "license": "CC0-1.0"
+  }
+]
