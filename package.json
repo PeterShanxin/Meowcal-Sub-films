@@ -8,6 +8,8 @@
     "typecheck": "tsc --noEmit",
     "studio:15s": "remotion studio launch-15s/src/index.ts --public-dir=launch-15s/public",
     "studio:cat-drama": "remotion studio cat-drama/src/index.ts --public-dir=cat-drama/public",
+    "studio:talking-about-you": "remotion studio talking-about-you/src/index.ts --public-dir=talking-about-you/public",
+    "audio:talking-about-you": "python talking-about-you/audio/score.py",
     "audio:15s": "python launch-15s/audio/synth.py",
     "audio:cat-drama": "python cat-drama/audio/drama.py",
     "render:15s": "remotion render launch-15s/src/index.ts LaunchFilm launch-15s/out/meowcal-sub-launch-film.mp4 --public-dir=launch-15s/public"

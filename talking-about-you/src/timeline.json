@@ -1,0 +1,25 @@
+{
+  "fps": 60,
+  "duration": 2010,
+  "lines": [
+    { "lang": "ja-JP", "source": "「画面に字幕があれば、」", "translation": "只要屏幕上有字幕，" },
+    { "lang": "ko-KR", "source": "거기에 박스를 그려.", "translation": "在那儿画个框。" },
+    { "lang": "en-US", "source": "The translation appears below.", "translation": "译文就出现在下面。" },
+    { "lang": "fr-FR", "source": "Rien ne quitte ton ordinateur.", "translation": "什么都不会离开你的电脑。" },
+    { "lang": "de-DE", "source": "Und es kostet nichts.", "translation": "而且，不要钱。" }
+  ],
+  "slide": 14,
+  "pass1": { "step": 96 },
+  "twist": {
+    "dim": 480,
+    "says": [
+      { "small": "五部电影", "big": "全是我写的代码。", "start": 494, "end": 590, "size": 120, "y": 560 },
+      { "small": "可惜", "big": "你一句没看懂。", "start": 594, "end": 692, "size": 132, "y": 560 }
+    ]
+  },
+  "rewind": { "start": 692, "end": 732 },
+  "pass2": { "cuts": [732, 900, 1050, 1200, 1350], "plates": [842, 940, 1090, 1240, 1400] },
+  "drag": { "enter": 742, "press": 766, "release": 808, "exit": 852 },
+  "end": { "start": 1560, "morph": 1572, "mark": 1618, "wordmark": 1636, "line": 1664, "out": 1830 },
+  "outro": [{ "small": "", "big": "第 6 部，你自己挑。", "start": 1848, "end": 2010, "size": 108, "sign": "—— Fable 5.2", "signAt": 1912 }]
+}

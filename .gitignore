@@ -4,3 +4,4 @@ __pycache__/
 cat-drama/audio/samples/**/*.wav
 cat-drama/audio/samples/**/*.ogg
 cat-drama/audio/samples/**/*.oga
+talking-about-you/audio/samples/*.wav
