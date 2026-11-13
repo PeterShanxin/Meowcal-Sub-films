@@ -9,6 +9,7 @@ frame-based timeline per film.
 
 | Folder | Film | Cuts | Status |
 | --- | --- | --- | --- |
+| [`reading-test/`](reading-test/) | 看个剧，还要做题？ A film scene turns into a reading test; a translated subtitle resolves the misunderstanding. | 21.6 s portrait and 3:4 cover | Approved; [v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/reading-test-v1.0.0) |
 | [`launch-15s/`](launch-15s/) | Launch film: the capture box is the whole film. | 15 s, landscape, vertical and square | Released: [v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/v1.0.0) |
 | [`cat-drama/`](cat-drama/) | 就差这一句: cats watch a melodrama, the translation drops out at the climax, and Meowcal Sub reads the subtitle. | 60 s landscape and portrait, 30 s portrait, English 60 s | Released: [cat-drama-v1.2.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.2.0) |
 | [`read-beyond-language/`](read-beyond-language/) | Read beyond language: a subtitle selection opens into understanding. | 15 s | Alternative concept, kept as its own project |
@@ -16,7 +17,7 @@ frame-based timeline per film.
 
 ## Working in this repository
 
-`launch-15s/` and `cat-drama/` are Remotion projects that share one toolchain at
+`launch-15s/`, `cat-drama/` and `reading-test/` share one Remotion toolchain at
 the repository root (`package.json`, `remotion.config.ts`, `tsconfig.json`).
 `read-beyond-language/` has its own `package.json` and installs separately.
 Run everything from the repository root:
@@ -26,6 +27,7 @@ npm ci
 npm run typecheck
 npm run studio:15s
 npm run studio:cat-drama
+npm run studio:reading-test
 ```
 
 Rendering, audio and asset details are in each film's README. Videos rendered
