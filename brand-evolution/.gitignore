@@ -1,0 +1,20 @@
+node_modules
+dist
+build
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Rebuilt from repository artwork and scripts/score.mjs.
+public/home-en.png
+public/home-zh.png
+public/mark.svg
+public/evolution-score.wav
+public/fonts/NotoSansSC.ttf
+public/home-old.png
+public/evolution-groove.wav
+public/evolution-groove.mp3
+public/coast-demo.mp4
+public/logo-old.svg
