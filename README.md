@@ -9,6 +9,7 @@ frame-based timeline per film.
 
 | Folder | Film | Cuts | Status |
 | --- | --- | --- | --- |
+| [`brand-evolution/`](brand-evolution/) | 换上新意，继续入戏: one continuous take from the old layout to the Chinese interface, a real viewing demo, the old cat logo becoming the new mark, and the name 妙影. | 32 s landscape and 3:4 cover | Released: [brand-evolution-v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/brand-evolution-v1.0.0) |
 | [`reading-test/`](reading-test/) | 看个剧，还要做题？ A film scene turns into a reading test; a translated subtitle resolves the misunderstanding. | 21.6 s portrait and 3:4 cover | Approved; [v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/reading-test-v1.0.0) |
 | [`launch-15s/`](launch-15s/) | Launch film: the capture box is the whole film. | 15 s, landscape, vertical and square | Released: [v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/v1.0.0) |
 | [`cat-drama/`](cat-drama/) | 就差这一句: cats watch a melodrama, the translation drops out at the climax, and Meowcal Sub reads the subtitle. | 60 s landscape and portrait, 30 s portrait, English 60 s | Released: [cat-drama-v1.2.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/cat-drama-v1.2.0) |
@@ -19,7 +20,7 @@ frame-based timeline per film.
 
 `launch-15s/`, `cat-drama/` and `reading-test/` share one Remotion toolchain at
 the repository root (`package.json`, `remotion.config.ts`, `tsconfig.json`).
-`read-beyond-language/` has its own `package.json` and installs separately.
+`read-beyond-language/` and `brand-evolution/` have their own `package.json` and install separately.
 Run everything from the repository root:
 
 ```bash
