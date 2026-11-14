@@ -1,0 +1,158 @@
+{
+  "fps": 60,
+  "copy": {
+    "kicker": "同一件事，交给两个 AI。",
+    "passNote": "Back and forth 好几次了，还是不太行，感觉差些意思。",
+    "question": "你选哪边？",
+    "ask": "两边的表现，你怎么看？",
+    "thought": [
+      "说到底，AI 不是抽奖机。",
+      "先想清楚什么算做完，再给它例子。"
+    ],
+    "brand": "Meowcal Sub · 妙影",
+    "brandLine": "免费开源 · Windows",
+    "tagline": "屏幕上有字幕，就看得懂。",
+    "credit": "This video is made with Opus 5.5"
+  },
+  "typing": {
+    "rate": 3.3,
+    "jitter": 0.45,
+    "punctPause": 9,
+    "seed": 52
+  },
+  "chats": {
+    "astra": {
+      "name": "GPT-6 Astra",
+      "accent": "#7fd1c0",
+      "intro": {
+        "msgs": [
+          {
+            "text": "最近 Fable 5.2 出世了。"
+          },
+          {
+            "text": "大家都说 OpenAI 已经打不过 Anthropic 了。"
+          },
+          {
+            "text": "想让你跟它打一场，看看效果。"
+          },
+          {
+            "text": "给 Meowcal Sub 做一条宣传片。"
+          },
+          {
+            "text": "创意、制作，全权交给你。"
+          }
+        ],
+        "reply": "好，接了。"
+      },
+      "logo": "logos/openai.svg"
+    },
+    "fable": {
+      "name": "Fable 5.2",
+      "accent": "#b6a7df",
+      "intro": {
+        "msgs": [
+          {
+            "text": "你 Fable 5.2 刚出世。"
+          },
+          {
+            "text": "蹭一下你的热点。"
+          },
+          {
+            "text": "给 Meowcal Sub 做一条宣传片。"
+          },
+          {
+            "text": "创意、制作，全权交给你。"
+          }
+        ],
+        "reply": "收到，这条我来定。"
+      },
+      "rant": {
+        "rate": 2.6,
+        "msgs": [
+          {
+            "text": "开头结尾都太平淡了。"
+          },
+          {
+            "text": "别老玩「寓言」这个名字，重点是 5.2 的能力。"
+          },
+          {
+            "text": "大胆一点，重新构思。"
+          }
+        ],
+        "reply": "收到。重来。"
+      },
+      "logo": "logos/claude.svg"
+    }
+  },
+  "clips": {
+    "astra": {
+      "file": "clips/astra.mp4",
+      "frames": 1299,
+      "still": 700
+    },
+    "v3": {
+      "file": "clips/fable-v3.mp4",
+      "play": 1968,
+      "frames": 2030,
+      "trim": 60
+    },
+    "v4": {
+      "file": "clips/fable-v4.mp4",
+      "frames": 2013,
+      "still": 1020
+    }
+  },
+  "waits": {
+    "dots": 24,
+    "reply": 66,
+    "working": 50,
+    "done": 270,
+    "tap": 56,
+    "open": 44,
+    "hold": 24,
+    "swap": 36,
+    "stamp": 80,
+    "fling": 96,
+    "outroHold": 110,
+    "brandHold": 240,
+    "noteHold": 60
+  },
+  "notes": {
+    "astra": [
+      "意外地还不错。",
+      "没有特别惊艳，但叙事 OK，风格也说得过去。",
+      "而且是 one shot，值得鼓励。"
+    ],
+    "v3": [
+      [
+        "开头很平淡。",
+        4
+      ],
+      [
+        "画面质量还不错。",
+        9.5
+      ],
+      [
+        "质感确实还行，比上一代更好。",
+        14.5
+      ],
+      [
+        "结尾也很平淡。",
+        26
+      ],
+      [
+        "总的来说，还是逃不过 PPT 的感觉。",
+        28.3
+      ],
+      [
+        "感觉甚至不如之前的 Opus 5.5 那种惊艳。",
+        30.8
+      ]
+    ],
+    "v4": [
+      "还不错。",
+      "而且还算半个 one shot。",
+      "视频的设计和 script，感觉比之前好。"
+    ]
+  }
+}
