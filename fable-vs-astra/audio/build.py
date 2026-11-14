@@ -215,7 +215,9 @@ def build_keys(c: dict, ty: Typist) -> None:
             put(frame, keys[i], g, rng.uniform(-0.15, 0.15))
     buf *= 0.9 / np.abs(buf).max()
     data = (np.clip(buf, -1, 1) * 32767).astype("<i2")
-    with wave.open(str(ROOT / "public/audio/keys.wav"), "wb") as wv:
+    out = ROOT / "public/audio/keys.wav"
+    out.parent.mkdir(parents=True, exist_ok=True)  # generated audio is not committed
+    with wave.open(str(out), "wb") as wv:
         wv.setnchannels(2)
         wv.setsampwidth(2)
         wv.setframerate(SR)
