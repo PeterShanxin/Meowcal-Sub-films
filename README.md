@@ -9,6 +9,7 @@ frame-based timeline per film.
 
 | Folder | Film | Cuts | Status |
 | --- | --- | --- | --- |
+| [`fable-vs-astra/`](fable-vs-astra/) | 两个 AI 做宣传片，你选哪边？ The same promo request to GPT-6 Astra, then Fable 5.2, in a typed chat; each film plays in turn with comments under it. | 152 s portrait and 3:4 cover | Released: [fable-vs-astra-v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/fable-vs-astra-v1.0.0) |
 | [`brand-evolution/`](brand-evolution/) | 换上新意，继续入戏: one continuous take from the old layout to the Chinese interface, a real viewing demo, the old cat logo becoming the new mark, and the name 妙影. | 32 s landscape and 3:4 cover | Released: [brand-evolution-v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/brand-evolution-v1.0.0) |
 | [`reading-test/`](reading-test/) | 看个剧，还要做题？ A film scene turns into a reading test; a translated subtitle resolves the misunderstanding. | 21.6 s portrait and 3:4 cover | Approved; [v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/reading-test-v1.0.0) |
 | [`launch-15s/`](launch-15s/) | Launch film: the capture box is the whole film. | 15 s, landscape, vertical and square | Released: [v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/v1.0.0) |
@@ -18,7 +19,7 @@ frame-based timeline per film.
 
 ## Working in this repository
 
-`launch-15s/`, `cat-drama/` and `reading-test/` share one Remotion toolchain at
+`launch-15s/`, `cat-drama/`, `reading-test/` and `fable-vs-astra/` share one Remotion toolchain at
 the repository root (`package.json`, `remotion.config.ts`, `tsconfig.json`).
 `read-beyond-language/` and `brand-evolution/` have their own `package.json` and install separately.
 Run everything from the repository root:
