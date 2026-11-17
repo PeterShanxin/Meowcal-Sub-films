@@ -1,0 +1,120 @@
+{
+ "bpm": 124.99,
+ "beat": 0.48,
+ "seconds": 50.9,
+ "cues": {
+  "open": 0,
+  "cuts": {
+   "rider": 1.92,
+   "cell": 3.36,
+   "blast": 3.84,
+   "paint": 4.8,
+   "swing": 5.28,
+   "robot": 5.76
+  },
+  "sprite": 0.0,
+  "sintel": 7.68,
+  "hook": 0.0,
+  "fansub": 10.08,
+  "bridge": 11.52,
+  "slot": 12.0,
+  "giveUp": 15.36,
+  "name": 16.32,
+  "value": 17.28,
+  "value2": 17.76,
+  "value3": 18.24,
+  "palette": 19.2,
+  "chips": [
+   21.6,
+   21.84,
+   22.08
+  ],
+  "pickTitle": 22.56,
+  "pickSource": 23.04,
+  "pickTarget": 23.52,
+  "start": 24.48,
+  "circle": 24.96,
+  "release": 25.92,
+  "confirm": 26.4,
+  "read": 26.88,
+  "lock": 28.8,
+  "plate": 29.28,
+  "swap": 30.72,
+  "fold": 31.92,
+  "line3": 33.12,
+  "line4": 36.0,
+  "pause": 36.48,
+  "relock": 37.92,
+  "play": 38.4,
+  "proof": 40.32,
+  "line3b": 41.28,
+  "proofHit": 42.24,
+  "brand": 44.16,
+  "ears": 45.12,
+  "tagline": 46.08,
+  "where": 47.04,
+  "resolve": 48.0,
+  "punch": [
+   7.2
+  ],
+  "zoom": 1.545
+ },
+ "sfx": {
+  "typeStart": 20.64,
+  "typeStep": 0.12,
+  "typeText": "Sintel",
+  "dragPress": 25.2,
+  "grab": 37.056,
+  "drop": 37.728
+ },
+ "music": {
+  "track": "red",
+  "file": "out/source/sb_red.mp3",
+  "altmix": "out/source/sb_red_altmix.mp3",
+  "bpm": 124.99,
+  "beat": 0.480038,
+  "firstBeat": 0.4816,
+  "note": "Beat n of the track is at firstBeat + n*beat (attack times: the onset-fitted grid plus 18 ms, measured on beat-averaged transients); downbeats are n = 3 mod 4. Film 0-1.92 s is Sprite Fright's own sound at its own 160 BPM, handing over on its beat; film beats 4-15 are track beats 283-294 (a drum section of the climax), entering on the hit at beat 283; film beat k >= 16 is track beat 171+k up to the closing splice.",
+  "segments": [
+   {
+    "film": 1.9152,
+    "from": 136.3274,
+    "to": 142.0928,
+    "note": "cold open on Red's drums: track beats 283-294, entering 5 ms before the hit at beat 283; the shots cut on its measured hits (beats 283, 286, 287, 289, 290, 291)"
+   },
+   {
+    "film": 7.6806,
+    "from": 90.2487,
+    "to": 130.5719,
+    "note": "track beats 187-271: build under the hook, break at 94.5 s, drop at 97.93 s (film 15.36, giveUp), climax at 126.73 s (film 44.16, brand)"
+   },
+   {
+    "film": 48.0038,
+    "from": 190.0966,
+    "to": 194.098,
+    "note": "the closing F minor chord, after the C-major bar: a cadence on film beat 100"
+   }
+  ],
+  "crossfade": 0.012,
+  "fadeOut": [
+   49.4,
+   50.9
+  ],
+  "tails": [
+   {
+    "film": 7.6806,
+    "from": 142.0928,
+    "length": 0.9,
+    "note": "the downbeat after the cold open rings out over the cut to the hook"
+   }
+  ],
+  "original": {
+   "film": 0.0,
+   "file": "out/source/sprite_fright.webm",
+   "from": 329.957,
+   "to": 331.877,
+   "note": "Sprite Fright's own soundtrack under the opening (160 BPM, a beat every 0.375 s): the scream 'Aaaah! My eyes!'. It starts so that its accent at 331.877 s falls on film 1.92 s, where Red's hit takes over; the recorded kit (audio/opening.json) plays along on its beats."
+  },
+  "score": "light"
+ }
+}

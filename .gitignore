@@ -8,3 +8,8 @@ cat-drama/audio/samples/**/*.ogg
 cat-drama/audio/samples/**/*.oga
 fable-vs-astra/public/clips/
 fable-vs-astra/public/audio/*.wav
+
+# sub2-remix: cut frames, fonts and the master are rebuilt by its scripts
+sub2-remix/public/frames/
+sub2-remix/public/fonts/
+sub2-remix/public/audio/*.wav
