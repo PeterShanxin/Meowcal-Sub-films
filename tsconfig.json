@@ -11,5 +11,5 @@
     "skipLibCheck": true,
     "lib": ["DOM", "ES2022"]
   },
-  "include": ["launch-15s/src", "cat-drama/src", "reading-test/src", "fable-vs-astra/src", "remotion.config.ts"]
+  "include": ["launch-15s/src", "cat-drama/src", "reading-test/src", "fable-vs-astra/src", "sub2-remix/src", "remotion.config.ts"]
 }

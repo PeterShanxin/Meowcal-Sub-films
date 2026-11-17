@@ -1,0 +1,5310 @@
+{
+ "bpm": 125,
+ "seconds": 50.9,
+ "note": "Write audio/light.json: a light, modern score for the whole film.",
+ "cues": {
+  "fansub": 10.08,
+  "bridge": 11.52,
+  "giveUp": 15.36,
+  "name": 16.32,
+  "value": 17.28,
+  "value2": 17.76,
+  "value3": 18.24,
+  "palette": 19.2,
+  "pickTitle": 22.56,
+  "pickSource": 23.04,
+  "pickTarget": 23.52,
+  "start": 24.48,
+  "circle": 24.96,
+  "release": 25.92,
+  "confirm": 26.4,
+  "read": 26.88,
+  "lock": 28.8,
+  "plate": 29.28,
+  "swap": 30.72,
+  "fold": 31.92,
+  "line3": 33.12,
+  "line4": 36.0,
+  "pause": 36.48,
+  "relock": 37.92,
+  "play": 38.4,
+  "proof": 40.32,
+  "line3b": 41.28,
+  "proofHit": 42.24,
+  "brand": 44.16,
+  "ears": 45.12,
+  "tagline": 46.08,
+  "where": 47.04,
+  "resolve": 48.0,
+  "cuts": [
+   1.92,
+   3.36,
+   3.84,
+   4.8,
+   5.28,
+   5.76
+  ]
+ },
+ "piano": [
+  [
+   4,
+   [
+    50,
+    54,
+    57,
+    62
+   ],
+   4,
+   0.26
+  ],
+  [
+   8,
+   [
+    45,
+    49,
+    52,
+    57
+   ],
+   4,
+   0.26
+  ],
+  [
+   12,
+   [
+    47,
+    50,
+    54,
+    59
+   ],
+   4,
+   0.26
+  ],
+  [
+   16,
+   [
+    43,
+    47,
+    50,
+    55
+   ],
+   4,
+   0.26
+  ],
+  [
+   20,
+   [
+    50,
+    54,
+    57,
+    62
+   ],
+   4,
+   0.26
+  ],
+  [
+   24,
+   [
+    43,
+    47,
+    50,
+    55
+   ],
+   4,
+   0.26
+  ],
+  [
+   28,
+   [
+    45,
+    50,
+    52,
+    57
+   ],
+   2,
+   0.26
+  ],
+  [
+   30,
+   [
+    45,
+    49,
+    52,
+    57
+   ],
+   2,
+   0.26
+  ],
+  [
+   32,
+   [
+    50,
+    54,
+    57,
+    62
+   ],
+   4,
+   0.26
+  ],
+  [
+   36,
+   [
+    45,
+    49,
+    52,
+    57
+   ],
+   4,
+   0.26
+  ],
+  [
+   40,
+   [
+    47,
+    50,
+    54,
+    59
+   ],
+   4,
+   0.26
+  ],
+  [
+   44,
+   [
+    43,
+    47,
+    50,
+    55
+   ],
+   4,
+   0.26
+  ],
+  [
+   48,
+   [
+    50,
+    54,
+    57,
+    62
+   ],
+   4,
+   0.26
+  ],
+  [
+   52,
+   [
+    45,
+    49,
+    52,
+    57
+   ],
+   4,
+   0.26
+  ],
+  [
+   56,
+   [
+    43,
+    47,
+    50,
+    55
+   ],
+   2,
+   0.26
+  ],
+  [
+   58,
+   [
+    45,
+    49,
+    52,
+    57
+   ],
+   2,
+   0.26
+  ],
+  [
+   60,
+   [
+    50,
+    54,
+    57,
+    62
+   ],
+   4,
+   0.26
+  ],
+  [
+   64,
+   [
+    45,
+    49,
+    52,
+    57
+   ],
+   4,
+   0.26
+  ],
+  [
+   68,
+   [
+    47,
+    50,
+    54,
+    59
+   ],
+   4,
+   0.26
+  ],
+  [
+   72,
+   [
+    43,
+    47,
+    50,
+    55
+   ],
+   4,
+   0.26
+  ],
+  [
+   76,
+   [
+    40,
+    43,
+    47,
+    52
+   ],
+   4,
+   0.26
+  ],
+  [
+   80,
+   [
+    50,
+    54,
+    57,
+    62
+   ],
+   4,
+   0.26
+  ],
+  [
+   84,
+   [
+    45,
+    49,
+    52,
+    57
+   ],
+   4,
+   0.26
+  ],
+  [
+   88,
+   [
+    43,
+    47,
+    50,
+    55
+   ],
+   2,
+   0.26
+  ],
+  [
+   90,
+   [
+    45,
+    49,
+    52,
+    57
+   ],
+   2,
+   0.26
+  ],
+  [
+   92,
+   [
+    50,
+    54,
+    57,
+    62
+   ],
+   4,
+   0.26
+  ],
+  [
+   96,
+   [
+    43,
+    47,
+    50,
+    55
+   ],
+   2,
+   0.26
+  ],
+  [
+   98,
+   [
+    45,
+    49,
+    52,
+    57
+   ],
+   2,
+   0.26
+  ],
+  [
+   100,
+   [
+    50,
+    54,
+    57,
+    62
+   ],
+   6,
+   0.34
+  ]
+ ],
+ "bass": [
+  [
+   4,
+   38,
+   1,
+   0.78
+  ],
+  [
+   5.5,
+   38,
+   0.5,
+   0.6
+  ],
+  [
+   7,
+   45,
+   1,
+   0.66
+  ],
+  [
+   8,
+   45,
+   1,
+   0.78
+  ],
+  [
+   9.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   11,
+   40,
+   1,
+   0.66
+  ],
+  [
+   12,
+   47,
+   1,
+   0.78
+  ],
+  [
+   13.5,
+   47,
+   0.5,
+   0.6
+  ],
+  [
+   15,
+   42,
+   1,
+   0.66
+  ],
+  [
+   16,
+   43,
+   1,
+   0.78
+  ],
+  [
+   17.5,
+   43,
+   0.5,
+   0.6
+  ],
+  [
+   19,
+   38,
+   1,
+   0.66
+  ],
+  [
+   20,
+   38,
+   1,
+   0.78
+  ],
+  [
+   21.5,
+   38,
+   0.5,
+   0.6
+  ],
+  [
+   23,
+   45,
+   1,
+   0.66
+  ],
+  [
+   24,
+   43,
+   1,
+   0.78
+  ],
+  [
+   25.5,
+   43,
+   0.5,
+   0.6
+  ],
+  [
+   27,
+   38,
+   1,
+   0.66
+  ],
+  [
+   28,
+   45,
+   1,
+   0.78
+  ],
+  [
+   29.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   30,
+   45,
+   1,
+   0.78
+  ],
+  [
+   31.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   32,
+   38,
+   1,
+   0.78
+  ],
+  [
+   33.5,
+   38,
+   0.5,
+   0.6
+  ],
+  [
+   35,
+   45,
+   1,
+   0.66
+  ],
+  [
+   36,
+   45,
+   1,
+   0.78
+  ],
+  [
+   37.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   39,
+   40,
+   1,
+   0.66
+  ],
+  [
+   40,
+   47,
+   1,
+   0.78
+  ],
+  [
+   41.5,
+   47,
+   0.5,
+   0.6
+  ],
+  [
+   43,
+   42,
+   1,
+   0.66
+  ],
+  [
+   44,
+   43,
+   1,
+   0.78
+  ],
+  [
+   45.5,
+   43,
+   0.5,
+   0.6
+  ],
+  [
+   47,
+   38,
+   1,
+   0.66
+  ],
+  [
+   48,
+   38,
+   1,
+   0.78
+  ],
+  [
+   49.5,
+   38,
+   0.5,
+   0.6
+  ],
+  [
+   51,
+   45,
+   1,
+   0.66
+  ],
+  [
+   52,
+   45,
+   1,
+   0.78
+  ],
+  [
+   53.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   55,
+   40,
+   1,
+   0.66
+  ],
+  [
+   56,
+   43,
+   1,
+   0.78
+  ],
+  [
+   57.5,
+   43,
+   0.5,
+   0.6
+  ],
+  [
+   58,
+   45,
+   1,
+   0.78
+  ],
+  [
+   59.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   60,
+   38,
+   1,
+   0.78
+  ],
+  [
+   61.5,
+   38,
+   0.5,
+   0.6
+  ],
+  [
+   63,
+   45,
+   1,
+   0.66
+  ],
+  [
+   64,
+   45,
+   1,
+   0.78
+  ],
+  [
+   65.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   67,
+   40,
+   1,
+   0.66
+  ],
+  [
+   68,
+   47,
+   1,
+   0.78
+  ],
+  [
+   69.5,
+   47,
+   0.5,
+   0.6
+  ],
+  [
+   71,
+   42,
+   1,
+   0.66
+  ],
+  [
+   72,
+   43,
+   1,
+   0.78
+  ],
+  [
+   73.5,
+   43,
+   0.5,
+   0.6
+  ],
+  [
+   75,
+   38,
+   1,
+   0.66
+  ],
+  [
+   76,
+   40,
+   1,
+   0.78
+  ],
+  [
+   77.5,
+   40,
+   0.5,
+   0.6
+  ],
+  [
+   79,
+   47,
+   1,
+   0.66
+  ],
+  [
+   80,
+   38,
+   1,
+   0.78
+  ],
+  [
+   81.5,
+   38,
+   0.5,
+   0.6
+  ],
+  [
+   83,
+   45,
+   1,
+   0.66
+  ],
+  [
+   84,
+   45,
+   1,
+   0.78
+  ],
+  [
+   85.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   87,
+   40,
+   1,
+   0.66
+  ],
+  [
+   88,
+   43,
+   1,
+   0.78
+  ],
+  [
+   89.5,
+   43,
+   0.5,
+   0.6
+  ],
+  [
+   90,
+   45,
+   1,
+   0.78
+  ],
+  [
+   91.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   92,
+   38,
+   1,
+   0.78
+  ],
+  [
+   93.5,
+   38,
+   0.5,
+   0.6
+  ],
+  [
+   95,
+   45,
+   1,
+   0.66
+  ],
+  [
+   96,
+   43,
+   1,
+   0.78
+  ],
+  [
+   97.5,
+   43,
+   0.5,
+   0.6
+  ],
+  [
+   98,
+   45,
+   1,
+   0.78
+  ],
+  [
+   99.5,
+   45,
+   0.5,
+   0.6
+  ],
+  [
+   100,
+   38,
+   4,
+   0.8
+  ]
+ ],
+ "strings": [
+  [
+   4,
+   "cello",
+   50,
+   4,
+   0.33999999999999997
+  ],
+  [
+   4,
+   "viola",
+   66,
+   4,
+   0.3
+  ],
+  [
+   4,
+   "viola",
+   69,
+   4,
+   0.26
+  ],
+  [
+   8,
+   "cello",
+   45,
+   4,
+   0.33999999999999997
+  ],
+  [
+   8,
+   "viola",
+   61,
+   4,
+   0.3
+  ],
+  [
+   8,
+   "viola",
+   64,
+   4,
+   0.26
+  ],
+  [
+   12,
+   "cello",
+   47,
+   4,
+   0.33999999999999997
+  ],
+  [
+   12,
+   "viola",
+   62,
+   4,
+   0.3
+  ],
+  [
+   12,
+   "viola",
+   66,
+   4,
+   0.26
+  ],
+  [
+   16,
+   "cello",
+   43,
+   4,
+   0.26
+  ],
+  [
+   16,
+   "viola",
+   59,
+   4,
+   0.22
+  ],
+  [
+   16,
+   "viola",
+   62,
+   4,
+   0.18
+  ],
+  [
+   20,
+   "cello",
+   50,
+   4,
+   0.26
+  ],
+  [
+   20,
+   "viola",
+   66,
+   4,
+   0.22
+  ],
+  [
+   20,
+   "viola",
+   69,
+   4,
+   0.18
+  ],
+  [
+   24,
+   "cello",
+   43,
+   4,
+   0.33999999999999997
+  ],
+  [
+   24,
+   "viola",
+   59,
+   4,
+   0.3
+  ],
+  [
+   24,
+   "viola",
+   62,
+   4,
+   0.26
+  ],
+  [
+   28,
+   "cello",
+   45,
+   2,
+   0.33999999999999997
+  ],
+  [
+   28,
+   "viola",
+   62,
+   2,
+   0.3
+  ],
+  [
+   28,
+   "viola",
+   64,
+   2,
+   0.26
+  ],
+  [
+   30,
+   "cello",
+   45,
+   2,
+   0.33999999999999997
+  ],
+  [
+   30,
+   "viola",
+   61,
+   2,
+   0.3
+  ],
+  [
+   30,
+   "viola",
+   64,
+   2,
+   0.26
+  ],
+  [
+   32,
+   "cello",
+   50,
+   4,
+   0.33999999999999997
+  ],
+  [
+   32,
+   "viola",
+   66,
+   4,
+   0.3
+  ],
+  [
+   32,
+   "viola",
+   69,
+   4,
+   0.26
+  ],
+  [
+   36,
+   "cello",
+   45,
+   4,
+   0.33999999999999997
+  ],
+  [
+   36,
+   "viola",
+   61,
+   4,
+   0.3
+  ],
+  [
+   36,
+   "viola",
+   64,
+   4,
+   0.26
+  ],
+  [
+   40,
+   "cello",
+   47,
+   4,
+   0.33999999999999997
+  ],
+  [
+   40,
+   "viola",
+   62,
+   4,
+   0.3
+  ],
+  [
+   40,
+   "viola",
+   66,
+   4,
+   0.26
+  ],
+  [
+   44,
+   "cello",
+   43,
+   4,
+   0.33999999999999997
+  ],
+  [
+   44,
+   "viola",
+   59,
+   4,
+   0.3
+  ],
+  [
+   44,
+   "viola",
+   62,
+   4,
+   0.26
+  ],
+  [
+   48,
+   "cello",
+   50,
+   4,
+   0.33999999999999997
+  ],
+  [
+   48,
+   "viola",
+   66,
+   4,
+   0.3
+  ],
+  [
+   48,
+   "viola",
+   69,
+   4,
+   0.26
+  ],
+  [
+   52,
+   "cello",
+   45,
+   4,
+   0.33999999999999997
+  ],
+  [
+   52,
+   "viola",
+   61,
+   4,
+   0.3
+  ],
+  [
+   52,
+   "viola",
+   64,
+   4,
+   0.26
+  ],
+  [
+   56,
+   "cello",
+   43,
+   2,
+   0.33999999999999997
+  ],
+  [
+   56,
+   "viola",
+   59,
+   2,
+   0.3
+  ],
+  [
+   56,
+   "viola",
+   62,
+   2,
+   0.26
+  ],
+  [
+   58,
+   "cello",
+   45,
+   2,
+   0.33999999999999997
+  ],
+  [
+   58,
+   "viola",
+   61,
+   2,
+   0.3
+  ],
+  [
+   58,
+   "viola",
+   64,
+   2,
+   0.26
+  ],
+  [
+   60,
+   "cello",
+   50,
+   4,
+   0.33999999999999997
+  ],
+  [
+   60,
+   "viola",
+   66,
+   4,
+   0.3
+  ],
+  [
+   60,
+   "viola",
+   69,
+   4,
+   0.26
+  ],
+  [
+   64,
+   "cello",
+   45,
+   4,
+   0.33999999999999997
+  ],
+  [
+   64,
+   "viola",
+   61,
+   4,
+   0.3
+  ],
+  [
+   64,
+   "viola",
+   64,
+   4,
+   0.26
+  ],
+  [
+   68,
+   "cello",
+   47,
+   4,
+   0.33999999999999997
+  ],
+  [
+   68,
+   "viola",
+   62,
+   4,
+   0.3
+  ],
+  [
+   68,
+   "viola",
+   66,
+   4,
+   0.26
+  ],
+  [
+   72,
+   "cello",
+   43,
+   4,
+   0.33999999999999997
+  ],
+  [
+   72,
+   "viola",
+   59,
+   4,
+   0.3
+  ],
+  [
+   72,
+   "viola",
+   62,
+   4,
+   0.26
+  ],
+  [
+   76,
+   "cello",
+   40,
+   4,
+   0.26
+  ],
+  [
+   76,
+   "viola",
+   55,
+   4,
+   0.22
+  ],
+  [
+   76,
+   "viola",
+   59,
+   4,
+   0.18
+  ],
+  [
+   80,
+   "cello",
+   50,
+   4,
+   0.33999999999999997
+  ],
+  [
+   80,
+   "viola",
+   66,
+   4,
+   0.3
+  ],
+  [
+   80,
+   "viola",
+   69,
+   4,
+   0.26
+  ],
+  [
+   84,
+   "cello",
+   45,
+   4,
+   0.33999999999999997
+  ],
+  [
+   84,
+   "viola",
+   61,
+   4,
+   0.3
+  ],
+  [
+   84,
+   "viola",
+   64,
+   4,
+   0.26
+  ],
+  [
+   88,
+   "cello",
+   43,
+   2,
+   0.33999999999999997
+  ],
+  [
+   88,
+   "viola",
+   59,
+   2,
+   0.3
+  ],
+  [
+   88,
+   "viola",
+   62,
+   2,
+   0.26
+  ],
+  [
+   90,
+   "cello",
+   45,
+   2,
+   0.33999999999999997
+  ],
+  [
+   90,
+   "viola",
+   61,
+   2,
+   0.3
+  ],
+  [
+   90,
+   "viola",
+   64,
+   2,
+   0.26
+  ],
+  [
+   92,
+   "cello",
+   50,
+   4,
+   0.33999999999999997
+  ],
+  [
+   92,
+   "viola",
+   66,
+   4,
+   0.3
+  ],
+  [
+   92,
+   "viola",
+   69,
+   4,
+   0.26
+  ],
+  [
+   96,
+   "cello",
+   43,
+   2,
+   0.33999999999999997
+  ],
+  [
+   96,
+   "viola",
+   59,
+   2,
+   0.3
+  ],
+  [
+   96,
+   "viola",
+   62,
+   2,
+   0.26
+  ],
+  [
+   98,
+   "cello",
+   45,
+   2,
+   0.33999999999999997
+  ],
+  [
+   98,
+   "viola",
+   61,
+   2,
+   0.3
+  ],
+  [
+   98,
+   "viola",
+   64,
+   2,
+   0.26
+  ],
+  [
+   100,
+   "cello",
+   50,
+   6,
+   0.33999999999999997
+  ],
+  [
+   100,
+   "viola",
+   66,
+   6,
+   0.3
+  ],
+  [
+   100,
+   "viola",
+   69,
+   6,
+   0.26
+  ],
+  [
+   32,
+   "violin",
+   78,
+   1.5,
+   0.55
+  ],
+  [
+   33.5,
+   "violin",
+   76,
+   0.5,
+   0.55
+  ],
+  [
+   34,
+   "violin",
+   74,
+   2,
+   0.55
+  ],
+  [
+   36,
+   "violin",
+   76,
+   1.5,
+   0.55
+  ],
+  [
+   37.5,
+   "violin",
+   73,
+   0.5,
+   0.55
+  ],
+  [
+   38,
+   "violin",
+   69,
+   2,
+   0.55
+  ],
+  [
+   40,
+   "violin",
+   74,
+   1.5,
+   0.55
+  ],
+  [
+   41.5,
+   "violin",
+   76,
+   0.5,
+   0.55
+  ],
+  [
+   42,
+   "violin",
+   78,
+   2,
+   0.55
+  ],
+  [
+   44,
+   "violin",
+   79,
+   2,
+   0.55
+  ],
+  [
+   46,
+   "violin",
+   78,
+   1,
+   0.55
+  ],
+  [
+   47,
+   "violin",
+   76,
+   1,
+   0.55
+  ],
+  [
+   48,
+   "violin",
+   78,
+   2,
+   0.55
+  ],
+  [
+   50,
+   "violin",
+   81,
+   2,
+   0.55
+  ],
+  [
+   52,
+   "violin",
+   81,
+   1.5,
+   0.55
+  ],
+  [
+   53.5,
+   "violin",
+   79,
+   0.5,
+   0.55
+  ],
+  [
+   54,
+   "violin",
+   76,
+   2,
+   0.55
+  ],
+  [
+   56,
+   "violin",
+   74,
+   2,
+   0.55
+  ],
+  [
+   58,
+   "violin",
+   73,
+   2,
+   0.55
+  ],
+  [
+   60,
+   "violin",
+   81,
+   3,
+   0.55
+  ],
+  [
+   63,
+   "violin",
+   78,
+   1,
+   0.55
+  ],
+  [
+   64,
+   "violin",
+   76,
+   3,
+   0.55
+  ],
+  [
+   67,
+   "violin",
+   73,
+   1,
+   0.55
+  ],
+  [
+   68,
+   "violin",
+   74,
+   2,
+   0.55
+  ],
+  [
+   70,
+   "violin",
+   78,
+   2,
+   0.55
+  ],
+  [
+   72,
+   "violin",
+   79,
+   3,
+   0.55
+  ],
+  [
+   75,
+   "violin",
+   76,
+   1,
+   0.55
+  ],
+  [
+   80,
+   "violin",
+   78,
+   2,
+   0.55
+  ],
+  [
+   82,
+   "violin",
+   81,
+   2,
+   0.55
+  ],
+  [
+   84,
+   "violin",
+   81,
+   1.5,
+   0.55
+  ],
+  [
+   85.5,
+   "violin",
+   79,
+   0.5,
+   0.55
+  ],
+  [
+   86,
+   "violin",
+   76,
+   2,
+   0.55
+  ],
+  [
+   88,
+   "violin",
+   79,
+   2,
+   0.55
+  ],
+  [
+   90,
+   "violin",
+   76,
+   2,
+   0.55
+  ],
+  [
+   92,
+   "violin",
+   81,
+   2,
+   0.62
+  ],
+  [
+   94,
+   "violin",
+   86,
+   2,
+   0.62
+  ],
+  [
+   96,
+   "violin",
+   83,
+   2,
+   0.62
+  ],
+  [
+   98,
+   "violin",
+   85,
+   2,
+   0.62
+  ],
+  [
+   100,
+   "violin",
+   86,
+   6,
+   0.62
+  ]
+ ],
+ "grooves": [],
+ "hits": {
+  "crash": [
+   [
+    4.0,
+    0.22
+   ],
+   [
+    32.0,
+    0.3
+   ],
+   [
+    60.0,
+    0.25
+   ],
+   [
+    88.0,
+    0.2
+   ],
+   [
+    92.0,
+    0.3
+   ],
+   [
+    100.0,
+    0.18
+   ]
+  ],
+  "belltree": [
+   [
+    32.0,
+    0.4
+   ],
+   [
+    34.0,
+    0.3
+   ],
+   [
+    92.0,
+    0.5
+   ],
+   [
+    100.0,
+    0.3
+   ]
+  ]
+ },
+ "events": [
+  {
+   "group": "shk",
+   "beat": 0.0938,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 0.4844,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 0.875,
+   "velocity": 0.5,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 0.875,
+   "velocity": 0.6,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 1.2656,
+   "velocity": 0.32,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 1.6563,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 2.0469,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 2.4375,
+   "velocity": 0.5,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 2.4375,
+   "velocity": 0.6,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 2.8281,
+   "velocity": 0.32,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 3.2188,
+   "velocity": 0.5,
+   "variation": 4
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 3.2188,
+   "velocity": 0.3,
+   "variation": 0
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 3.349,
+   "velocity": 0.37,
+   "variation": 1
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 3.4792,
+   "velocity": 0.44,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 3.6094,
+   "velocity": 0.32,
+   "variation": 5
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 3.6094,
+   "velocity": 0.51,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 3.7396,
+   "velocity": 0.58,
+   "variation": 4
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 3.8698,
+   "velocity": 0.65,
+   "variation": 5
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 4,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 4,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 4.0,
+   "velocity": 0.95
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 4.0,
+   "velocity": 0.6
+  },
+  {
+   "group": "shk",
+   "beat": 4.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 4.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 4.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 5,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 5,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 5.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 5.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 5.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 5.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 5.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 6,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 6.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 6.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 6.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 6.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 7,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 7,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 7.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 7.0,
+   "velocity": 0.95
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 7.0,
+   "velocity": 0.6
+  },
+  {
+   "group": "shk",
+   "beat": 7.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 7.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 7.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 8,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 8.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 8.0,
+   "velocity": 0.95
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 8.0,
+   "velocity": 0.6
+  },
+  {
+   "group": "shk",
+   "beat": 8.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 8.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 8.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 9,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 9,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 9.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 9.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 9.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 9.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 9.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 10,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 10.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 10.0,
+   "velocity": 0.95
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 10.0,
+   "velocity": 0.6
+  },
+  {
+   "group": "shk",
+   "beat": 10.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 10.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 10.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 11,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 11,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 11.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 11.0,
+   "velocity": 0.95
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 11.0,
+   "velocity": 0.6
+  },
+  {
+   "group": "shk",
+   "beat": 11.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 11.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 11.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 12,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 12.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 12.0,
+   "velocity": 0.95
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 12.0,
+   "velocity": 0.6
+  },
+  {
+   "group": "shk",
+   "beat": 12.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 12.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 12.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 13,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 13,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 13.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 13.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 13.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 13.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 13.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 14,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 14.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 14.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 14.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 14.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 15,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 15,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 15.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 15.0,
+   "velocity": 0.95
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 15.0,
+   "velocity": 0.6
+  },
+  {
+   "group": "shk",
+   "beat": 15.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 15.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 15.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 16,
+   "velocity": 0.56,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 16,
+   "velocity": 0.35,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 16.0,
+   "velocity": 0.95
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 16.0,
+   "velocity": 0.6
+  },
+  {
+   "group": "shk",
+   "beat": 16.5,
+   "velocity": 0.22,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 17.0,
+   "velocity": 0.35,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 17.5,
+   "velocity": 0.22,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 18.0,
+   "velocity": 0.35,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 18.5,
+   "velocity": 0.56,
+   "variation": 5
+  },
+  {
+   "group": "shk",
+   "beat": 18.5,
+   "velocity": 0.22,
+   "variation": 1
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 19,
+   "velocity": 0.5,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 19,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 19.0,
+   "velocity": 0.35,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 19.5,
+   "velocity": 0.22,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 20,
+   "velocity": 0.56,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 20.0,
+   "velocity": 0.35,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 20.5,
+   "velocity": 0.22,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 21.0,
+   "velocity": 0.35,
+   "variation": 2
+  },
+  {
+   "group": "snap",
+   "beat": 21.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 21.5,
+   "velocity": 0.22,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 22.0,
+   "velocity": 0.35,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 22.5,
+   "velocity": 0.56,
+   "variation": 5
+  },
+  {
+   "group": "shk",
+   "beat": 22.5,
+   "velocity": 0.22,
+   "variation": 1
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 23,
+   "velocity": 0.5,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 23,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 23.0,
+   "velocity": 0.35,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 23.5,
+   "velocity": 0.22,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 24,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 24,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "snap",
+   "beat": 24.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 24.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 24.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 24.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 25,
+   "velocity": 0.8,
+   "variation": 2
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 25,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 25,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 25.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 25.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 25.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 25.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 26,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 26.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 26.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 26.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 26.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 27,
+   "velocity": 0.8,
+   "variation": 6
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 27,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 27,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 27.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 27.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 27.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 27.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 28,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 28,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 28.125,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 28.25,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 28.375,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 28.5,
+   "velocity": 0.8,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 28.5,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 28.625,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 28.75,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 28.875,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 29,
+   "velocity": 0.8,
+   "variation": 2
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 29,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 29,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 29.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 29.125,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 29.25,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 29.375,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 29.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 29.5,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 29.625,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 29.75,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 29.875,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 30,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 30.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 30,
+   "velocity": 0.4,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 30.125,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 30.25,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 30.25,
+   "velocity": 0.48,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 30.375,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 30.5,
+   "velocity": 0.8,
+   "variation": 5
+  },
+  {
+   "group": "shk",
+   "beat": 30.5,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 30.5,
+   "velocity": 0.56,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 30.625,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 30.75,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 30.75,
+   "velocity": 0.64,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 30.875,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 31,
+   "velocity": 0.8,
+   "variation": 6
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 31,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 31,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 31.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 31.125,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 31.25,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 31.25,
+   "velocity": 0.72,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 31.375,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 32,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 32,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 32.0,
+   "velocity": 1.0
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 32.0,
+   "velocity": 0.8
+  },
+  {
+   "group": "shk",
+   "beat": 32.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 32.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 32.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 33,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 33,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 33.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 33.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 33.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 33.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 33.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 34,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 34.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 34.0,
+   "velocity": 0.9
+  },
+  {
+   "group": "shk",
+   "beat": 34.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 34.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 34.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 35,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 35,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 35.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 35.0,
+   "velocity": 0.7,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 35.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 35.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 35.5,
+   "velocity": 0.8,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 35.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 36,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 36.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 36.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 36.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 36.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 37,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 37,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 37.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 37.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 37.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 37.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 37.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 38,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 38.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 38.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 38.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 38.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 39,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 39,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 39.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 39.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 39.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 39.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 40,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 40.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "snap",
+   "beat": 40.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 40.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 40.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 40.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 41,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 41,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 41.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 41.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 41.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 41.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 41.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 42,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 42.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 42.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 42.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 42.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 43,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 43,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 43.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 43.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 43.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 43.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 44,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 44.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 44.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 44.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 44.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 45,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 45,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 45.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 45.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 45.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 45.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 45.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 46,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 46.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 46.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 46.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 46.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 47,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 47,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 47.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 47.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 47.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 47.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 48,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 48.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 48.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 48.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 48.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 49,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 49,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 49.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 49.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 49.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 49.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 49.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 50,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 50.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 50.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 50.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 50.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 51,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 51,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 51.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "snap",
+   "beat": 51.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 51.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 51.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 51.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 52,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 52.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 52.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 52.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 52.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 53,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 53,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 53.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 53.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 53.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 53.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 53.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 54,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 54.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "snap",
+   "beat": 54.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 54.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 54.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 54.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 55,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 55,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 55.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 55.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 55.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 55.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 56,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 56.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 56.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 56.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 56.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 57,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 57,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 57.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 57.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 57.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 57.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 57.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 58,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 58.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 58.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 58.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 58.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 59,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 59,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 59.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 59.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 59.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 59.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 60,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 60.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 60.0,
+   "velocity": 1.0
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 60.0,
+   "velocity": 0.8
+  },
+  {
+   "group": "shk",
+   "beat": 60.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 60.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 60.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 61,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 61,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 61.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "snap",
+   "beat": 61.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 61.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 61.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 61.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 61.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 62,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 62.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 62.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 62.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 62.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 63,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 63,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 63.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 63.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 63.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 63.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 64,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 64.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "snap",
+   "beat": 64.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 64.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 64.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 64.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 65,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 65,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 65.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 65.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 65.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 65.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 65.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 66,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 66.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 66.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 66.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "snap",
+   "beat": 66.5,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 66.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 67,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 67,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 67.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 67.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 67.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 67.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 68,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 68.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 68.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 68.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 68.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 69,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 69,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 69.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 69.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 69.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 69.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 69.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 70,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 70.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 70.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 70.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 70.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 71,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 71,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 71.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 71.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 71.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 71.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 72,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 72.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 72.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 72.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 72.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 73,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 73,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 73.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 73.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 73.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 73.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 73.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 74,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 74.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 74.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 74.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 74.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 75,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 75,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 75.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 75.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 75.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 75.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 76,
+   "velocity": 0.3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 76.0,
+   "velocity": 0.8
+  },
+  {
+   "group": "shk",
+   "beat": 78,
+   "velocity": 0.3
+  },
+  {
+   "group": "shk",
+   "beat": 78,
+   "velocity": 0.3
+  },
+  {
+   "group": "snap",
+   "beat": 79.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 80,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 80,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 80,
+   "velocity": 0.3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 80.0,
+   "velocity": 1.0
+  },
+  {
+   "group": "snap",
+   "beat": 80.0,
+   "velocity": 0.6
+  },
+  {
+   "group": "shk",
+   "beat": 80.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 80.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 80.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 81,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 81,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 81.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 81.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 81.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 81.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 81.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 82,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 82.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 82.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 82.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 82.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 83,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 83,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 83.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 83.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 83.5,
+   "velocity": 0.8,
+   "variation": 7
+  },
+  {
+   "group": "shk",
+   "beat": 83.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 83.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 84,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 84.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "snap",
+   "beat": 84.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 84.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 84.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 84.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 85,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 85,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 85.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 85.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 85.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 85.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 85.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 86,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 86.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 86.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 86.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 86.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 87,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 87,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 87.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 87.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 87.5,
+   "velocity": 0.8,
+   "variation": 7
+  },
+  {
+   "group": "shk",
+   "beat": 87.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 87.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 88,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 88.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 88.0,
+   "velocity": 1.0
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 88.0,
+   "velocity": 0.8
+  },
+  {
+   "group": "shk",
+   "beat": 88.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 88.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 88.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 89,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 89,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 89.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 89.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 89.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 89.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 89.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 90,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 90.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 90.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 90.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 90.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 91,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 91,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 91.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 91.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 91.5,
+   "velocity": 0.8,
+   "variation": 7
+  },
+  {
+   "group": "shk",
+   "beat": 91.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 91.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 92,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 92.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 92.0,
+   "velocity": 1.0
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 92.0,
+   "velocity": 0.8
+  },
+  {
+   "group": "shk",
+   "beat": 92.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 92.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 92.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 93,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 93,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 93.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 93.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 93.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 93.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 93.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 94,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 94.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 94.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 94.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 94.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 95,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 95,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 95.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 95.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 95.5,
+   "velocity": 0.8,
+   "variation": 7
+  },
+  {
+   "group": "shk",
+   "beat": 95.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 95.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 96,
+   "velocity": 0.8,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 96.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "snap",
+   "beat": 96.0,
+   "velocity": 0.55
+  },
+  {
+   "group": "shk",
+   "beat": 96.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 96.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 96.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 97,
+   "velocity": 0.72,
+   "variation": 1
+  },
+  {
+   "group": "snap",
+   "beat": 97,
+   "velocity": 0.45,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 97.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 97.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 97.5,
+   "velocity": 0.8,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 97.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 97.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 98,
+   "velocity": 0.8,
+   "variation": 4
+  },
+  {
+   "group": "shk",
+   "beat": 98.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 98.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "shk",
+   "beat": 98.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 98.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-slap",
+   "beat": 99,
+   "velocity": 0.72,
+   "variation": 3
+  },
+  {
+   "group": "snap",
+   "beat": 99,
+   "velocity": 0.45,
+   "variation": 3
+  },
+  {
+   "group": "shk",
+   "beat": 99.0,
+   "velocity": 0.5,
+   "variation": 0
+  },
+  {
+   "group": "shk",
+   "beat": 99.25,
+   "velocity": 0.32,
+   "variation": 1
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 99.5,
+   "velocity": 0.8,
+   "variation": 7
+  },
+  {
+   "group": "shk",
+   "beat": 99.5,
+   "velocity": 0.5,
+   "variation": 2
+  },
+  {
+   "group": "shk",
+   "beat": 99.75,
+   "velocity": 0.32,
+   "variation": 3
+  },
+  {
+   "group": "cajon-bass",
+   "beat": 100.0,
+   "velocity": 0.8
+  }
+ ]
+}

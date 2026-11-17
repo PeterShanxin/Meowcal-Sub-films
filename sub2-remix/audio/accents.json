@@ -1,0 +1,177 @@
+{
+ "bpm": 125,
+ "seconds": 52.0,
+ "note": "Recorded accents for the picture's hits where Red has no drum of its own. Beat k = k * 0.48 s, the film's grid (audio/cues.json). The slam at 1.92 s doubles Red's entry. Red's own drums carry the cold open, the drop, lock, swap, pause, play, proof and brand.",
+ "cues": {
+  "slam": 1.92,
+  "fansub": 10.08,
+  "bridge": 11.52,
+  "name": 16.32,
+  "two": 16.8,
+  "two2": 17.04,
+  "value2": 17.76,
+  "value3": 18.24,
+  "plate": 29.28,
+  "line3": 33.12,
+  "relock": 37.92,
+  "line3b": 41.28,
+  "proofHit": 42.24,
+  "where": 47.04,
+  "fold": 31.92,
+  "giveUp": 15.36
+ },
+ "piano": [],
+ "bass": [],
+ "strings": [],
+ "hits": {
+  "boom": [
+   [
+    4,
+    0.8
+   ],
+   [
+    16,
+    0.6
+   ],
+   [
+    21,
+    0.9
+   ],
+   [
+    88,
+    0.8
+   ],
+   [
+    32,
+    1.0
+   ]
+  ],
+  "kick": [
+   [
+    21,
+    0.8
+   ],
+   [
+    24,
+    0.85
+   ],
+   [
+    61,
+    0.7
+   ],
+   [
+    69,
+    0.8
+   ],
+   [
+    79,
+    0.75
+   ],
+   [
+    86,
+    0.75
+   ],
+   [
+    88,
+    0.8
+   ],
+   [
+    32,
+    0.9
+   ]
+  ],
+  "crash": [
+   [
+    4,
+    0.5
+   ],
+   [
+    21,
+    0.4
+   ],
+   [
+    88,
+    0.4
+   ],
+   [
+    32,
+    0.7
+   ]
+  ],
+  "swell": [
+   [
+    32,
+    "swell-2s",
+    0.45
+   ]
+  ],
+  "tom": [
+   [
+    34,
+    0,
+    0.85
+   ],
+   [
+    35,
+    3,
+    0.8
+   ],
+   [
+    35.5,
+    5,
+    0.85
+   ]
+  ],
+  "clap": [
+   [
+    24,
+    0.5
+   ],
+   [
+    61,
+    0.55
+   ],
+   [
+    69,
+    0.5
+   ],
+   [
+    79,
+    0.5
+   ],
+   [
+    88,
+    0.55
+   ]
+  ],
+  "rim": [
+   [
+    37,
+    0.6
+   ],
+   [
+    38,
+    0.65
+   ],
+   [
+    66.5,
+    0.6
+   ],
+   [
+    86,
+    0.5
+   ],
+   [
+    98,
+    0.6
+   ]
+  ],
+  "snare": [
+   [
+    21,
+    0.55
+   ]
+  ]
+ },
+ "grooves": []
+}

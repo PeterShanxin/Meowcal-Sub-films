@@ -1,0 +1,1519 @@
+{
+  "license": "CC0-1.0",
+  "sources": [
+    "https://github.com/sgossner/VCSL",
+    "https://github.com/sgossner/VSCO-2-CE"
+  ],
+  "samples": [
+    {
+      "id": "bass-Fs0-rr1",
+      "group": "bass",
+      "root": 30,
+      "blob": "4578fd1b4f56290dc35ee453105e487efb3c5c67",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_F%230_v1_rr1.wav"
+    },
+    {
+      "id": "bass-Fs0-rr2",
+      "group": "bass",
+      "root": 30,
+      "blob": "d0a056d068a5c9e2b9e1ddbf1f309c80e617dc9f",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_F%230_v1_rr2.wav"
+    },
+    {
+      "id": "bass-G0-rr1",
+      "group": "bass",
+      "root": 31,
+      "blob": "45d11b0a0545d59407f740b938461b205e8c91cb",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_G0_v1_rr1.wav"
+    },
+    {
+      "id": "bass-G0-rr2",
+      "group": "bass",
+      "root": 31,
+      "blob": "968cf37ef77070e116c8f665d0242af1287530fc",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_G0_v1_rr2.wav"
+    },
+    {
+      "id": "bass-As0-rr1",
+      "group": "bass",
+      "root": 34,
+      "blob": "6b42c2b752ac8aa098fa512b1c068229036f9d55",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_A%230_v1_rr1.wav"
+    },
+    {
+      "id": "bass-As0-rr2",
+      "group": "bass",
+      "root": 34,
+      "blob": "74b090dd2b40841aa3657f35859ae5810ed3344e",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_A%230_v1_rr2.wav"
+    },
+    {
+      "id": "bass-C1-rr1",
+      "group": "bass",
+      "root": 36,
+      "blob": "46a4f947083669e7281be98b16c89b434529ea9e",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_C1_v1_rr1.wav"
+    },
+    {
+      "id": "bass-C1-rr2",
+      "group": "bass",
+      "root": 36,
+      "blob": "aa16603fb7d318a87c47abf01e3ea321cdc78418",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_C1_v1_rr2.wav"
+    },
+    {
+      "id": "bass-D1-rr1",
+      "group": "bass",
+      "root": 38,
+      "blob": "623693ad1479a3e1da230fe62b8d012406412d86",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_D1_v1_rr1.wav"
+    },
+    {
+      "id": "bass-D1-rr2",
+      "group": "bass",
+      "root": 38,
+      "blob": "6b66446765a55ddcad2fbfdf3b47fdc6737bc540",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_D1_v1_rr2.wav"
+    },
+    {
+      "id": "bass-E1-rr1",
+      "group": "bass",
+      "root": 40,
+      "blob": "da8962289a777507e94094c6dde7131916ca1b64",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_E1_v1_rr1.wav"
+    },
+    {
+      "id": "bass-E1-rr2",
+      "group": "bass",
+      "root": 40,
+      "blob": "3326b2b4ae5a4bc6156e7ec8ce5adaca94e867e5",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_E1_v1_rr2.wav"
+    },
+    {
+      "id": "bass-Fs1-rr1",
+      "group": "bass",
+      "root": 42,
+      "blob": "757d0487bc7ad3461aac13cdce1999fabb3952b3",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_F%231_v1_rr1.wav"
+    },
+    {
+      "id": "bass-Fs1-rr2",
+      "group": "bass",
+      "root": 42,
+      "blob": "9a7f711fd6039b0ba71e6061edfb7de9d7102a8a",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_F%231_v1_rr2.wav"
+    },
+    {
+      "id": "bass-Gs1-rr1",
+      "group": "bass",
+      "root": 44,
+      "blob": "1b3774619e9ae958177bc6bd4429d32fbef0c0c8",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_G%231_v1_rr1.wav"
+    },
+    {
+      "id": "bass-Gs1-rr2",
+      "group": "bass",
+      "root": 44,
+      "blob": "51b5c8bbabf1760a072fc557652fb84bcaf827d8",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_G%231_v1_rr2.wav"
+    },
+    {
+      "id": "bass-A1-rr1",
+      "group": "bass",
+      "root": 45,
+      "blob": "311a5027a127715530f1e723a21f7927d280d493",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_A1_v1_rr1.wav"
+    },
+    {
+      "id": "bass-A1-rr2",
+      "group": "bass",
+      "root": 45,
+      "blob": "4ccbcc407cdc07f124f6523d50778d8e77ac2aad",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_A1_v1_rr2.wav"
+    },
+    {
+      "id": "bass-Cs2-rr1",
+      "group": "bass",
+      "root": 49,
+      "blob": "16b7ca596182a49fe693b81ed925df8d2fc1be59",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_C%232_v1_rr1.wav"
+    },
+    {
+      "id": "bass-Cs2-rr2",
+      "group": "bass",
+      "root": 49,
+      "blob": "1538275fda063011eae150b531752b410186c2b6",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_C%232_v1_rr2.wav"
+    },
+    {
+      "id": "bass-E2-rr1",
+      "group": "bass",
+      "root": 52,
+      "blob": "ba882653db7ef6fcebc5dc0e373707cdca944e62",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_E2_v1_rr1.wav"
+    },
+    {
+      "id": "bass-E2-rr2",
+      "group": "bass",
+      "root": 52,
+      "blob": "0d330f46bca35ae676072455ab09bc1391ffdff7",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_E2_v1_rr2.wav"
+    },
+    {
+      "id": "bass-Gs2-rr1",
+      "group": "bass",
+      "root": 56,
+      "blob": "b32004f92c141a30ba5e314dd0cc1d2687b92856",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_G%232_v1_rr1.wav"
+    },
+    {
+      "id": "bass-Gs2-rr2",
+      "group": "bass",
+      "root": 56,
+      "blob": "425eaabaf3d12ea8da780056e5e1a7ee4ddbde80",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Solo%20Contrabass/Pizz/BKCtbss_Pizz_G%232_v1_rr2.wav"
+    },
+    {
+      "id": "belltree-1",
+      "group": "belltree",
+      "root": 60,
+      "blob": "f9d451c269d1ef72d71e5ccfbd647ae52a621f61",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Bell%20Tree/Stroke/BellTree_Stroke_3_Mid.wav"
+    },
+    {
+      "id": "boom-1",
+      "group": "boom",
+      "root": 60,
+      "blob": "5f6b56f8c90ea38c32b54b510931c1fe6d5aa79a",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Bass%20Drum%202/bassdrum_hit_f.wav"
+    },
+    {
+      "id": "clap-1",
+      "group": "clap",
+      "root": 60,
+      "blob": "e033dc2c58e13d3edcb7a61bd6f1bc90310562ae",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Claps/Clap_rr1.wav"
+    },
+    {
+      "id": "clap-2",
+      "group": "clap",
+      "root": 60,
+      "blob": "74d14ae56377ebe03606b810a70250809a1c1e19",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Claps/Clap_rr2.wav"
+    },
+    {
+      "id": "clap-3",
+      "group": "clap",
+      "root": 60,
+      "blob": "045be34ec05a829f38d42cb643c4d1cda70e9cd0",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Claps/Clap_rr3.wav"
+    },
+    {
+      "id": "crash-1",
+      "group": "crash",
+      "root": 60,
+      "blob": "1a66cc768a4595533aab424baf00fddfa316cfb9",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Suspended%20Cymbal%201/susCymb1_hit_mp1.wav"
+    },
+    {
+      "id": "glock-G4",
+      "group": "glock",
+      "root": 79,
+      "blob": "0fb4b3e2baea5685fa4bb29aba340781c0ab0077",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Glockenspiel/glock_soft_G4_01.wav"
+    },
+    {
+      "id": "glock-C5",
+      "group": "glock",
+      "root": 84,
+      "blob": "b68621c4f4fc482284bc8e848ea2d2654366d49e",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Glockenspiel/glock_soft_C5_02.wav"
+    },
+    {
+      "id": "glock-G5",
+      "group": "glock",
+      "root": 91,
+      "blob": "2de4932c129eaacdb2ec9e6e9795cdf00e112cf7",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Glockenspiel/glock_soft_G5_01.wav"
+    },
+    {
+      "id": "glock-C6",
+      "group": "glock",
+      "root": 96,
+      "blob": "d3c777e9470ee9d4b1821817585967500fc34362",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Glockenspiel/glock_soft_C6_01.wav"
+    },
+    {
+      "id": "hat-1",
+      "group": "hat",
+      "root": 60,
+      "blob": "6855f948794d15bbc636996256cab0a14839e6a1",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Hi-Hat%20Cymbal/HiHat_HitC_v2_rr1_Mid.wav"
+    },
+    {
+      "id": "hat-2",
+      "group": "hat",
+      "root": 60,
+      "blob": "7c01881e59793e38511450ff217fb7eee60809fa",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Hi-Hat%20Cymbal/HiHat_HitC_v2_rr2_Mid.wav"
+    },
+    {
+      "id": "kick-1",
+      "group": "kick",
+      "root": 60,
+      "blob": "9af68d83e0d8e6ecd83f5d6db0c6b62e521c6991",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/VSCO%201%20Percussion/drums/bass/bdrum_muted_mf_1.wav"
+    },
+    {
+      "id": "kick-2",
+      "group": "kick",
+      "root": 60,
+      "blob": "59b0c23eec66834941efb54839a66fb302b20696",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/VSCO%201%20Percussion/drums/bass/bdrum_muted_mp_2.wav"
+    },
+    {
+      "id": "openhat-1",
+      "group": "openhat",
+      "root": 60,
+      "blob": "e55c1c8af186f34aee593b05f621aed9b11915b9",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Hi-Hat%20Cymbal/HiHat_HitO_rr1_Mid.wav"
+    },
+    {
+      "id": "piano-As1",
+      "group": "piano",
+      "root": 34,
+      "blob": "28fb743be468c9fa930c05948b4e7916e53aaba4",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%231_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-C2",
+      "group": "piano",
+      "root": 36,
+      "blob": "b462e67751ea92893b46650c8d9c052e77dcf2f1",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_C2_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-D2",
+      "group": "piano",
+      "root": 38,
+      "blob": "c34e3f61d8368f58ee441289e50578ae1bac8ba6",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_D2_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-E2",
+      "group": "piano",
+      "root": 40,
+      "blob": "72a4116e0be18cf35d2c7dbc1b54beb533cb90e8",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_E2_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Fs2",
+      "group": "piano",
+      "root": 42,
+      "blob": "8caf9faed0082e8fb8f1bbec0b64b5ecfefaedbb",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_F%232_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Gs2",
+      "group": "piano",
+      "root": 44,
+      "blob": "0b7a09f089c6978e90f0c069bc659d93e016be51",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_G%232_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-As2",
+      "group": "piano",
+      "root": 46,
+      "blob": "eee7af318572e8cfe274ecdf26f280ada7ff4730",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%232_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-C3",
+      "group": "piano",
+      "root": 48,
+      "blob": "d413df8f62fe20165777ff8ee5d3163471ee7837",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_C3_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-D3",
+      "group": "piano",
+      "root": 50,
+      "blob": "4d4e354eb7a9b2493cf03666df689c0d502375c4",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_D3_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-E3",
+      "group": "piano",
+      "root": 52,
+      "blob": "55c2d83a277a9696cf12f21e56d2aef9f5272590",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_E3_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Fs3",
+      "group": "piano",
+      "root": 54,
+      "blob": "a2c9cde1fa857a04ba08dd9fca6c16e0deb40206",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_F%233_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Gs3",
+      "group": "piano",
+      "root": 56,
+      "blob": "6cc5b8f2d013750cb3711dff8e3feb0076d3b8ee",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_G%233_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-As3",
+      "group": "piano",
+      "root": 58,
+      "blob": "bcd87fc2c02037a40345ab600bbda280b3696c0a",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%233_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-C4",
+      "group": "piano",
+      "root": 60,
+      "blob": "8a98b9adf092d11585c401889f4cc58c773e798b",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_C4_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-D4",
+      "group": "piano",
+      "root": 62,
+      "blob": "44b8f032ed434d66b9d463b1ea2bc9a10bf6901a",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_D4_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-E4",
+      "group": "piano",
+      "root": 64,
+      "blob": "ee2f164523644c060b4dafcf8186953784f19a1e",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_E4_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Fs4",
+      "group": "piano",
+      "root": 66,
+      "blob": "b6d3570f9d385f9bde8ffcf9e86bf794be8c3035",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_F%234_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Gs4",
+      "group": "piano",
+      "root": 68,
+      "blob": "731e99facad96dc0f66a1ef01282a3d667d84ce3",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_G%234_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-As4",
+      "group": "piano",
+      "root": 70,
+      "blob": "3042a43ebb25349ab597e49586f4218c6a7c55d8",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%234_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-C5",
+      "group": "piano",
+      "root": 72,
+      "blob": "c53e8471e2859bca1b75221f1ae2e94e66248ba8",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_C5_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-D5",
+      "group": "piano",
+      "root": 74,
+      "blob": "432296fc6ab1a514830392712347cf7a692eb6e0",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_D5_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-E5",
+      "group": "piano",
+      "root": 76,
+      "blob": "e09ab4c6eeb5422e49e3512be24e7a2e0237aad4",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_E5_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Fs5",
+      "group": "piano",
+      "root": 78,
+      "blob": "9879a49ea5a19775e19764d3d191f27e2eba4fd2",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_F%235_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Gs5",
+      "group": "piano",
+      "root": 80,
+      "blob": "d3f4ece960ea52e2bdf57432b5851fc082f35fb3",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_G%235_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-As5",
+      "group": "piano",
+      "root": 82,
+      "blob": "d1df9d09c61170701247ce0feeca223c7f9d5e4b",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%235_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-C6",
+      "group": "piano",
+      "root": 84,
+      "blob": "fa875a5ea095d34ebb68009958e4644a24a8cce7",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_C6_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-D6",
+      "group": "piano",
+      "root": 86,
+      "blob": "52bd5eabe5f5f75e6bd794cc1005a9c85c7fbcf1",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_D6_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-E6",
+      "group": "piano",
+      "root": 88,
+      "blob": "d4208718d18e04a09435a6b1bb9dac7cb7cf0051",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_E6_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Fs6",
+      "group": "piano",
+      "root": 90,
+      "blob": "f926316fb52b56a3a17774e889b2fabe225f9cf5",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_F%236_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-Gs6",
+      "group": "piano",
+      "root": 92,
+      "blob": "fea42d62def4a8f7bf0ef8630bd7890313d92fdd",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_G%236_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-As6",
+      "group": "piano",
+      "root": 94,
+      "blob": "06fefee4a51bf5346000942b4ece513fcdb4ad1c",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_A%236_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-C7",
+      "group": "piano",
+      "root": 96,
+      "blob": "759355b15332c233646d1a325abc4a23b9b5ed13",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_C7_vl3_rr1.wav"
+    },
+    {
+      "id": "piano-D7",
+      "group": "piano",
+      "root": 98,
+      "blob": "465283089ab3ec284ebf165d35d1e8739469cd3b",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/Sus/JHPiano_Sus_Close_D7_vl3_rr1.wav"
+    },
+    {
+      "id": "rim-1",
+      "group": "rim",
+      "root": 60,
+      "blob": "9c4d6ddd95c68b9827701aea23609f4b88425e3c",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Snare%20Drum%2C%20Modern%201/Snare2_stick_v1_rr1_Mid.wav"
+    },
+    {
+      "id": "rim-2",
+      "group": "rim",
+      "root": 60,
+      "blob": "a690f94ddce564005c1949ae5239230c95b83814",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Snare%20Drum%2C%20Modern%201/Snare2_stick_v1_rr2_Mid.wav"
+    },
+    {
+      "id": "roll-1",
+      "group": "roll",
+      "root": 60,
+      "blob": "7b030cce4330c19a2505807d2bdc08b1853abc69",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Snare%20Drum%2C%20Modern%201/Snare2_rollSN_v4_rr1_Mid.wav"
+    },
+    {
+      "id": "shaker-1",
+      "group": "shaker",
+      "root": 60,
+      "blob": "5a815875b3459e384b65884fa863d2fe578e6ecb",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Shaker%2C%20Small/Mid_ShakerDouble_Up_rr1.wav"
+    },
+    {
+      "id": "shaker-2",
+      "group": "shaker",
+      "root": 60,
+      "blob": "f65e49d6780817d3ab32a3505ab2de79b5ddb4ef",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Shaker%2C%20Small/Mid_ShakerDouble_Up_rr2.wav"
+    },
+    {
+      "id": "snare-1",
+      "group": "snare",
+      "root": 60,
+      "blob": "7439fbcbbce4e29decc5220808799615ce15c22b",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Snare%20Drum%2C%20Modern%201/Snare2_HitSN_v5_rr1_Mid.wav"
+    },
+    {
+      "id": "snare-2",
+      "group": "snare",
+      "root": 60,
+      "blob": "3d9a5146f588c2e213bc608071e7464fbe5a70f4",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Snare%20Drum%2C%20Modern%201/Snare2_HitSN_v5_rr2_Mid.wav"
+    },
+    {
+      "id": "swell-1-5s",
+      "group": "swell",
+      "root": 60,
+      "blob": "e3c97b86a0673734204ecc3c667f6ec222ec865e",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Suspended%20Cymbal%201/susCymb1_cresc_1.5s.wav"
+    },
+    {
+      "id": "swell-2s",
+      "group": "swell",
+      "root": 60,
+      "blob": "5375b5cb5abde0aecdeceb07411468fedaa06238",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Suspended%20Cymbal%201/susCymb1_cresc_2s.wav"
+    },
+    {
+      "id": "tamb-1",
+      "group": "tamb",
+      "root": 60,
+      "blob": "11c538acc0aee9abfd5087d6ff4866753f388b29",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Tambourine%201/Tamb1_Hit_v1_rr1_Mid.wav"
+    },
+    {
+      "id": "tamb-2",
+      "group": "tamb",
+      "root": 60,
+      "blob": "aad955871ad59069036194cf73591a6930a91621",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Tambourine%201/Tamb1_Hit_v2_rr1_Mid.wav"
+    },
+    {
+      "id": "tom-1",
+      "group": "tom",
+      "root": 60,
+      "blob": "c9709d5bdaddaf3bd93a6b2c87cbc3cd6f148f8f",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Tom%201/Stick/TomH_HitS_v3_rr1_Mid.wav"
+    },
+    {
+      "id": "tom-2",
+      "group": "tom",
+      "root": 60,
+      "blob": "8dde88741fd1f49a3d0c477f18be014e0540e9c0",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Tom%201/Stick/TomH_HitS_v3_rr2_Mid.wav"
+    },
+    {
+      "id": "pianodry-C2-2",
+      "group": "piano-dry",
+      "root": 36,
+      "layer": 2,
+      "blob": "f341a21eec0e406b32de9ba94e2845991aa2536f",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C2_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-C2-3",
+      "group": "piano-dry",
+      "root": 36,
+      "layer": 3,
+      "blob": "16f98223b4fd59606d8cc712b0238f922a88ae8a",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C2_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-D2-2",
+      "group": "piano-dry",
+      "root": 38,
+      "layer": 2,
+      "blob": "f177280255165a728d268c913c1d7e7326cc853a",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_D2_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-D2-3",
+      "group": "piano-dry",
+      "root": 38,
+      "layer": 3,
+      "blob": "e3c2d0b6d1de8b030434a2dd897f494f79ac40d6",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_D2_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-E2-2",
+      "group": "piano-dry",
+      "root": 40,
+      "layer": 2,
+      "blob": "639cff00ebac6d76f8acb6e5f4d99075933d16fc",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_E2_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-E2-3",
+      "group": "piano-dry",
+      "root": 40,
+      "layer": 3,
+      "blob": "8d91efa375ab738e803a18dc94b6b1d366185ae0",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_E2_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-Fs2-2",
+      "group": "piano-dry",
+      "root": 42,
+      "layer": 2,
+      "blob": "3002bfd9d03cdd80242e8d28db7de6f1534cd376",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_F%232_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-Fs2-3",
+      "group": "piano-dry",
+      "root": 42,
+      "layer": 3,
+      "blob": "af24d8eddbbf989b6439aa3fd3aa2f13bde42326",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_F%232_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-Gs2-2",
+      "group": "piano-dry",
+      "root": 44,
+      "layer": 2,
+      "blob": "6bf3d90bafef91545f26df99726ebe9badcf677d",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_G%232_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-Gs2-3",
+      "group": "piano-dry",
+      "root": 44,
+      "layer": 3,
+      "blob": "4bffe50db1aa62643aaf7f107e3122ce467d3bc4",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_G%232_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-As2-2",
+      "group": "piano-dry",
+      "root": 46,
+      "layer": 2,
+      "blob": "b6728f1b35b038fc3859d2da0302b65c08520b89",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_A%232_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-As2-3",
+      "group": "piano-dry",
+      "root": 46,
+      "layer": 3,
+      "blob": "8b20545cd9733c090b0622285676229dae92c046",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_A%232_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-C3-2",
+      "group": "piano-dry",
+      "root": 48,
+      "layer": 2,
+      "blob": "8ef76a88e25aebe3d1f3dc26099289900b3650d8",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C3_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-C3-3",
+      "group": "piano-dry",
+      "root": 48,
+      "layer": 3,
+      "blob": "07e5ead535a3a348d33e4100228e0109033eff20",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C3_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-D3-2",
+      "group": "piano-dry",
+      "root": 50,
+      "layer": 2,
+      "blob": "7bbddabf76cd7cf74e9fc0bf23780d2cd76bfbac",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_D3_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-D3-3",
+      "group": "piano-dry",
+      "root": 50,
+      "layer": 3,
+      "blob": "0a241b1c240d86ae612d628e0d710dd270adb9d9",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_D3_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-E3-2",
+      "group": "piano-dry",
+      "root": 52,
+      "layer": 2,
+      "blob": "a831ea6bb534d95082b5186d064f3dcf34faad03",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_E3_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-E3-3",
+      "group": "piano-dry",
+      "root": 52,
+      "layer": 3,
+      "blob": "be766954a602f29fdc30b58b027676e1cffda358",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_E3_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-Fs3-2",
+      "group": "piano-dry",
+      "root": 54,
+      "layer": 2,
+      "blob": "53134a84b09d23c541862b975a7f34758810e3b5",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_F%233_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-Fs3-3",
+      "group": "piano-dry",
+      "root": 54,
+      "layer": 3,
+      "blob": "496426f59187e5059794d3f394d1dad8547f7c96",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_F%233_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-Gs3-2",
+      "group": "piano-dry",
+      "root": 56,
+      "layer": 2,
+      "blob": "6fb1ae6c7747b0ff4524bfe61c4105faf6e28715",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_G%233_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-Gs3-3",
+      "group": "piano-dry",
+      "root": 56,
+      "layer": 3,
+      "blob": "bd1f9506ef8ab9778b7c0978d2b63c3733eea7d3",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_G%233_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-As3-2",
+      "group": "piano-dry",
+      "root": 58,
+      "layer": 2,
+      "blob": "d7be074de79b629e9d898397bd6e3abbe3f1de08",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_A%233_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-As3-3",
+      "group": "piano-dry",
+      "root": 58,
+      "layer": 3,
+      "blob": "bd6675ad5cda935d969fa71a98939c01cfeae3ae",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_A%233_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-C4-2",
+      "group": "piano-dry",
+      "root": 60,
+      "layer": 2,
+      "blob": "5f80e0d82e670ab294d58ac9373b4156f2b6d611",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C4_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-C4-3",
+      "group": "piano-dry",
+      "root": 60,
+      "layer": 3,
+      "blob": "6042681e62e98fe2c0af4a491151d05ddf584669",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C4_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-D4-2",
+      "group": "piano-dry",
+      "root": 62,
+      "layer": 2,
+      "blob": "4984e6295e6c221c49373dfef84c7b79e5f8ea4a",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_D4_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-D4-3",
+      "group": "piano-dry",
+      "root": 62,
+      "layer": 3,
+      "blob": "6989a2c82b42e17b4afa3215ed27f8cb3841a7ce",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_D4_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-E4-2",
+      "group": "piano-dry",
+      "root": 64,
+      "layer": 2,
+      "blob": "7ea42b329ed1c287e50c0d7d6346512b22dc4a33",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_E4_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-E4-3",
+      "group": "piano-dry",
+      "root": 64,
+      "layer": 3,
+      "blob": "a19bc018a487c432c55510d7c87aaa8c7c0bb2b5",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_E4_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-Fs4-2",
+      "group": "piano-dry",
+      "root": 66,
+      "layer": 2,
+      "blob": "aacdd412d3ae2af135234ee84ac65dc8e2d90cb6",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_F%234_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-Fs4-3",
+      "group": "piano-dry",
+      "root": 66,
+      "layer": 3,
+      "blob": "9647a4f2763077f6d231cde92b54e7c263262d17",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_F%234_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-Gs4-2",
+      "group": "piano-dry",
+      "root": 68,
+      "layer": 2,
+      "blob": "23a9b08346353bc378da75c7eaf71ce817f5e366",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_G%234_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-Gs4-3",
+      "group": "piano-dry",
+      "root": 68,
+      "layer": 3,
+      "blob": "313c0d6a12153821c6051fca91d5b4b76d71f6aa",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_G%234_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-As4-2",
+      "group": "piano-dry",
+      "root": 70,
+      "layer": 2,
+      "blob": "67798d47f4b044dc272f09b831b3ef7691cef3bb",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_A%234_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-As4-3",
+      "group": "piano-dry",
+      "root": 70,
+      "layer": 3,
+      "blob": "02cf47835025a8ef62f5dc9604797bf521fb0e37",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_A%234_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-C5-2",
+      "group": "piano-dry",
+      "root": 72,
+      "layer": 2,
+      "blob": "d4e3e6c40762d902e249fe93aa4bd492962fb40c",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C5_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-C5-3",
+      "group": "piano-dry",
+      "root": 72,
+      "layer": 3,
+      "blob": "5ad9b67ecb4890f19ccc5dc8a9f688fd27d36087",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C5_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-D5-2",
+      "group": "piano-dry",
+      "root": 74,
+      "layer": 2,
+      "blob": "dba636952f84eaa11707230ed9c4c71c0185fb0d",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_D5_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-D5-3",
+      "group": "piano-dry",
+      "root": 74,
+      "layer": 3,
+      "blob": "a71f110a876d83466577175b8ed610fb53597851",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_D5_vl3_rr1.wav"
+    },
+    {
+      "id": "pianodry-E5-2",
+      "group": "piano-dry",
+      "root": 76,
+      "layer": 2,
+      "blob": "e57cf75170c75a7af57bb07b5ef069ee25300f67",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_E5_vl2_rr1.wav"
+    },
+    {
+      "id": "pianodry-E5-3",
+      "group": "piano-dry",
+      "root": 76,
+      "layer": 3,
+      "blob": "a4a9b978a2d17ef97e3b270e24dd47db1a9919ad",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_E5_vl3_rr1.wav"
+    },
+    {
+      "id": "cello-A2",
+      "group": "cello",
+      "root": 57,
+      "layer": 1,
+      "blob": "76df6b474aff133b2ac9d96bf2466cb6fd865c72",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_A2_v1_1.wav"
+    },
+    {
+      "id": "cello-B1",
+      "group": "cello",
+      "root": 47,
+      "layer": 1,
+      "blob": "d6a4a2d1a688c6ccb4e1e1a56b878c9c93df468b",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_B1_v1_1.wav"
+    },
+    {
+      "id": "cello-B3",
+      "group": "cello",
+      "root": 71,
+      "layer": 1,
+      "blob": "16d846690d7c4d385f3cfc8f1fe25873d6bd5b01",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_B3_v1_1.wav"
+    },
+    {
+      "id": "cello-C1",
+      "group": "cello",
+      "root": 36,
+      "layer": 1,
+      "blob": "ff87d1ae488d87189f33a0d18550d3bcde012f3d",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_C1_v1_1.wav"
+    },
+    {
+      "id": "cello-C3",
+      "group": "cello",
+      "root": 60,
+      "layer": 1,
+      "blob": "73ccb5dc2cc2a07926a1c41aa3c5621b19f420bf",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_C3_v1_1.wav"
+    },
+    {
+      "id": "cello-D2",
+      "group": "cello",
+      "root": 50,
+      "layer": 1,
+      "blob": "8076f809d4f6a8057f3835e12d22751a25e39252",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_D2_v1_1.wav"
+    },
+    {
+      "id": "cello-D4",
+      "group": "cello",
+      "root": 74,
+      "layer": 1,
+      "blob": "e1125afc13def9b43e4612cdcebd11b99fce20cc",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_D4_v1_1.wav"
+    },
+    {
+      "id": "cello-E1",
+      "group": "cello",
+      "root": 40,
+      "layer": 1,
+      "blob": "fcd27d29a8c0d520539cef6aad659bf9006ae730",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_E1_v1_1.wav"
+    },
+    {
+      "id": "cello-E3",
+      "group": "cello",
+      "root": 64,
+      "layer": 1,
+      "blob": "63f4d6df3a25fb95f417b5d45b5f8bf6a11107bf",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_E3_v1_1.wav"
+    },
+    {
+      "id": "cello-F2",
+      "group": "cello",
+      "root": 53,
+      "layer": 1,
+      "blob": "78f52c49ddc8a357657d92b05cd89f15beb6c717",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_F2_v1_1.wav"
+    },
+    {
+      "id": "cello-F4",
+      "group": "cello",
+      "root": 77,
+      "layer": 1,
+      "blob": "7f39cccecb392eaa0ff4c94e3607dc2294458a30",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_F4_v1_1.wav"
+    },
+    {
+      "id": "cello-G1",
+      "group": "cello",
+      "root": 43,
+      "layer": 1,
+      "blob": "42a2731d11a4749c3026f0618e21a8c9370c2024",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_G1_v1_1.wav"
+    },
+    {
+      "id": "cello-G3",
+      "group": "cello",
+      "root": 67,
+      "layer": 1,
+      "blob": "7880157fbb8e57fb0b7a694b8569701bc0d942ea",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_G3_v1_1.wav"
+    },
+    {
+      "id": "viola-A3",
+      "group": "viola",
+      "root": 69,
+      "layer": 1,
+      "blob": "a57d0e5e328257ef14a3dd09b1debea045671527",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_A3_v1_1.wav"
+    },
+    {
+      "id": "viola-B2",
+      "group": "viola",
+      "root": 59,
+      "layer": 1,
+      "blob": "86e2428bca77c49d795e5e3d5be7dd9b022fce65",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_B2_v1_1.wav"
+    },
+    {
+      "id": "viola-B4",
+      "group": "viola",
+      "root": 83,
+      "layer": 1,
+      "blob": "66520dad5b544b8e93c48e0f3aa941b3e85bc633",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_B4_v1_1.wav"
+    },
+    {
+      "id": "viola-C2",
+      "group": "viola",
+      "root": 48,
+      "layer": 1,
+      "blob": "b1cfb66c1ab03bdb9adac7e347b427bc61524b94",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_C2_v1_1.wav"
+    },
+    {
+      "id": "viola-C4",
+      "group": "viola",
+      "root": 72,
+      "layer": 1,
+      "blob": "a88aa6006bbc4ad1b25e4f08eb2d8ac974a7097f",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_C4_v1_1.wav"
+    },
+    {
+      "id": "viola-D2",
+      "group": "viola",
+      "root": 50,
+      "layer": 1,
+      "blob": "d508161e1c7a255d291f1d32f9605a9c215357aa",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_D2_v1_1.wav"
+    },
+    {
+      "id": "viola-D3",
+      "group": "viola",
+      "root": 62,
+      "layer": 1,
+      "blob": "9a3a65b93d871964a666d6a86deec4d29425d828",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_D3_v1_1.wav"
+    },
+    {
+      "id": "viola-D5",
+      "group": "viola",
+      "root": 86,
+      "layer": 1,
+      "blob": "57d1de0867673e6861f318c01ed3358ffbff2996",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_D5_v1_1.wav"
+    },
+    {
+      "id": "viola-E2",
+      "group": "viola",
+      "root": 52,
+      "layer": 1,
+      "blob": "6401156b3518b6f39e95fdaefc74cc814d6aceb2",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_E2_v1_1.wav"
+    },
+    {
+      "id": "viola-E4",
+      "group": "viola",
+      "root": 76,
+      "layer": 1,
+      "blob": "c97e8f4eeffe3fd94afeb8a3d32099105ab270d2",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_E4_v1_1.wav"
+    },
+    {
+      "id": "viola-F3",
+      "group": "viola",
+      "root": 65,
+      "layer": 1,
+      "blob": "f9e0fa27802046cf9ed1e6b5625b6a815b3c09e8",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_F3_v1_1.wav"
+    },
+    {
+      "id": "viola-G2",
+      "group": "viola",
+      "root": 55,
+      "layer": 1,
+      "blob": "7c6dbafbe1f5de539b5861515f1bf39987e354cb",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_G2_v1_1.wav"
+    },
+    {
+      "id": "viola-G4",
+      "group": "viola",
+      "root": 79,
+      "layer": 1,
+      "blob": "2f34fb8b8826e09cf0427d1710b650a5c3dd3010",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Viola%20Section/susvib/ViolaEns_susvib_G4_v1_1.wav"
+    },
+    {
+      "id": "violin-A2",
+      "group": "violin",
+      "root": 57,
+      "layer": 1,
+      "blob": "b86c2e7000da2a80466196acca2ddbdf6cf83fe8",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_A2_v1.wav"
+    },
+    {
+      "id": "violin-A3",
+      "group": "violin",
+      "root": 69,
+      "layer": 1,
+      "blob": "ec84b89a4b93ecdc7e23d0c023b897b6f151bca7",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_A3_v1.wav"
+    },
+    {
+      "id": "violin-B2",
+      "group": "violin",
+      "root": 59,
+      "layer": 1,
+      "blob": "c2bdf89eed02c0e7fbb11b52799ac62276787ff8",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_B2_v1.wav"
+    },
+    {
+      "id": "violin-B4",
+      "group": "violin",
+      "root": 83,
+      "layer": 1,
+      "blob": "8e22cb66ba5bccb4df68decf98139b3008733e8a",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_B4_v1.wav"
+    },
+    {
+      "id": "violin-C4",
+      "group": "violin",
+      "root": 72,
+      "layer": 1,
+      "blob": "6d81fcafba04ca992a8b85665a56e60337929ce0",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_C4_v1.wav"
+    },
+    {
+      "id": "violin-D3",
+      "group": "violin",
+      "root": 62,
+      "layer": 1,
+      "blob": "e47f9a53d487475fb049039ca7846e11c1ff830a",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_D3_v1.wav"
+    },
+    {
+      "id": "violin-D5",
+      "group": "violin",
+      "root": 86,
+      "layer": 1,
+      "blob": "fa455a7f8fe8c5c00b36c8e131bbc340204ae1c8",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_D5_v1.wav"
+    },
+    {
+      "id": "violin-E4",
+      "group": "violin",
+      "root": 76,
+      "layer": 1,
+      "blob": "838b43d3c9e763898817869d411ab26463b7464f",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_E4_v1.wav"
+    },
+    {
+      "id": "violin-Fs3",
+      "group": "violin",
+      "root": 66,
+      "layer": 1,
+      "blob": "996ca7e6b1d9541d2f2fd7f53ba88294693893e7",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_F%233_v1.wav"
+    },
+    {
+      "id": "violin-G2",
+      "group": "violin",
+      "root": 55,
+      "layer": 1,
+      "blob": "e2de84e8b912dbfb8df3efe7b8ee241e2bcfa027",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_G2_v1.wav"
+    },
+    {
+      "id": "violin-G4",
+      "group": "violin",
+      "root": 79,
+      "layer": 1,
+      "blob": "81d3994ebbf467cbbc88bb2d2ad0dd94d96e7e04",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Violin%20Section/susVib/VlnEns_susVib_G4_v1.wav"
+    },
+    {
+      "id": "wood-wood_click_f_rr1",
+      "group": "wood",
+      "blob": "ee846604e1c6850582d6aad3d4cd9983e1c73d49",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Woodblock/wood_click_f_rr1.wav"
+    },
+    {
+      "id": "wood-wood_click_f_rr2",
+      "group": "wood",
+      "blob": "25739527f54e1a2f1bea670cdf3eece04f414946",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Woodblock/wood_click_f_rr2.wav"
+    },
+    {
+      "id": "claves-Claves1_Hit_v2_rr1_Mid",
+      "group": "claves",
+      "blob": "4b5fd3123833f205db154e4aeed85fc5b627b9f9",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Claves/Claves1_Hit_v2_rr1_Mid.wav"
+    },
+    {
+      "id": "claves-Claves2_Hit_v2_rr1_Mid",
+      "group": "claves",
+      "blob": "75711ced6b8094f2ee0aca36e9faa449a42c8591",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Claves/Claves2_Hit_v2_rr1_Mid.wav"
+    },
+    {
+      "id": "cajon1-Cajon_hit1_f_rr1",
+      "group": "cajon-slap",
+      "blob": "fb3a34a2db5b3456efd8b9650851d7716a5b9bd1",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Cajon/Cajon_hit1_f_rr1.wav"
+    },
+    {
+      "id": "cajon1-Cajon_hit1_f_rr2",
+      "group": "cajon-slap",
+      "blob": "d8d5f6c35d73b64cb2d08c1f7673986b696cd84b",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Cajon/Cajon_hit1_f_rr2.wav"
+    },
+    {
+      "id": "cajon3-Cajon_hit3_f_rr1",
+      "group": "cajon-bass",
+      "blob": "4efe11c9bcb483a56556dc879d34caa4387065a5",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Cajon/Cajon_hit3_f_rr1.wav"
+    },
+    {
+      "id": "cajon3-Cajon_hit3_f_rr2",
+      "group": "cajon-bass",
+      "blob": "bedffa3e06f679754bc439652cff616ea730e630",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Cajon/Cajon_hit3_f_rr2.wav"
+    },
+    {
+      "id": "bongo-hi-BongoH_Hit1_v2_rr1_Mid",
+      "group": "bongo-hi",
+      "blob": "c6e9bb2d2026e6bda4b8ab199f5faae01a11f34a",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Bongos/BongoH_Hit1_v2_rr1_Mid.wav"
+    },
+    {
+      "id": "bongo-hi-BongoH_Hit1_v2_rr2_Mid",
+      "group": "bongo-hi",
+      "blob": "1817065ea6dfc94140e8826977931d3c26a75e2d",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Bongos/BongoH_Hit1_v2_rr2_Mid.wav"
+    },
+    {
+      "id": "bongo-lo-BongoL_Hit1_v2_rr1_Mid",
+      "group": "bongo-lo",
+      "blob": "9e4675082fe4fe4944b662987c000c34c3718615",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Bongos/BongoL_Hit1_v2_rr1_Mid.wav"
+    },
+    {
+      "id": "bongo-lo-BongoL_Hit1_v2_rr2_Mid",
+      "group": "bongo-lo",
+      "blob": "9dbd7c0018803b73bd6a04cf3a660c959620266e",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Membranophones/Struck%20Membranophones/Bongos/BongoL_Hit1_v2_rr2_Mid.wav"
+    },
+    {
+      "id": "shk-Mid_ShakerHighFaster_Down_rr1",
+      "group": "shk",
+      "blob": "d04a94860571471202fbf14cfcb4cc90a15ef873",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Shaker%2C%20Small/Mid_ShakerHighFaster_Down_rr1.wav"
+    },
+    {
+      "id": "shk-Mid_ShakerHighFaster_Up_rr1",
+      "group": "shk",
+      "blob": "831b3482793512402dfd6f015d4a3d4abf432e49",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Shaker%2C%20Small/Mid_ShakerHighFaster_Up_rr1.wav"
+    },
+    {
+      "id": "shk-Mid_ShakerHighFaster_Down_rr2",
+      "group": "shk",
+      "blob": "45d0c9daa1e7891595c4134ae72ef9eedc0536eb",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Shaker%2C%20Small/Mid_ShakerHighFaster_Down_rr2.wav"
+    },
+    {
+      "id": "shk-Mid_ShakerHighFaster_Up_rr2",
+      "group": "shk",
+      "blob": "9529768151bd8f7b17883ceb339f2d2386d32610",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Shaker%2C%20Small/Mid_ShakerHighFaster_Up_rr2.wav"
+    },
+    {
+      "id": "snap-SoloClap_vl2",
+      "group": "snap",
+      "blob": "d378d151a23ac302bf95b2030958f632cc5df4f7",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Claps/SoloClap_vl2.wav"
+    },
+    {
+      "id": "snap-SoloClap_vl3",
+      "group": "snap",
+      "blob": "e6f236e93ee8ea8696d25f0d8fe7252433ee9052",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Claps/SoloClap_vl3.wav"
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_B2_med_01",
+      "group": "marimba",
+      "blob": "c936311bb0a094e7a6625f3c8a4914754242583d",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_B2_med_01.wav",
+      "root": 59
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_B4_med_01",
+      "group": "marimba",
+      "blob": "9393bece679f9d698a8b8acf81be463c07247576",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_B4_med_01.wav",
+      "root": 83
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_C2_med_01",
+      "group": "marimba",
+      "blob": "8d18c94d5945941574e44563a60908d9f8c11430",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_C2_med_01.wav",
+      "root": 48
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_C4_med_01",
+      "group": "marimba",
+      "blob": "85c657dd0a8f58808efad5e9184d5b9124285512",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_C4_med_01.wav",
+      "root": 72
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_C6_med_01",
+      "group": "marimba",
+      "blob": "f5c95434f42f07fecdbd4f3e3a6a737d81cdd45a",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_C6_med_01.wav",
+      "root": 96
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_F1_med_01",
+      "group": "marimba",
+      "blob": "21df93be7915e72dabe9189001262c62b436355f",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_F1_med_01.wav",
+      "root": 41
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_F3_med_01",
+      "group": "marimba",
+      "blob": "2c74c56eba169268ec3e74bc2de31fb282716a58",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_F3_med_01.wav",
+      "root": 65
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_F5_med_01",
+      "group": "marimba",
+      "blob": "215d4dfb83636c70a5997ac65cb3acf201c53dc5",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_F5_med_01.wav",
+      "root": 89
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_G2_med_01",
+      "group": "marimba",
+      "blob": "f27193e84ff36d8c16ddc4a59bc89acc79d426ae",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_G2_med_01.wav",
+      "root": 55
+    },
+    {
+      "id": "marimba-Marimba_hit_Outrigger_G4_med_01",
+      "group": "marimba",
+      "blob": "be84c27de4fea671b78c82591aa6d6f98c06619e",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Struck%20Idiophones/Marimba/Marimba_hit_Outrigger_G4_med_01.wav",
+      "root": 79
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_A4_k1_vl3_rr2",
+      "group": "kalimba",
+      "blob": "640928dd87d9daef984fdd69ece3f5fe2dca10ec",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_A4_k1_vl3_rr2.wav",
+      "root": 80.62
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_B2_k8_vl3_rr2",
+      "group": "kalimba",
+      "blob": "2faf2d70de7bdd960af6d0fedc625df9684f8a38",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_B2_k8_vl3_rr2.wav",
+      "root": 58.9
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_B3_k12_vl3_rr2",
+      "group": "kalimba",
+      "blob": "8367490064d6b1959e14b021687ed6be005441c5",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_B3_k12_vl3_rr2.wav",
+      "root": 71.06
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_B3_k3_vl3_rr2",
+      "group": "kalimba",
+      "blob": "7a0763fc7415233947d71e1d75e36d370306fb63",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_B3_k3_vl3_rr2.wav",
+      "root": 70.95
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_B4_k15_vl3_rr2",
+      "group": "kalimba",
+      "blob": "2572a0c10a6bf57812bdb3dbdd934ac51265be6f",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_B4_k15_vl3_rr2.wav",
+      "root": 83.03
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_C#3_k7_vl3_rr2",
+      "group": "kalimba",
+      "blob": "d73617e0712c14bcd3e307b5c7031d56271478f7",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_C%233_k7_vl3_rr2.wav",
+      "root": 61.2
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_C#4_k2_vl3_rr2",
+      "group": "kalimba",
+      "blob": "6ac4f7d017305fab7fea0533dd36dbafe69fb44b",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_C%234_k2_vl3_rr2.wav",
+      "root": 73.2
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_D#3_k6_vl3_rr2",
+      "group": "kalimba",
+      "blob": "1eb51b1c74a059ee06bbdfefa12104b2ca340114",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_D%233_k6_vl3_rr2.wav",
+      "root": 62.89
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_D#3_k9_vl3_rr2",
+      "group": "kalimba",
+      "blob": "32760dffed22be77581f06c1cc59659ee3d86004",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_D%233_k9_vl3_rr2.wav",
+      "root": 62.94
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_D#4_k13_vl3_rr2",
+      "group": "kalimba",
+      "blob": "f355c45d9f9ac6f1b03ff2957b440646422e944b",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_D%234_k13_vl3_rr2.wav",
+      "root": 75.35
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_F#3_k10_vl3_rr2",
+      "group": "kalimba",
+      "blob": "fe028b23548028949c8b4aeae82dd7e413cf5cbc",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_F%233_k10_vl3_rr2.wav",
+      "root": 65.94
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_F#3_k5_vl3_rr2",
+      "group": "kalimba",
+      "blob": "110d815d38bed26e90ef0b38c8bb9d96405cf80d",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_F%233_k5_vl3_rr2.wav",
+      "root": 66.03
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_F#4_k14_vl3_rr2",
+      "group": "kalimba",
+      "blob": "29c460e3a0249dce32b0620ecafcc797bfa5e36a",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_F%234_k14_vl3_rr2.wav",
+      "root": 78.46
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_G#3_k11_vl3_rr2",
+      "group": "kalimba",
+      "blob": "266f8a6b0b8a807b453c82ee721ec030297fea4c",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_G%233_k11_vl3_rr2.wav",
+      "root": 68.2
+    },
+    {
+      "id": "kalimba-Mbira6_Normal_MainSpirit_G#3_k4_vl3_rr2",
+      "group": "kalimba",
+      "blob": "a17af43ffd96bf37ca7a57563b733c808136083c",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Idiophones/Plucked%20Idiophones/Kalimba%2C%20Kenya/Mbira6_Normal_MainSpirit_G%233_k4_vl3_rr2.wav",
+      "root": 68.3
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+ "bpm": 125,
+ "seconds": 52.0,
+ "note": "A recorded kit under the whole film (beat k = k * 0.48 s, audio/cues.json), mixed by build.py 5 dB under Red. It thickens Red's drums in the cold open, runs four on the floor from the drop, fills into the lock and the brand, drops out while the viewer pauses and drags back, and returns with a crash on play. The riser (audio/riser.json) covers beats 16-32.",
+ "cues": {
+  "rider": 1.92,
+  "giveUp": 15.36,
+  "lock": 28.8,
+  "play": 38.4,
+  "brand": 44.16
+ },
+ "piano": [],
+ "bass": [],
+ "strings": [],
+ "grooves": [
+  {
+   "from": 4,
+   "to": 16,
+   "kick": [
+    0,
+    2,
+    2.5
+   ],
+   "clap": [
+    1,
+    3
+   ],
+   "hat": 0.5,
+   "level": 0.85
+  },
+  {
+   "from": 32,
+   "to": 59,
+   "kick": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "clap": [
+    1,
+    3
+   ],
+   "hat": 0.5,
+   "level": 0.85
+  },
+  {
+   "from": 60,
+   "to": 76,
+   "kick": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "clap": [
+    1,
+    3
+   ],
+   "hat": 0.5,
+   "level": 0.9
+  },
+  {
+   "from": 80,
+   "to": 90,
+   "kick": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "clap": [
+    1,
+    3
+   ],
+   "hat": 0.5,
+   "level": 0.95
+  },
+  {
+   "from": 92,
+   "to": 100,
+   "kick": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "clap": [
+    1,
+    3
+   ],
+   "hat": 0.5,
+   "level": 1.0
+  }
+ ],
+ "hits": {
+  "kick": [
+   [
+    4,
+    0.9
+   ],
+   [
+    32,
+    0.9
+   ],
+   [
+    60,
+    0.9
+   ],
+   [
+    80,
+    0.9
+   ],
+   [
+    92,
+    0.95
+   ]
+  ],
+  "crash": [
+   [
+    4,
+    0.5
+   ],
+   [
+    32,
+    0.55
+   ],
+   [
+    60,
+    0.5
+   ],
+   [
+    80,
+    0.55
+   ],
+   [
+    92,
+    0.6
+   ]
+  ],
+  "tom": [
+   [
+    59,
+    7,
+    0.7
+   ],
+   [
+    59.25,
+    5,
+    0.7
+   ],
+   [
+    59.5,
+    2,
+    0.75
+   ],
+   [
+    59.75,
+    0,
+    0.8
+   ],
+   [
+    75,
+    5,
+    0.6
+   ],
+   [
+    75.5,
+    0,
+    0.65
+   ]
+  ],
+  "roll": [
+   [
+    90,
+    2,
+    0.9
+   ]
+  ],
+  "snare": [
+   [
+    47,
+    0.5
+   ],
+   [
+    47.5,
+    0.55
+   ],
+   [
+    71,
+    0.5
+   ],
+   [
+    71.5,
+    0.55
+   ]
+  ],
+  "boom": [
+   [
+    100,
+    0.8
+   ]
+  ]
+ }
+}

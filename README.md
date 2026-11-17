@@ -1,6 +1,7 @@
 # Meowcal Sub films
 
-Promotional and launch films for [Meowcal Sub](https://github.com/PeterShanxin/Meowcal-Sub).
+Promotional and launch films for [Meowcal Sub](https://github.com/PeterShanxin/Meowcal-Sub) and
+[Meowcal Sub 2](https://github.com/PeterShanxin/Meowcal-Sub-2).
 Each film lives in its own folder with its own README, source, score and
 render instructions. Picture and sound are generated from code and share one
 frame-based timeline per film.
@@ -9,6 +10,7 @@ frame-based timeline per film.
 
 | Folder | Film | Cuts | Status |
 | --- | --- | --- | --- |
+| [`sub2-remix/`](sub2-remix/) | 好字幕，自动上屏。 Launch film for [Meowcal Sub 2 · 妙影2](https://github.com/PeterShanxin/Meowcal-Sub-2): 想看的片，只有外语字幕？ over a horror scream, a cold open cut on the beat, then one take over Sintel in which the app finds the fansub, recognises the line on screen and keeps the second subtitle in step through a pause and a rewind. | 50.9 s portrait and 3:4 cover | Released: [sub2-remix-v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/sub2-remix-v1.0.0) |
 | [`fable-vs-astra/`](fable-vs-astra/) | 两个 AI 做宣传片，你选哪边？ The same promo request to GPT-6 Astra, then Fable 5.2, in a typed chat; each film plays in turn with comments under it. | 152 s portrait and 3:4 cover | Released: [fable-vs-astra-v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/fable-vs-astra-v1.0.0) |
 | [`brand-evolution/`](brand-evolution/) | 换上新意，继续入戏: one continuous take from the old layout to the Chinese interface, a real viewing demo, the old cat logo becoming the new mark, and the name 妙影. | 32 s landscape and 3:4 cover | Released: [brand-evolution-v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/brand-evolution-v1.0.0) |
 | [`reading-test/`](reading-test/) | 看个剧，还要做题？ A film scene turns into a reading test; a translated subtitle resolves the misunderstanding. | 21.6 s portrait and 3:4 cover | Approved; [v1.0.0](https://github.com/PeterShanxin/Meowcal-Sub-films/releases/tag/reading-test-v1.0.0) |
@@ -19,7 +21,7 @@ frame-based timeline per film.
 
 ## Working in this repository
 
-`launch-15s/`, `cat-drama/`, `reading-test/` and `fable-vs-astra/` share one Remotion toolchain at
+`launch-15s/`, `cat-drama/`, `reading-test/`, `fable-vs-astra/` and `sub2-remix/` share one Remotion toolchain at
 the repository root (`package.json`, `remotion.config.ts`, `tsconfig.json`).
 `read-beyond-language/` and `brand-evolution/` have their own `package.json` and install separately.
 Run everything from the repository root:
