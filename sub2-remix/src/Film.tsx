@@ -11,19 +11,16 @@ import { C, FontGate } from "./theme";
  * take over one scene of Sintel. */
 export const Film: React.FC<{ silent?: boolean }> = ({ silent }) => {
   const t = useCurrentFrame() / FPS;
-  // Every drum hit is a visible hit: the frame jumps in and flares on the
-  // hit's own frame, then settles. Cuts hit hardest; UI landings lightly.
+  // Only the cold open's cuts jolt the frame on the drum hit. From Sintel on
+  // the UI moves for its own reasons; the frame no longer shakes to the beat.
   const kick = (at: number, length: number) => {
     const u = (t - at) / length;
     return u < 0 || u >= 1 ? 0 : Math.pow(1 - u, 3);
   };
   // The cut to the rider is a zoom-through (Picture), so it does not jolt.
   const cuts = [...Object.values(cue.cuts).filter((at) => at !== cue.cuts.rider), ...cue.punch, cue.sintel];
-  const big = [cue.giveUp, cue.lock, cue.proofHit, cue.brand];
-  const small = [cue.fansub, cue.bridge, cue.name, cue.value, cue.palette, cue.circle, cue.plate, cue.swap, cue.pause, cue.play, cue.proof, cue.ears];
-  const push =
-    cuts.reduce((sum, at) => sum + 3.2 * kick(at, 0.3), 0) + big.reduce((sum, at) => sum + 2.2 * kick(at, 0.45), 0) + small.reduce((sum, at) => sum + kick(at, 0.3), 0);
-  const flare = cuts.reduce((sum, at) => sum + kick(at, 0.18), 0) + big.reduce((sum, at) => sum + 0.6 * kick(at, 0.3), 0);
+  const push = cuts.reduce((sum, at) => sum + 3.2 * kick(at, 0.3), 0);
+  const flare = cuts.reduce((sum, at) => sum + kick(at, 0.18), 0);
   return (
     <AbsoluteFill style={{ background: C.bg }}>
       <FontGate>

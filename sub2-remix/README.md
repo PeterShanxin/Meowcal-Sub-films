@@ -59,10 +59,10 @@ subtitle-card icon are the parent film's. What changed:
 
 | File | Format |
 | --- | --- |
-| `out/release-v10/meowcal-sub-2-remix-v10.mp4` | 1080 × 1920, 60 fps, H.264 yuv420p BT.709, AAC stereo 48 kHz |
-| `out/release-v10/cover-v10.png` | 1080 × 1440 Xiaohongshu cover |
-| `out/release-v10/description.zh-CN.txt` | Post title, body, tags, disclosures and credits (UTF-8 with BOM), from [`description.zh-CN.md`](description.zh-CN.md) |
-| `out/release-v10/qc.json` | Measured streams, full-decode result, loudness, true peak, SHA-256 |
+| `out/release-v11/meowcal-sub-2-remix-v11.mp4` | 1080 × 1920, 60 fps, H.264 yuv420p BT.709, AAC stereo 48 kHz |
+| `out/release-v11/cover-v11.png` | 1080 × 1440 Xiaohongshu cover |
+| `out/release-v11/description.zh-CN.txt` | Post title, body, tags, disclosures and credits (UTF-8 with BOM), from [`description.zh-CN.md`](description.zh-CN.md) |
+| `out/release-v11/qc.json` | Measured streams, full-decode result, loudness, true peak, SHA-256 |
 
 `out/`, `public/frames/`, `public/fonts/` and `public/audio/*.wav` are not
 committed; the steps below rebuild them.
@@ -137,7 +137,12 @@ table (`audio/compose.py`), rendered from recorded CC0 samples:
   snap; the other landings ride the groove unaccented. v8 also used claves,
   woodblock, bongos, kalimba and glockenspiel (17 voices); the owner found the
   score's elements cluttered ("BGM元素比较杂乱 特别是木鱼"), so v9 has 11.
-- **Measured on the v9 MP4.** `check_sync.py`: 44 of 49 cues are clear onsets (v10 the same),
+- **v11 picture fixes.** The search result shows a poster, as the app does
+  (a 2:3 crop of Sintel at 5:40, built by `fetch_assets.py`); the cursor is a
+  slim Windows 11 arrow; only the cold open's cuts jolt the frame on the beat
+  (the UI section no longer shakes); and on Start the search steps back and
+  fades instead of squeezing into the button.
+- **Measured on the v9 MP4.** `check_sync.py`: 44 of 49 cues are clear onsets (v10 and v11 the same),
   5 soft (the zoom, one chip and the end card's three lines), none off;
   −14.0 LUFS, −1.4 dBTP. v9 also ends at 50.9 s instead of 52 s (the end
   card held still for 4 s after the last chord). Older figures follow.
