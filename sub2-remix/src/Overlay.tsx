@@ -263,11 +263,12 @@ export const Cursor: React.FC<{ t: number }> = ({ t }) => {
   const { x, y } = path(t, stops);
   const clicks = [cue.pickTitle, cue.pickSource, cue.pickTarget, cue.start, sfx.dragPress, cue.confirm, cue.pause, sfx.grab, cue.play];
   const press = clicks.reduce((sum, time) => sum + bump(t, time, 0.24), 0);
-  const size = 58;
+  // The Windows 11 arrow: a slim white pointer with a dark outline and a tail.
+  const size = 46;
   return (
-    <svg width={size} height={size * 1.3} viewBox="0 0 34 44" style={{ position: "absolute", left: x - (2 * size) / 34, top: y - (2 * size) / 34, opacity, scale: 1 - 0.16 * press,
-      transformOrigin: "0 0", filter: "drop-shadow(0 4px 10px rgba(0,0,0,.6))" }}>
-      <path d="M2 2L29 27H17L11 40Z" fill="#fff" stroke="#10131b" strokeWidth="2" />
+    <svg width={size} height={size * (26 / 18)} viewBox="0 0 18 26" style={{ position: "absolute", left: x - (1.5 * size) / 18, top: y - (1.5 * size) / 18, opacity, scale: 1 - 0.1 * press,
+      transformOrigin: "0 0", filter: "drop-shadow(0 3px 6px rgba(0,0,0,.45))", overflow: "visible" }}>
+      <path d="M1.5 1.5V20.2L6.1 15.9L9.2 23.1L12.3 21.8L9.3 14.8H15.6Z" fill="#fff" stroke="#111" strokeWidth="1.3" strokeLinejoin="round" />
     </svg>
   );
 };

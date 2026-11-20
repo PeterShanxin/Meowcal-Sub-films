@@ -1,4 +1,5 @@
 import React from "react";
+import { Img, staticFile } from "remotion";
 import { bump, cue, FIRST, lin, LINES, pop, reveal, sfx } from "./clock";
 import { LIST_Y, PAL, rigRect, ROW_H, START, TRACK, TRACK_TEXT_X, captureBox } from "./layout";
 import { IconArt } from "./Icon";
@@ -18,10 +19,13 @@ export const Rig: React.FC<{ t: number }> = ({ t }) => {
   const rect = rigRect(t);
   const arrive =
     bump(t, cue.giveUp + 0.4, 0.5) + bump(t, cue.palette + 0.4, 0.5) + bump(t, cue.lock, 0.5) + 1.6 * bump(t, cue.ears, 0.6);
-  const scale = 1 + 0.03 * arrive;
+  // Start pressed: the search steps back out of the way (as the app hides it)
+  // before the capture box is drawn; it does not squeeze into the button.
+  const dismiss = t >= cue.start && t < cue.release ? lin(t, [cue.start + 0.12, cue.start + 0.42], [1, 0]) : 1;
+  if (dismiss <= 0) return null;
+  const scale = (1 + 0.03 * arrive) * (0.94 + 0.06 * dismiss);
 
   const tile = Math.max(lin(t, [cue.giveUp - 0.03, cue.giveUp + 0.03, cue.palette, cue.palette + 0.3], [0, 1, 1, 0]), lin(t, [cue.brand + 0.1, cue.brand + 0.45], [0, 1]));
-  const gold = lin(t, [cue.start + 0.42, cue.start + 0.6], [0, 1]) * (t < sfx.dragPress ? 1 : 0);
   // The file folds down into the empty plate and the next line lands in it; at
   // the brand the mark rises out of the plate, as it rose out of the empty slot.
   const away = t > cue.fold && t < cue.brand ? lin(t, [cue.line3 - 0.02, cue.line3 + 0.1], [1, 0]) : t >= cue.brand - 0.5 && t < cue.brand + 0.2 ? lin(t, [cue.brand - 0.08, cue.brand + 0.06], [0, 1]) : 1;
@@ -30,14 +34,13 @@ export const Rig: React.FC<{ t: number }> = ({ t }) => {
   const render = lin(t, [cue.giveUp - 0.03, cue.giveUp + 0.3], [0.55, 0]) * (t < cue.palette ? 1 : 0);
 
   return (
-    <div style={{ ...at(rect), scale, opacity: lin(t, [first, first + 0.12], [0, 1]) * away, overflow: "hidden", background: C.glass,
+    <div style={{ ...at(rect), scale, opacity: lin(t, [first, first + 0.12], [0, 1]) * away * dismiss, overflow: "hidden", background: C.glass,
       backdropFilter: "blur(28px) saturate(1.15)", boxShadow: `0 0 0 2px ${C.glassLine}, 0 0 ${90 * render}px rgba(255,220,160,${render}), 0 40px 90px rgba(0,0,0,.55)` }}>
       <Mark t={t} tile={tile} size={rect.w} />
       {render > 0 && <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(255,244,220,.9), rgba(235,197,139,.2) 60%, transparent)", opacity: render, mixBlendMode: "screen" }} />}
       <Palette t={t} />
       <Toolbar t={t} />
       <Track t={t} />
-      {gold > 0 && <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, #f6d3a2, #dba564)", opacity: gold }} />}
     </div>
   );
 };
@@ -126,8 +129,10 @@ const Palette: React.FC<{ t: number }> = ({ t }) => {
       {step === 0 && t >= cue.chips[0] - 0.12 && (
         <div style={{ position: "absolute", left: 20, top: LIST_Y + 14, width: PAL.w - 40, height: PAL.title - 28, borderRadius: 20,
           opacity: reveal(t, cue.chips[0] - 0.12, cue.chips[0] + 0.1), background: `rgba(242,199,143,${0.05 + 0.1 * bump(t, cue.pickTitle, 0.3)})`, boxShadow: `inset 0 0 0 2px ${C.goldRing}` }}>
-          <div style={{ position: "absolute", left: 28, top: 20, width: 100, height: 146, borderRadius: 12, background: "linear-gradient(160deg, #4a3423, #2a1d14)", display: "flex", alignItems: "center",
-            justifyContent: "center", fontFamily: MONO, fontSize: 22, fontWeight: 700, letterSpacing: 2, color: "#a89887" }}>MOV</div>
+          {/* The poster, as the app shows TMDB's (.work-poster: 60 x 88, radius 5, scaled). */}
+          <div style={{ position: "absolute", left: 28, top: 20, width: 100, height: 146, borderRadius: 9, overflow: "hidden", background: "#111116", boxShadow: "inset 0 0 0 2px rgba(255,255,255,.08)" }}>
+            <Img src={staticFile("frames/poster.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", opacity: reveal(t, cue.chips[0] - 0.05, cue.chips[0] + 0.17) }} />
+          </div>
           <div style={{ position: "absolute", left: 156, top: 16, fontSize: 42, fontWeight: 600, color: C.heading }}>Sintel</div>
           <div style={{ position: "absolute", left: 156, top: 74, fontSize: 27, color: C.muted }}>2010 · 电影</div>
           <div style={{ position: "absolute", left: 156, top: 122, display: "flex", gap: 12 }}>

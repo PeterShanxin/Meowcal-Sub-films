@@ -97,6 +97,17 @@ def main() -> None:
         stamp.write_text(spec)
         print("frames", name, len(list(frames.glob("f*.jpg"))))
 
+    # The search result's poster, as the app shows one from TMDB: a 2:3 crop of
+    # Sintel on the rooftop at sunset (5:40), from the same CC BY 3.0 film.
+    poster = ROOT / "public" / "frames" / "poster.jpg"
+    if not poster.exists():
+        subprocess.run(
+            [FFMPEG, "-v", "error", "-y", "-ss", "340", "-i", str(source_dir / sources["sintel"]["file"]), "-frames:v", "1",
+             "-vf", "crop=ih*2/3:ih:iw*0.7-ih/3:0,scale=300:450:flags=lanczos,setsar=1", "-q:v", "2", str(poster)],
+            check=True,
+        )
+        print("poster", poster.name)
+
 
 if __name__ == "__main__":
     main()
